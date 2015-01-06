@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Archive</title>
-  <meta name="description" content="Paul Rayner's blog on DDD, BDD and agile.">
+  <title>Word Document to Asciidoc Conversion</title>
+  <meta name="description" content="I had content in Word documents that I needed to convert to Asciidoc for our book. Here are the steps I found to work best:">
 
-  
+  <meta name="keywords" content="">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://thepaulrayner.com/archive.html">
+  <link rel="canonical" href="http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc.adoc/">
   <link rel="alternate" type="application/rss+xml" title="Paul Rayner's Blog" href="http://thepaulrayner.com/feed.xml" />
 </head>
 
@@ -64,24 +64,63 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Archive</h1>
+    <h1 class="post-title">Word Document to Asciidoc Conversion</h1>
+    <span class="post-meta">
+<i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Feb 14, 2013
+
+<i class="fa fa-tags fa-lg"></i>&nbsp;
+
+</span>
+
   </header>
 
   <article class="post-content">
-    <h2>Blog Posts</h2>
+    <p>I had content in Word documents that I needed to convert to Asciidoc for our book. Here are the steps I found to work best:</p>
 
-<ul>
-<li><p>20 Jun 2013 &raquo; <a href="/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange.adoc/"> Domain-Driven Design in Ruby at DDD Exchange 2013 in London </a></p></li>
-<li><p>07 May 2013 &raquo; <a href="/blog/2013/05/07/succeeding-with-ddd-documentation/"> Succeeding with DDD - Documentation </a></p></li>
-<li><p>15 Feb 2013 &raquo; <a href="/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd.adoc/"> Agile User stories and Domain-Driven Design (DDD) </a></p></li>
-<li><p>14 Feb 2013 &raquo; <a href="/blog/2013/02/14/word-to-asciidoc.adoc/"> Word Document to Asciidoc Conversion </a></p></li>
-<li><p>07 Feb 2013 &raquo; <a href="/blog/2013/02/07/colors-when-viewing-folders-in-terminal.adoc/"> Colors when viewing folders in Terminal </a></p></li>
-<li><p>07 Feb 2013 &raquo; <a href="/blog/2013/02/07/array-slicing-in-ruby.adoc/"> Array Slicing in Ruby </a></p></li>
-<li><p>06 Feb 2013 &raquo; <a href="/blog/2013/02/06/object-ids-in-ruby.adoc/"> Object Ids in Ruby </a></p></li>
-<li><p>04 Feb 2013 &raquo; <a href="/blog/2013/02/04/blogging-with-octopress-and-github-pages.adoc/"> Blogging with Octopress and Github Pages </a></p></li>
-<li><p>01 Feb 2013 &raquo; <a href="/blog/2013/02/01/book-review-implementing-domain-driven-design.adoc/"> Book Review: Implementing Domain-Driven Design </a></p></li>
-<li><p>02 Jan 2013 &raquo; <a href="/blog/2013/01/02/duplicate-entries-using-open-with.adoc/"> Duplicate Entries using &#39;Open With&#39; on OS X </a></p></li>
-</ul>
+<ol>
+<li>Save Word doc as HTML</li>
+<li>Encode as UTF-8</li>
+<li>Use pandoc to convert from HTML to AsciiDoc</li>
+<li>Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things</li>
+<li>Use Sublime Text 2 to perform any remaining formatting</li>
+</ol>
+
+<h2>Save Word doc as HTML</h2>
+
+<p>Open the document in Word, and then save as a web page. <em>Select the &quot;Save only Display Information into HTML&quot; option when saving.</em> Exit from Word (and wave it goodbye as you do!).</p>
+
+<h2>Encode as UTF-8</h2>
+
+<p>Open the html file in Sublime Text 2. Avert your eyes at the horror that is Word-formatted HTML. Reopen with encoding UTF-8 and save the file:</p>
+
+<p><img src="http://thepaulrayner.com/assets/sublime-text-utf8.png" alt="Sublime Text 2 Reopen with Encoding"></p>
+
+<p>If I don&#39;t recode as UTF-8, then the next step will fail with the error:</p>
+
+<p><code>pandoc: Cannot decode byte &#39;\x6f&#39;: Data.Text.Encoding.decodeUtf8: Invalid UTF-8 stream</code></p>
+
+<h2>Use Pandoc to convert from HTML to AsciiDoc</h2>
+
+<p>Run <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>. For example, the following command takes <code>ConventionSheet.htm</code> and converts it to the AsciiDoc file <code>file.asc</code>:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">pandoc -f html -t asciidoc -o file.asc ConventionSheet.htm
+</code></pre></div>
+<h2>Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things</h2>
+
+<p>Weird single quotes need to go:</p>
+
+<p><img src="http://thepaulrayner.com/assets/sublime-text-backtick-replace.png" alt="Sublime Text 2 Replace backtick with single quote"></p>
+
+<p>If you had reviewing turned on in Word, then reviewer comments and changes will likely be present in the HTML. Remove these using a search and replace with the following Regex in the search field:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">\[line-through\]\*(.+)\*
+</code></pre></div>
+<p>When matched lines cross line breaks then you can use the single line option (<code>?s</code>) in your regex for search and replace:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">(?s)\[line-through\]\*.(.*?)\*
+</code></pre></div>
+<h2>Use Sublime Text 2 to perform any remaining AsciiDoc formatting</h2>
+
+<p>Monospace any regex or other special characters (these will cause problems for the AsciiDoc parser) in the document.</p>
+
+<p>Edit the AsciiDoc document as you wish! Note that GitHub now natively displays AsciiDoc files (using <a href="http://asciidoctor.org/news/asciidoctor-announcement.html">AsciiDoctor</a> behind the scenes), just as it does for Markdown.</p>
 
   </article>
 
@@ -91,6 +130,22 @@
     </div>
 
     
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'thepaulrayner'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
     <footer class="site-footer">
 

@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Archive</title>
-  <meta name="description" content="Paul Rayner's blog on DDD, BDD and agile.">
+  <title>Duplicate Entries using 'Open With' on OS X</title>
+  <meta name="description" content="I noticed today on my MBP running Mountain Lion that using &quot;Open With&quot; (control+click on a file in Finder) showed duplicate entries for the file. ">
 
-  
+  <meta name="keywords" content="">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://thepaulrayner.com/archive.html">
+  <link rel="canonical" href="http://thepaulrayner.com/blog/2013/01/02/duplicate-entries-using-open-with.adoc/">
   <link rel="alternate" type="application/rss+xml" title="Paul Rayner's Blog" href="http://thepaulrayner.com/feed.xml" />
 </head>
 
@@ -64,24 +64,25 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Archive</h1>
+    <h1 class="post-title">Duplicate Entries using 'Open With' on OS X</h1>
+    <span class="post-meta">
+<i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Jan 2, 2013
+
+<i class="fa fa-tags fa-lg"></i>&nbsp;
+
+</span>
+
   </header>
 
   <article class="post-content">
-    <h2>Blog Posts</h2>
+    <p>I noticed today on my MBP running Mountain Lion that using &quot;Open With&quot; (control+click on a file in Finder) showed duplicate entries for the file. </p>
 
-<ul>
-<li><p>20 Jun 2013 &raquo; <a href="/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange.adoc/"> Domain-Driven Design in Ruby at DDD Exchange 2013 in London </a></p></li>
-<li><p>07 May 2013 &raquo; <a href="/blog/2013/05/07/succeeding-with-ddd-documentation/"> Succeeding with DDD - Documentation </a></p></li>
-<li><p>15 Feb 2013 &raquo; <a href="/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd.adoc/"> Agile User stories and Domain-Driven Design (DDD) </a></p></li>
-<li><p>14 Feb 2013 &raquo; <a href="/blog/2013/02/14/word-to-asciidoc.adoc/"> Word Document to Asciidoc Conversion </a></p></li>
-<li><p>07 Feb 2013 &raquo; <a href="/blog/2013/02/07/colors-when-viewing-folders-in-terminal.adoc/"> Colors when viewing folders in Terminal </a></p></li>
-<li><p>07 Feb 2013 &raquo; <a href="/blog/2013/02/07/array-slicing-in-ruby.adoc/"> Array Slicing in Ruby </a></p></li>
-<li><p>06 Feb 2013 &raquo; <a href="/blog/2013/02/06/object-ids-in-ruby.adoc/"> Object Ids in Ruby </a></p></li>
-<li><p>04 Feb 2013 &raquo; <a href="/blog/2013/02/04/blogging-with-octopress-and-github-pages.adoc/"> Blogging with Octopress and Github Pages </a></p></li>
-<li><p>01 Feb 2013 &raquo; <a href="/blog/2013/02/01/book-review-implementing-domain-driven-design.adoc/"> Book Review: Implementing Domain-Driven Design </a></p></li>
-<li><p>02 Jan 2013 &raquo; <a href="/blog/2013/01/02/duplicate-entries-using-open-with.adoc/"> Duplicate Entries using &#39;Open With&#39; on OS X </a></p></li>
-</ul>
+<p>I&#39;m unsure as to what I did that caused this problem to happen, though <a href="https://discussions.apple.com/thread/4250905?start=0&amp;tstart=0">a recent thread on Apple Support Communities</a> indicates it has something to do with clone images. I recently updated XCode through the App Store, and now have a duplicate entry for XCode when I do &quot;Open With,&quot; so perhaps it&#39;s happening when I update an application.</p>
+
+<p>As one of the responses in the thread suggested, the solution for me was to run the following command in my Terminal window:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user
+</code></pre></div>
+<p>I didn’t need to logout. I just relaunched Finder (control+option+click on Finder icon in the Dock) and the problem went away.</p>
 
   </article>
 
@@ -91,6 +92,22 @@
     </div>
 
     
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'thepaulrayner'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
     <footer class="site-footer">
 

@@ -5,8 +5,8 @@
     <description>Paul Rayner&#39;s blog on DDD, BDD and agile.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Jan 2015 23:09:55 +0000</pubDate>
-    <lastBuildDate>Tue, 06 Jan 2015 23:09:55 +0000</lastBuildDate>
+    <pubDate>Tue, 06 Jan 2015 23:45:34 +0000</pubDate>
+    <lastBuildDate>Tue, 06 Jan 2015 23:45:34 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -105,8 +105,8 @@ Last week when I was in London I came across Leonardo DaVinci&amp;#39;s drawing,
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 </description>
         <pubDate>Thu, 20 Jun 2013 11:28:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange/</guid>
+        <link>http://thepaulrayner.com/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange.adoc/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange.adoc/</guid>
         
         
         <category>ddd</category>
@@ -691,8 +691,8 @@ much technical detail you incorporate.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The document is designed to be printed double-sided. I recommend laminating your copies before you hand them out so they last longer and are less likely to get lost in a pile of paper.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 15 Feb 2013 21:14:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd.adoc/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd.adoc/</guid>
         
         
         <category>ddd</category>
@@ -751,8 +751,8 @@ much technical detail you incorporate.&lt;/p&gt;
 &lt;p&gt;Edit the AsciiDoc document as you wish! Note that GitHub now natively displays AsciiDoc files (using &lt;a href=&quot;http://asciidoctor.org/news/asciidoctor-announcement.html&quot;&gt;AsciiDoctor&lt;/a&gt; behind the scenes), just as it does for Markdown.&lt;/p&gt;
 </description>
         <pubDate>Thu, 14 Feb 2013 15:35:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc.adoc/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc.adoc/</guid>
         
         
         <category>writing</category>
@@ -816,8 +816,8 @@ export LS_COLORS
 export LSCOLORS=GxFxCxDxBxegedabagaced
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Thu, 07 Feb 2013 15:33:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal.adoc/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal.adoc/</guid>
         
         
       </item>
@@ -927,8 +927,8 @@ end
 &lt;p&gt;Thanks also to the &lt;a href=&quot;http://mybrainstormings.wordpress.com/2012/09/10/arrays-in-ruby/&quot;&gt;My Brainstormings blog&lt;/a&gt; for additional help with understanding how arrays work in Ruby.&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Feb 2013 10:03:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/07/array-slicing-in-ruby/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/07/array-slicing-in-ruby/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/07/array-slicing-in-ruby.adoc/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/07/array-slicing-in-ruby.adoc/</guid>
         
         
         <category>ruby</category>
@@ -982,8 +982,8 @@ end
 &lt;p&gt;I highly recommend using a koan-based approach to learning the details of a new language. There&amp;#39;s a good list of links for various languages in &lt;a href=&quot;http://rubygeek.github.com/2011/01/22/koan-a-copia/&quot;&gt;&amp;quot;Koan-a-Copia!&amp;quot;&lt;/a&gt; article by &lt;a href=&quot;https://twitter.com/rubygeekdotcom&quot;&gt;Nola Stowe&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 06 Feb 2013 11:26:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/06/object-ids-in-ruby/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/06/object-ids-in-ruby/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/06/object-ids-in-ruby.adoc/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/06/object-ids-in-ruby.adoc/</guid>
         
         
         <category>ruby</category>
@@ -994,9 +994,7 @@ end
     
       <item>
         <title>Blogging with Octopress and Github Pages</title>
-        <description>&lt;h2&gt;Why Octopress?&lt;/h2&gt;
-
-&lt;p&gt;Here are &lt;a href=&quot;http://alblue.bandlem.com/2012/02/advantages-of-octopress.html&quot;&gt;4 good reasons from AlBlue&amp;#39;s blog&lt;/a&gt; to consider using Octopress for a technical blog: &lt;/p&gt;
+        <description>&lt;p&gt;Here are &lt;a href=&quot;http://alblue.bandlem.com/2012/02/advantages-of-octopress.html&quot;&gt;4 good reasons from AlBlue&amp;#39;s blog&lt;/a&gt; to consider using Octopress for a technical blog: &lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Jekyll-based&lt;/li&gt;
@@ -1006,6 +1004,8 @@ end
 &lt;/ul&gt;
 
 &lt;p&gt;See also &lt;a href=&quot;http://www.neilsmithline.com/blog/2012/05/26/octopress-is-pretty-great/&quot;&gt;Octopress Is Pretty Great&lt;/a&gt;, which has a great description of not only the positives of Octopress, but also a good step-by-step summary of how to configure Octopress for your environment.&lt;/p&gt;
+
+&lt;h2&gt;Why Octopress?&lt;/h2&gt;
 
 &lt;p&gt;The Jekyll-style approach is to write content in an author-friendly text format (i.e. &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;) that is then translated to HTML and served up as such is gaining more and more momentum over the more common CMS-style approach. Tom Preston Werner &lt;a href=&quot;http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html&quot;&gt;wrote Jekyll back in 2008&lt;/a&gt;, and it is now used to &lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages&quot;&gt;serve content on Github Pages&lt;/a&gt;. &lt;/p&gt;
 
@@ -1091,8 +1091,8 @@ end
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 04 Feb 2013 12:26:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages.adoc/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages.adoc/</guid>
         
         
         <category>writing</category>
@@ -1261,8 +1261,8 @@ This is a review of the book &lt;em&gt;Implementing Domain-Driven Design&lt;/em&
 &lt;p&gt;For someone that wants to get up to speed with DDD there are a variety of complementary options. Firstly, those that want to explore on their own can find sample apps and an abundance of presentations and articles on the &lt;a href=&quot;http://dddcommunity.org&quot;&gt;DDD Community site&lt;/a&gt; and &lt;a href=&quot;http://www.infoq.com/domain-driven-design/&quot;&gt;InfoQ&lt;/a&gt;. There is also the &lt;a href=&quot;http://tech.groups.yahoo.com/group/domaindrivendesign/&quot;&gt;DDD mailing list&lt;/a&gt;, &lt;a href=&quot;http://stackoverflow.com/questions/tagged/domain-driven-design&quot;&gt;Stack Overflow feed&lt;/a&gt;, and blog posts by a variety of knowledgeable individuals. Finally, if you want to get up-to-speed quickly then attend one of the excellent public &lt;a href=&quot;http://www.domainlanguage.com/training&quot;&gt;Domain Language DDD classes&lt;/a&gt;, designed by Eric Evans himself. These classes are offered through &lt;a href=&quot;http://www.domainlanguage.com/about&quot;&gt;Domain Language&lt;/a&gt; and its training partners in New York City, Denver, London, Paris, Oslo and Stockholm.  The classes are also available as onsite offerings if you want to get your whole team trained.&lt;/p&gt;
 </description>
         <pubDate>Fri, 01 Feb 2013 11:40:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/01/book-review-implementing-domain-driven-design/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/01/book-review-implementing-domain-driven-design/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/01/book-review-implementing-domain-driven-design.adoc/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/01/book-review-implementing-domain-driven-design.adoc/</guid>
         
         
         <category>ddd</category>
@@ -1283,8 +1283,8 @@ This is a review of the book &lt;em&gt;Implementing Domain-Driven Design&lt;/em&
 &lt;p&gt;I didn’t need to logout. I just relaunched Finder (control+option+click on Finder icon in the Dock) and the problem went away.&lt;/p&gt;
 </description>
         <pubDate>Wed, 02 Jan 2013 16:57:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/01/02/duplicate-entries-using-open-with/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/01/02/duplicate-entries-using-open-with/</guid>
+        <link>http://thepaulrayner.com/blog/2013/01/02/duplicate-entries-using-open-with.adoc/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/01/02/duplicate-entries-using-open-with.adoc/</guid>
         
         
         <category>osx</category>

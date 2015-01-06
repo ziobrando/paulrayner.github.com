@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Archive</title>
-  <meta name="description" content="Paul Rayner's blog on DDD, BDD and agile.">
+  <title>Colors when viewing folders in Terminal</title>
+  <meta name="description" content="Saw directory listing coloring at Golden Ruby Users Group this week, and needed to have it!">
 
-  
+  <meta name="keywords" content="">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://thepaulrayner.com/archive.html">
+  <link rel="canonical" href="http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal.adoc/">
   <link rel="alternate" type="application/rss+xml" title="Paul Rayner's Blog" href="http://thepaulrayner.com/feed.xml" />
 </head>
 
@@ -64,25 +64,69 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Archive</h1>
+    <h1 class="post-title">Colors when viewing folders in Terminal</h1>
+    <span class="post-meta">
+<i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Feb 7, 2013
+
+<i class="fa fa-tags fa-lg"></i>&nbsp;
+
+</span>
+
   </header>
 
   <article class="post-content">
-    <h2>Blog Posts</h2>
+    <p>Saw directory listing coloring at Golden Ruby Users Group this week, and needed to have it!</p>
+
+<p><a href="http://linux-sxs.org/housekeeping/lscolors.html">LsColors</a></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">LS_COLORS=&#39;di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90&#39;
+export LS_COLORS
+</code></pre></div>
+<p><a href="http://norbauer.com/notebooks/code/notes/ls-colors-and-terminal-app">ls, colors and Terminal.app</a></p>
+
+<p>Customize Your Colors</p>
+
+<p>The values in LSCOLORS are codes corresponding to different colors for different types of files. The letter you use indicates which color to use, and the position in the string indicates what type of file should be that color. Each color comes in pairs – a foreground color and a background color. Here is a list of color values:</p>
 
 <ul>
-<li><p>20 Jun 2013 &raquo; <a href="/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange.adoc/"> Domain-Driven Design in Ruby at DDD Exchange 2013 in London </a></p></li>
-<li><p>07 May 2013 &raquo; <a href="/blog/2013/05/07/succeeding-with-ddd-documentation/"> Succeeding with DDD - Documentation </a></p></li>
-<li><p>15 Feb 2013 &raquo; <a href="/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd.adoc/"> Agile User stories and Domain-Driven Design (DDD) </a></p></li>
-<li><p>14 Feb 2013 &raquo; <a href="/blog/2013/02/14/word-to-asciidoc.adoc/"> Word Document to Asciidoc Conversion </a></p></li>
-<li><p>07 Feb 2013 &raquo; <a href="/blog/2013/02/07/colors-when-viewing-folders-in-terminal.adoc/"> Colors when viewing folders in Terminal </a></p></li>
-<li><p>07 Feb 2013 &raquo; <a href="/blog/2013/02/07/array-slicing-in-ruby.adoc/"> Array Slicing in Ruby </a></p></li>
-<li><p>06 Feb 2013 &raquo; <a href="/blog/2013/02/06/object-ids-in-ruby.adoc/"> Object Ids in Ruby </a></p></li>
-<li><p>04 Feb 2013 &raquo; <a href="/blog/2013/02/04/blogging-with-octopress-and-github-pages.adoc/"> Blogging with Octopress and Github Pages </a></p></li>
-<li><p>01 Feb 2013 &raquo; <a href="/blog/2013/02/01/book-review-implementing-domain-driven-design.adoc/"> Book Review: Implementing Domain-Driven Design </a></p></li>
-<li><p>02 Jan 2013 &raquo; <a href="/blog/2013/01/02/duplicate-entries-using-open-with.adoc/"> Duplicate Entries using &#39;Open With&#39; on OS X </a></p></li>
+<li>a = black</li>
+<li>b = red</li>
+<li>c = green</li>
+<li>d = brown</li>
+<li>e = blue</li>
+<li>f = magenta</li>
+<li>g = cyan</li>
+<li>h = grey</li>
+<li>A = dark grey</li>
+<li>B = bold red</li>
+<li>C = bold green</li>
+<li>D = yellow</li>
+<li>E = bold blue</li>
+<li>F = magenta</li>
+<li>G = cyan</li>
+<li>H = white</li>
+<li>x = default</li>
 </ul>
 
+<p>And here is a list of the positions in LSCOLORS:</p>
+
+<ul>
+<li>directory</li>
+<li>symbolic link</li>
+<li>socket</li>
+<li>pipe</li>
+<li>executable</li>
+<li>block device</li>
+<li>character device</li>
+<li>executable with setuid set</li>
+<li>executable with setguid set</li>
+<li>directory writable by others, with sticky bit</li>
+<li>directory writable by others, without sticky bit</li>
+</ul>
+
+<p><a href="http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/">Colors for Dark Terminal Themes</a>:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+</code></pre></div>
   </article>
 
 </div>
@@ -91,6 +135,22 @@
     </div>
 
     
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'thepaulrayner'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
     <footer class="site-footer">
 

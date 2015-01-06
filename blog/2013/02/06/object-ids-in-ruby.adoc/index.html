@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Archive</title>
-  <meta name="description" content="Paul Rayner's blog on DDD, BDD and agile.">
+  <title>Object Ids in Ruby</title>
+  <meta name="description" content="In my effort to master Ruby this year, I started this morning working through Ruby Koans. I just completed these tests and was intrigued by the comment in th...">
 
-  
+  <meta name="keywords" content="">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://thepaulrayner.com/archive.html">
+  <link rel="canonical" href="http://thepaulrayner.com/blog/2013/02/06/object-ids-in-ruby.adoc/">
   <link rel="alternate" type="application/rss+xml" title="Paul Rayner's Blog" href="http://thepaulrayner.com/feed.xml" />
 </head>
 
@@ -64,24 +64,58 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Archive</h1>
+    <h1 class="post-title">Object Ids in Ruby</h1>
+    <span class="post-meta">
+<i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Feb 6, 2013
+
+<i class="fa fa-tags fa-lg"></i>&nbsp;
+
+</span>
+
   </header>
 
   <article class="post-content">
-    <h2>Blog Posts</h2>
+    <p>In my effort to master Ruby this year, I started this morning working through <a href="http://rubykoans.com">Ruby Koans</a>. I just completed these tests and was intrigued by the comment in the second koan:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">def test_some_system_objects_always_have_the_same_id
+  assert_equal 0, false.object_id
+  assert_equal 2, true.object_id
+  assert_equal 4, nil.object_id
+end
 
-<ul>
-<li><p>20 Jun 2013 &raquo; <a href="/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange.adoc/"> Domain-Driven Design in Ruby at DDD Exchange 2013 in London </a></p></li>
-<li><p>07 May 2013 &raquo; <a href="/blog/2013/05/07/succeeding-with-ddd-documentation/"> Succeeding with DDD - Documentation </a></p></li>
-<li><p>15 Feb 2013 &raquo; <a href="/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd.adoc/"> Agile User stories and Domain-Driven Design (DDD) </a></p></li>
-<li><p>14 Feb 2013 &raquo; <a href="/blog/2013/02/14/word-to-asciidoc.adoc/"> Word Document to Asciidoc Conversion </a></p></li>
-<li><p>07 Feb 2013 &raquo; <a href="/blog/2013/02/07/colors-when-viewing-folders-in-terminal.adoc/"> Colors when viewing folders in Terminal </a></p></li>
-<li><p>07 Feb 2013 &raquo; <a href="/blog/2013/02/07/array-slicing-in-ruby.adoc/"> Array Slicing in Ruby </a></p></li>
-<li><p>06 Feb 2013 &raquo; <a href="/blog/2013/02/06/object-ids-in-ruby.adoc/"> Object Ids in Ruby </a></p></li>
-<li><p>04 Feb 2013 &raquo; <a href="/blog/2013/02/04/blogging-with-octopress-and-github-pages.adoc/"> Blogging with Octopress and Github Pages </a></p></li>
-<li><p>01 Feb 2013 &raquo; <a href="/blog/2013/02/01/book-review-implementing-domain-driven-design.adoc/"> Book Review: Implementing Domain-Driven Design </a></p></li>
-<li><p>02 Jan 2013 &raquo; <a href="/blog/2013/01/02/duplicate-entries-using-open-with.adoc/"> Duplicate Entries using &#39;Open With&#39; on OS X </a></p></li>
-</ul>
+def test_small_integers_have_fixed_ids
+  assert_equal 1, 0.object_id
+  assert_equal 3, 1.object_id
+  assert_equal 5, 2.object_id
+  assert_equal 201, 100.object_id
+
+  # THINK ABOUT IT:
+  # What pattern do the object IDs for small integers follow?
+end
+</code></pre></div>
+<p>To put it another way:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt;&gt; (0..50).each { |i| print i.object_id, &#39; &#39; }
+</code></pre></div>
+<p>What would you expect to see as output? You can find the answer in <a href="http://stackoverflow.com/questions/3952730/fixed-object-id-for-system-objects-and-small-integers-in-ruby">Fixed Object Id for System Objects and Small Integers in Ruby</a>.</p>
+
+<p>But why does this happen? I did a little digging and found these 2006 articles by Caleb Tennis on <a href="http://www.oreillynet.com/ruby/blog/2006/01/the_ruby_value_1.html">The Ruby VALUE</a> and <a href="http://www.oreillynet.com/ruby/blog/2006/02/ruby_values_and_object_ids.html">Ruby Values and object_ids</a>. In the first article he points out that:</p>
+
+<blockquote>
+<p>The first point of interest is the VALUE - Ruby’s internal representation of its objects. In the general sense, a VALUE is just a C pointer to a Ruby object data type. We use VALUEs in the C code like we would use objects in the Ruby code.</p>
+
+<p>...for performance purposes, Ruby doesn’t use the VALUE as a pointer in every instance. For Fixnums, Ruby stores the number value directly in the VALUE itself. That keeps us from having to keep a lookup table of every possible Fixnum in the system.</p>
+</blockquote>
+
+<p>There is also a good Stack Overflow answer to this question of <a href="http://stackoverflow.com/questions/3430280/ruby-how-does-object-id-assignment-work">how object assignment works in Ruby</a>:</p>
+
+<blockquote>
+<p>In MRI the <code>object_id</code> of an object is the same as the <code>VALUE</code> that represents the object on the C level. For most kinds of objects this <code>VALUE</code> is a pointer to a location in memory where the actual object data is stored. Obviously this will be different during multiple runs because it only depends on where the system decided to allocate the memory, not on any property of the object itself.</p>
+
+<p>However for performance reasons <code>true</code>, <code>false</code>, <code>nil</code> and <code>Fixnum</code>s are handled specially. For these objects there isn&#39;t actually a struct with the object&#39;s data in memory. All of the object&#39;s data is encoded in the <code>VALUE</code> itself. As you already figured out the values for <code>false</code>, <code>true</code>, <code>nil</code> and any <code>Fixnum</code> <code>i</code>, are <code>0</code>, <code>2</code>, <code>4</code> and <code>i*2+1</code> respectively.</p>
+
+<p>The reason that this works is that on any systems that MRI runs on, <code>0</code>, <code>2</code>, <code>4</code> and <code>i*2+1</code> are never valid addresses for an object on the heap, so there&#39;s no overlap with pointers to object data.</p>
+</blockquote>
+
+<p>I highly recommend using a koan-based approach to learning the details of a new language. There&#39;s a good list of links for various languages in <a href="http://rubygeek.github.com/2011/01/22/koan-a-copia/">&quot;Koan-a-Copia!&quot;</a> article by <a href="https://twitter.com/rubygeekdotcom">Nola Stowe</a>.</p>
 
   </article>
 
@@ -91,6 +125,22 @@
     </div>
 
     
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'thepaulrayner'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
     <footer class="site-footer">
 
