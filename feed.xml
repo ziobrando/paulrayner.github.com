@@ -5,8 +5,8 @@
     <description>Paul Rayner&#39;s blog on DDD, BDD and agile.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Jan 2015 21:43:13 +0000</pubDate>
-    <lastBuildDate>Tue, 06 Jan 2015 21:43:13 +0000</lastBuildDate>
+    <pubDate>Tue, 06 Jan 2015 23:09:55 +0000</pubDate>
+    <lastBuildDate>Tue, 06 Jan 2015 23:09:55 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -116,15 +116,12 @@ Last week when I was in London I came across Leonardo DaVinci&amp;#39;s drawing,
       <item>
         <title>Succeeding with DDD - Documentation</title>
         <description>&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;categories: [DDD, Agile]&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I&amp;#8217;m often asked about what teams doing Domain-Driven Design (DDD) should do in the way of documentation. The question &lt;a href=&quot;http://stackoverflow.com/questions/16284767/what-types-of-written-design-documents-are-used-in-ddd-projects&quot;&gt;What types of Written Design Documents are used in DDD projects?&lt;/a&gt; came up on Stack Overflow and I started to write a response, but realized it was getting way too long to post there. So here it is.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sidebarblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&quot;When it comes to documentation, we need to begin with the end in mind.&quot;&lt;/p&gt;
+&lt;p&gt;When it comes to documentation, we need to begin with the end in mind.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -152,8 +149,9 @@ now as it develops the software, or is it to support future development?&quot;
 Depending on the answer to this question, approach the documentation in a
 different way. Let&amp;#8217;s start with supporting future development.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;the-problem-of-tribal-mythology&quot;&gt;The Problem of Tribal Mythology&lt;/h3&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;the-problem-of-tribal-mythology&quot;&gt;The Problem of Tribal Mythology&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Jason Smith in &lt;a href=&quot;http://www.amazon.com/Elemental-Design-Patterns-Jason-Smith/dp/0321711920&quot;&gt;Elemental Design Patterns&lt;/a&gt; says the following about kinds of
 documentation supporting future development:&lt;/p&gt;
@@ -194,8 +192,10 @@ as the software is being built, but then there is the additional maintenance
 cost of keeping it up-to-date as things change.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;preserving-tribal-wisdom&quot;&gt;Preserving Tribal Wisdom&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;preserving-tribal-wisdom&quot;&gt;Preserving Tribal Wisdom&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;So we want to avoid tribal mythology by documenting our systems as necessary.
 We want to capture and preserve for people to come the &quot;tribal wisdom&quot; that
@@ -212,6 +212,10 @@ rote copying, and provides illumination through a comprehensive discussion of
 the reasons behind the action.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Jason Smith&lt;br&gt;
+&lt;cite&gt;Elemental Design Patterns&lt;/cite&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
@@ -224,10 +228,16 @@ designs. By ensuring that we have a strong tradition of knowledge retention
 that facilitates understanding, we build a tradition of tribal wisdom.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Jason Smith&lt;br&gt;
+&lt;cite&gt;Elemental Design Patterns&lt;/cite&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;favor-documenting-over-documentation&quot;&gt;Favor Documenting over Documentation&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;favor-documenting-over-documentation&quot;&gt;Favor Documenting over Documentation&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;So we support future development by preserving tribal wisdom through
 documentation, but what about supporting the team as they develop the product?&lt;/p&gt;
@@ -250,10 +260,12 @@ like. Let&amp;#8217;s look at some important characteristics of this style of
 documentation:&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;characteristics-of-useful-documentation&quot;&gt;Characteristics of Useful Documentation&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;characteristics-of-useful-documentation&quot;&gt;Characteristics of Useful Documentation&lt;/h3&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;trustworthy&quot;&gt;Trustworthy&lt;/h4&gt;
+&lt;h3 id=&quot;trustworthy&quot;&gt;Trustworthy&lt;/h3&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This should have to go without saying but, like comments in code, much of the
 documentation that exists cannot be trusted. If you have documents that are
@@ -262,8 +274,8 @@ date. They must be correct. They must speak the truth about the software and
 the business domain.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;malleable&quot;&gt;Malleable&lt;/h4&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;malleable&quot;&gt;Malleable&lt;/h3&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Part of keeping documents trustworthy is enabling change. Documentation must
 be malleable - make it as easy to change as possible. Reduce the friction of
@@ -282,8 +294,8 @@ that it is kept up to date. As much as possible, push the knowledge into the
 code and the tests.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;accessible&quot;&gt;Accessible&lt;/h4&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;accessible&quot;&gt;Accessible&lt;/h3&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Documentation must be as accessible as necessary. Things that the team is
 working on right now, I would expect to be on the walls of the team area. Just
@@ -304,8 +316,10 @@ code.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;documentation-and-doing-ddd&quot;&gt;Documentation and Doing DDD&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;documentation-and-doing-ddd&quot;&gt;Documentation and Doing DDD&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;DDD teams often find they have a leg-up with documentation, because they
 devote so much effort to distilling domain knowledge into the software itself
@@ -339,8 +353,10 @@ However, there are certain kinds of documentation that teams doing DDD do find
 very helpful. Let&amp;#8217;s look at some of these.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;requirements-specification&quot;&gt;Requirements Specification?&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;requirements-specification&quot;&gt;Requirements Specification?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Many teams opt for user stories as items in a feature queue, prioritized by value to the business
 (i.e. &quot;Product Backlog&quot;, in Scrum terms). See my earlier blog post on &lt;a href=&quot;http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/&quot;&gt;user stories and DDD&lt;/a&gt;.&lt;/p&gt;
@@ -435,15 +451,19 @@ vogue recently, but I am still a big fan of them.&lt;/p&gt;
 possible.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;core-elements&quot;&gt;Core Elements&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;core-elements&quot;&gt;Core Elements&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I typically create a short document that captures the core domain vision
 statement and the context map.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;architecture&quot;&gt;Architecture&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;architecture&quot;&gt;Architecture&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Architecture is largely orthogonal, but supportive, for DDD. I find the &lt;a href=&quot;http://en.wikipedia.org/wiki/4%2B1_architectural_view_model&quot;&gt;4+1 architecture&lt;/a&gt; to be the most useful. It is useful to keep in mind that, as Grady Booch declared in 2009, architecture is a &lt;em&gt;shared hallucination&lt;/em&gt;:&lt;/p&gt;
 &lt;/div&gt;
@@ -453,6 +473,9 @@ statement and the context map.&lt;/p&gt;
 &lt;p&gt;Architecture is just a collective hunch, a shared hallucination, an assertion by a set of stakeholders on the nature of their observable world, be it a world that is or a world as they wish it to be. Architecture therefore serves as a means of anchoring an extended set of stakeholders to a common vision of that world, a vision around which they may rally, to which they are led, and for which they work collectively to make manifest.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Grady Booch
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Notice that in Krutchen&amp;#8217;s approach, scenarios are the unifying thing.
@@ -472,8 +495,10 @@ worth solving for the business.&lt;/p&gt;
 &lt;p&gt;George Fairbanks book, &lt;a href=&quot;http://www.amazon.com/Just-Enough-Software-Architecture-Risk-Driven/dp/0984618104/&quot;&gt;Just-Enough Software Architecture&lt;/a&gt; is the best book I&amp;#8217;ve found on characterizing, describing and documenting software archtictures. I love the pragmatic, risk-driven approach to architecture that this book takes (the sections on modeling alone are excellent, though it defines DDD too narrowly for my taste). If you are looking for something more comprehensive in the software engineering tradition, then it&amp;#8217;s hard to beat the definitive tome: &lt;a href=&quot;http://www.amazon.com/Documenting-Software-Architectures-Views-Beyond/dp/0321552687&quot;&gt;Documenting Software Architectures&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;ubiquitous-language&quot;&gt;Ubiquitous language&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;ubiquitous-language&quot;&gt;Ubiquitous language&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;It can be helpful having a document that explains the Ubiquitous Language.
 Many teams develop a dictionary of significant business terms early on, and
@@ -501,8 +526,10 @@ these changes in language were made, since that kind of historical information
 won&amp;#8217;t be obvious by looking at the code etc.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;informal-uml-diagrams&quot;&gt;Informal UML diagrams&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;informal-uml-diagrams&quot;&gt;Informal UML diagrams&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I am always sketching UML diagrams on whiteboards. It saddens me that many
 teams don&amp;#8217;t see the value in this. I particularly find instance diagrams
@@ -537,8 +564,10 @@ tends to communicate that they are &quot;done,&quot; and shouldn&amp;#8217;t be 
 are finished.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;anything-else&quot;&gt;Anything else?&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;anything-else&quot;&gt;Anything else?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I&amp;#8217;m a big fan BDD tool such as Cucumber to create living documentation for
 the system, if the team has the skills and experience with such a tool. For
@@ -566,8 +595,10 @@ improvements I see in communication and collaboration when teams use these
 tools to refine acceptance criteria for user stories.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;standalone-vs-combined-documents&quot;&gt;Standalone vs. Combined Documents&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;standalone-vs-combined-documents&quot;&gt;Standalone vs. Combined Documents&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;No preference for this. Most teams work this kind of thing out on their own
 over time. I&amp;#8217;m not even sure what the factors are for deciding whether to
@@ -582,8 +613,10 @@ words, supporting text that explains the critical aspects of the diagram is a
 multiplier for this in terms of utility.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;respect-your-audience&quot;&gt;Respect Your Audience&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;respect-your-audience&quot;&gt;Respect Your Audience&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Finally, and most importantly, when writing any software documentation
 consider your audience. Will the readers be coders? testers? domain experts?
@@ -595,10 +628,15 @@ much technical detail you incorporate.&lt;/p&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;There&amp;#8217;s probably a lot of things I&amp;#8217;ve missed here. What has been your experience with doing DDD in terms of documentation?&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</description>
         <pubDate>Tue, 07 May 2013 00:00:00 +0000</pubDate>
         <link>http://thepaulrayner.com/blog/2013/05/07/succeeding-with-ddd-documentation/</link>
         <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/05/07/succeeding-with-ddd-documentation/</guid>
+        
+        <category>DDD</category>
+        
+        <category>Agile</category>
         
         
       </item>
