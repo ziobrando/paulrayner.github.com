@@ -2,111 +2,177 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Paul Rayner&#39;s Blog</title>
-    <description>Paul Rayner&#39;s blog on DDD, BDD and agile.</description>
+    <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Jan 2015 23:45:34 +0000</pubDate>
-    <lastBuildDate>Tue, 06 Jan 2015 23:45:34 +0000</lastBuildDate>
+    <pubDate>Thu, 08 Jan 2015 20:59:18 +0000</pubDate>
+    <lastBuildDate>Thu, 08 Jan 2015 20:59:18 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
+        <title>Build Jekyll-Based Blogs &amp;amp; Websites with AsciiDoc</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Announcing the release of &lt;a href=&quot;https://github.com/asciidoctor/jekyll-asciidoc&quot;&gt;jekyll-asciidoc&lt;/a&gt;, a &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; plugin that converts AsciiDoc files in your site source to HTML pages using &lt;a href=&quot;http://asciidoctor.org&quot;&gt;Asciidoctor&lt;/a&gt;. The jekyll-asciidoc gem was written by Dan Allen (&lt;a href=&quot;https://twitter.com/mojavelinux&quot;&gt;@mojavelinux&lt;/a&gt;) and I have &lt;a href=&quot;https://rubygems.org/gems/jekyll-asciidoc&quot;&gt;published the release 1.0.0 version to RubyGems&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Jekyll is a simple, blog-aware, static site generator, enabling you to convert plain text content into static websites and blogs. Until recently, Jekyll only supported &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; (or &lt;a href=&quot;http://redcloth.org/textile&quot;&gt;Textile&lt;/a&gt;) formatted content.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;However, as &lt;a href=&quot;https://github.com/blog/1939-how-github-uses-github-to-document-github&quot;&gt;How GitHub uses GitHub to document GitHub&lt;/a&gt; mentions:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Jekyll 2.0 introduced a new plugin type called a &lt;a href=&quot;http://jekyllrb.com/docs/plugins/#converters&quot;&gt;Converter&lt;/a&gt; that transforms any markup into HTML. This frees the writer up to compose content however she chooses, and Jekyll will just serve the final HTML. For example, you can write your posts in AsciiDoc, if that&amp;#8217;s your thing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;By adding the Asciidoctor gem and jekyll-asciidoc plugin to your instance of Jekyll, you can start writing content using all the richness and clarity of AsciiDoc syntax.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock tip&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;i class=&quot;fa icon-tip&quot; title=&quot;Tip&quot;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+GitHub doesn’t (yet) whitelist the AsciiDoc plugin, so you can only run it on your own machine. I set up a Travis CI job to automate publishing of this site to GitHub Pages.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;This post is actually written in AsciiDoc and is being rendered using jekyll-asciidoc!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here&amp;#8217;s the actual AsciiDoc content for this blog post. You can also see it at &lt;a href=&quot;https://github.com/paulrayner/paulrayner.github.com/tree/jekyll/_posts&quot;&gt;my website source repository on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;post.adoc&lt;/div&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;CodeRay highlight&quot;&gt;&lt;code data-lang=&quot;asciidoc&quot;&gt;---
+tags: Asciidoc
+excerpt: The jekyll-asciidoc gem has now been released and is available for download at RubyGems. Get it now, and add the richness of AsciiDoc markup to your Jekyll static site generation.
+---
+:title: Build Jekyll-Based Blogs &amp;amp; Websites with AsciiDoc
+:layout: post
+:date: 2015-01-05 11:40
+:comments: true
+:sharing: true
+
+http://jekyllrb.com/[Jekyll] is a simple, blog-aware, static site generator, enabling you to convert plain text content into static websites and blogs. Until recently, Jekyll only supported http://daringfireball.net/projects/markdown/[Markdown] (or http://redcloth.org/textile[Textile]) formatted content.
+
+However, as the GitHub blog article https://github.com/blog/1939-how-github-uses-github-to-document-github[How GitHub uses GitHub to document GitHub] mentions:
+
+[quote]
+____
+Jekyll 2.0 introduced a new plugin type called a http://jekyllrb.com/docs/plugins/#converters[Converter] that transforms any markup into HTML. This frees the writer up to compose content however she chooses, and Jekyll will just serve the final HTML. For example, you can write your posts in AsciiDoc, if that&#39;s your thing.
+____
+
+Dan Allen (https://twitter.com/mojavelinux[@mojavelinux]) recently authored https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc], a Jekyll plugin that converts AsciiDoc files in your site source to HTML pages using http://asciidoctor.org[Asciidoctor]. I have now published the release 1.0.0 version to RubyGems at https://rubygems.org/gems/jekyll-asciidoc.
+
+*_This post is actually written in AsciiDoc and is being rendered using jekyll-asciidoc!_*
+
+Here&#39;s the actual AsciiDoc content for this blog post. You can also see it at https://github.com/paulrayner/paulrayner.github.com/tree/jekyll/_posts[my website source repository on GitHub].&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 05 Jan 2015 00:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/blog/2015/01/05/jekyll-asciidoc-gem-published/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2015/01/05/jekyll-asciidoc-gem-published/</guid>
+        
+        <category>Asciidoc</category>
+        
+        
+      </item>
+    
+      <item>
         <title>Domain-Driven Design in Ruby at DDD Exchange 2013 in London</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg/178px-Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg&quot; alt=&quot;Burlington House Cartoon&quot;&gt;
-Last week when I was in London I came across Leonardo DaVinci&amp;#39;s drawing, &lt;a href=&quot;http://en.wikipedia.org/wiki/The_Virgin_and_Child_with_St_Anne_and_St_John_the_Baptist&quot;&gt;&lt;em&gt;The Virgin and Child with St Anne and St John the Baptist&lt;/em&gt;&lt;/a&gt;, while wandering the National Gallery in London. It&amp;#39;s also known as &lt;em&gt;The Burlington House Cartoon&lt;/em&gt; because drawings of this sort were usually transferred to a board for painting by pricking or incising the outline. With this cartoon, this has not been done, suggesting that the drawing has been kept as a work of art in its own right.&lt;/p&gt;
-
-&lt;p&gt;I see a sample app as functioning like this cartoon. It&amp;#39;s not a complete system, and is not intended to be prescriptive in any way. Rather, it is an along-the-way artifact created to learn. It&amp;#39;s a point-in-time snapshot of a much deeper, largely invisible, learning process, and thus is incomplete in that way too. When the sample app is done, it can function as a teaching tool, as a guide on the way to building something real. As a conversation starter and tradeoff clarifier.&lt;/p&gt;
-
-&lt;p&gt;Last Friday I presented at the &lt;a href=&quot;http://skillsmatter.com/event/design-architecture/dddx-2013&quot;&gt;DDD Exchange 2013&lt;/a&gt; hosted by Skills Matter in London on what I&amp;#39;ve learned recently in exploring doing domain-driven design (DDD) in Ruby. The way I approached this exploration was to start porting the DDD sample app from Java and C# to Ruby. I wanted to do this because it would give me an opportunity to go much deeper in Ruby than every before, while applying DDD concepts and techniques I was familiar with in some unfamiliar ways using new tools.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://skillsmatter.com/custom/images/dddx-670x180px.gif&quot; alt=&quot;DDD Exchange Logo&quot;&gt;&lt;/p&gt;
-
+        <description>&lt;div class=&quot;imageblock left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg/178px-Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg!&quot; alt=&quot;Burlington House Cartoon&quot; width=&quot;150&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Last week when I was in London I came across Leonardo DaVinci&amp;#8217;s drawing, &lt;a href=&quot;http://en.wikipedia.org/wiki/The_Virgin_and_Child_with_St_Anne_and_St_John_the_Baptist&quot;&gt;The Virgin and Child with St Anne and St John the Baptist&lt;/a&gt;, while wandering the National Gallery in London. It&amp;#8217;s also known as &lt;em&gt;The Burlington House Cartoon&lt;/em&gt; because drawings of this sort were usually transferred to a board for painting by pricking or incising the outline. With this cartoon, this has not been done, suggesting that the drawing has been kept as a work of art in its own right.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I see a sample app as functioning like this cartoon. It&amp;#8217;s not a complete system, and is not intended to be prescriptive in any way. Rather, it is an along-the-way artifact created to learn. It&amp;#8217;s a point-in-time snapshot of a much deeper, largely invisible, learning process, and thus is incomplete in that way too. When the sample app is done, it can function as a teaching tool, as a guide on the way to building something real. As a conversation starter and tradeoff clarifier.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Last Friday I presented at the &lt;a href=&quot;http://skillsmatter.com/event/design-architecture/dddx-2013&quot;&gt;DDD Exchange 2013&lt;/a&gt; hosted by Skills Matter in London on what I&amp;#8217;ve learned recently in exploring doing domain-driven design (DDD) in Ruby. The way I approached this exploration was to start porting the DDD sample app from Java and C# to Ruby. I wanted to do this because it would give me an opportunity to go much deeper in Ruby than every before, while applying DDD concepts and techniques I was familiar with in some unfamiliar ways using new tools.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I started the port to Ruby back in early May, and presented my early findings to an encouraging audience at DDD Denver on May 13. At that point I had only the domain model objects and some of the Rspec tests in place. Much of my time had been taken with investigating how best to implement value objects, and possible different approaches for the UI and for how to tackle enabling eventual consistency between aggregates. I had only begun to work out how to handle persistence with MongoDB.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;When I gave the DDD Denver presentation, I was very nervous about presenting such an incomplete effort in public. But I found everyone to be very supportive and it inspired me to keep going. In the next four weeks I was able to solve all the big issues and prepare a presentation for DDD Exchange 2013. If you are interested, Skills Matter did an excellent job of recording the presentation and getting it online. See below for links to resources.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;My hope is that this - currently very unfinished and unpolished - effort sparks interesting conversations about options, tradeoffs and possibilities, and helps others get to grips with the details of how to make DDD real on their projects.&lt;/p&gt;
-
+&lt;/div&gt;
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Original slides for today&amp;#39;s &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt; 2013 talk Domain-Driven Design with Ruby are now online at &lt;a href=&quot;http://virtual-genius.com/presentations/ddd_with_ruby_20130614&quot;&gt;http://t.co/w9W3wvNz1J&lt;/a&gt; &lt;a href=&quot;https://twitter.com/search?q=%23DDDesign&amp;amp;src=hash&quot;&gt;#DDDesign&lt;/a&gt;&lt;/p&gt;&amp;mdash; Paul Rayner (@thepaulrayner) &lt;a href=&quot;https://twitter.com/thepaulrayner/statuses/345538141706412032&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;Here&amp;#39;s a list of resources related to my presentation:&lt;/p&gt;
-
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here&amp;#8217;s a list of resources related to my presentation:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://virtual-genius.com/presentations/ddd_with_ruby_20130614.html&quot;&gt;Original presentation slides&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://skillsmatter.com/podcast/design-architecture/paul-rayner/mh-7679&quot;&gt;Video of the presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/paulrayner/ddd_sample_app_ruby&quot;&gt;Sample app on Github&lt;/a&gt; - see the README for a comprehensive list of resources I&amp;#39;ve compiled as I&amp;#39;ve researched how to accomplish the Ruby port (including links to the Java and C# apps the port is based on).&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://virtual-genius.com/presentations/ddd_with_ruby_20130614.html&quot;&gt;Original presentation slides&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://skillsmatter.com/podcast/design-architecture/paul-rayner/mh-7679&quot;&gt;Video of the presentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/paulrayner/ddd_sample_app_ruby&quot;&gt;Sample app on Github&lt;/a&gt; - see the README for a comprehensive list of resources I&amp;#8217;ve compiled as I&amp;#8217;ve researched how to accomplish the Ruby port (including links to the Java and C# apps the port is based on).&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;A big thank you again to Skills Matter for hosting such a wonderful event and making it such a special day (for both me and my son).&lt;/p&gt;
-
+&lt;/div&gt;
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Many thanks to all of today&amp;#39;s speakers: &lt;a href=&quot;https://twitter.com/unclebobmartin&quot;&gt;@unclebobmartin&lt;/a&gt; &lt;a href=&quot;https://twitter.com/robsmallshire&quot;&gt;@robsmallshire&lt;/a&gt; &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; &lt;a href=&quot;https://twitter.com/zimakki&quot;&gt;@zimakki&lt;/a&gt; You guys are awesome! &lt;a href=&quot;https://twitter.com/search?q=%23DDDx&amp;amp;src=hash&quot;&gt;#DDDx&lt;/a&gt; &lt;a href=&quot;https://twitter.com/search?q=%23FF&amp;amp;src=hash&quot;&gt;#FF&lt;/a&gt; (2/2)&lt;/p&gt;&amp;mdash; skillsmatter (@skillsmatter) &lt;a href=&quot;https://twitter.com/skillsmatter/statuses/345596880899682304&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;h2&gt;Tweets&lt;/h2&gt;
-
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;##Tweets&lt;/p&gt;
+&lt;/div&gt;
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Cargo sample is back in ruby ! &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jérémie Chassaing (@thinkb4coding) &lt;a href=&quot;https://twitter.com/thinkb4coding/statuses/345489374517006336&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Good session by &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; about DDD with Ruby &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; Nathan Gloyn (@NathanGloyn) &lt;a href=&quot;https://twitter.com/NathanGloyn/statuses/345499135933308928&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; talk about ruby at &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt; gave me some interesting ideas to explore. Great talk !&lt;/p&gt;&amp;mdash; Thomas Jaskula (@tjaskula) &lt;a href=&quot;https://twitter.com/tjaskula/statuses/345497941353570305&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; really rocked. Cleared away so much fog and sparkled a lot of cool ideas! Thanks! &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; ziobrando (@ziobrando) &lt;a href=&quot;https://twitter.com/ziobrando/statuses/345497521143029760&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Really, REALLY interesting session by &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; about doing DDD in Ruby &lt;a href=&quot;https://twitter.com/search?q=%23DDDX&amp;amp;src=hash&quot;&gt;#DDDX&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tom Janssens (@ToJans) &lt;a href=&quot;https://twitter.com/ToJans/statuses/345492748020887552&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Good idea to show the project directory tree to show how to apply DDD with Rails/MongoDB/Mongoid by &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; at &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; cyrille martraire (@cyriux) &lt;a href=&quot;https://twitter.com/cyriux/statuses/345495156864200706&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; explaining how he did an hexagonal arch in rails application, really nice and clean  &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rui Carvalho (@rhwy) &lt;a href=&quot;https://twitter.com/rhwy/statuses/345494558446063616&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Looks like Ruby on Rails smackdown here between activerecord pattern and domain driven pattern. Who will win? &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; DCU CoderDojo (@coderdojodcu) &lt;a href=&quot;https://twitter.com/coderdojodcu/statuses/345496157423812608&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Actors are back in &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; ruby presentation...&lt;/p&gt;&amp;mdash; Jérémie Chassaing (@thinkb4coding) &lt;a href=&quot;https://twitter.com/thinkb4coding/statuses/345495764119732224&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Domain driven design with &lt;a href=&quot;https://twitter.com/search?q=%23ruby&amp;amp;src=hash&quot;&gt;#ruby&lt;/a&gt;  &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; &lt;a href=&quot;http://t.co/FMHMtgI1hX&quot;&gt;pic.twitter.com/FMHMtgI1hX&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rui Carvalho (@rhwy) &lt;a href=&quot;https://twitter.com/rhwy/statuses/345488522964238336&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;As an exercise, I think I’ll be reimplementing in Python the &lt;a href=&quot;https://twitter.com/search?q=%23dddesign&amp;amp;src=hash&quot;&gt;#dddesign&lt;/a&gt; Ruby sample presented by &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; at &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;.&lt;/p&gt;&amp;mdash; Robert Smallshire (@robsmallshire) &lt;a href=&quot;https://twitter.com/robsmallshire/statuses/345498791186673664&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Had a good talk during the break with &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; about evangelising &lt;a href=&quot;https://twitter.com/search?q=%23DDDesign&amp;amp;src=hash&quot;&gt;#DDDesign&lt;/a&gt; in dynamic languages like ruby and php  &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mathias Verraes (@mathiasverraes) &lt;a href=&quot;https://twitter.com/mathiasverraes/statuses/345578077138608128&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; talk at &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt; &lt;a href=&quot;https://twitter.com/search?q=%23ruby&amp;amp;src=hash&quot;&gt;#ruby&lt;/a&gt; &lt;a href=&quot;http://t.co/ryycPIso6k&quot;&gt;pic.twitter.com/ryycPIso6k&lt;/a&gt;&lt;/p&gt;&amp;mdash; Thomas Jaskula (@tjaskula) &lt;a href=&quot;https://twitter.com/tjaskula/statuses/345489563344572416&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;And I just have to include this one...&lt;/p&gt;
-
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;And I just have to include this one&amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/div&gt;
 &lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Breaking News! Holy Camelshit! Is really possible to apply DDD with Rails! &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; DDD Borat (@DDD_Borat) &lt;a href=&quot;https://twitter.com/DDD_Borat/statuses/345497300921090048&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-</description>
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</description>
         <pubDate>Thu, 20 Jun 2013 11:28:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange.adoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange.adoc/</guid>
+        <link>http://thepaulrayner.com/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange/</guid>
+        
+        <category>DDD</category>
         
         
         <category>ddd</category>
@@ -630,7 +696,7 @@ much technical detail you incorporate.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-        <pubDate>Tue, 07 May 2013 00:00:00 +0000</pubDate>
+        <pubDate>Tue, 07 May 2013 11:40:00 +0000</pubDate>
         <link>http://thepaulrayner.com/blog/2013/05/07/succeeding-with-ddd-documentation/</link>
         <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/05/07/succeeding-with-ddd-documentation/</guid>
         
@@ -1103,193 +1169,279 @@ end
     
       <item>
         <title>Book Review: Implementing Domain-Driven Design</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://thepaulrayner.com/assets/iddd_thumbnail.jpg&quot; alt=&quot;Implementing DDD&quot;&gt;
-This is a review of the book &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; by Vaughn Vernon, based on the &lt;a href=&quot;http://my.safaribooksonline.com/book/project-management/9780133039900&quot;&gt;Safari Books Online rough cut edition&lt;/a&gt;. The book is also currently available for &lt;a href=&quot;http://amzn.to/RN4qWJ&quot;&gt;preorder on Amazon.com&lt;/a&gt;, with a scheduled release date of February 14, 2013. Rather than try to cover everything, I’ll be focusing on the parts of the book that I found most interesting and helpful: highlighting the things that stood out to me.&lt;/p&gt;
-
-&lt;p&gt;I have been a certified &lt;a href=&quot;http://www.domainlanguage.com/about&quot;&gt;Domain Language DDD instructor&lt;/a&gt; for over two years now, and the most common question I am asked is where to find solid, pragmatic advice on how to actually implement DDD using the frameworks and tools with which developers are already familiar. The good news is &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; more than adequately fills the lacuna. {&amp;quot; This book is up-to-date, easily comprehensible, free from dogma and the advice it gives is firmly grounded in the real-world experience of one of DDD&amp;#39;s foremost practitioners. &amp;quot;}&lt;/p&gt;
-
-&lt;h3&gt;Some Background&lt;/h3&gt;
-
-&lt;p&gt;At the end of 2011 I was privileged to be a technical editor for Vaughn&amp;#39;s &lt;a href=&quot;http://dddcommunity.org/library/vernon_2011&quot;&gt;Effective Aggregate Design series&lt;/a&gt;. Around the same time I also enjoyed hearing Vaughn present a series on effective aggregate design locally at our &lt;a href=&quot;#DDD%20Denver&quot;&gt;DDD Denver&lt;/a&gt; meetup. So, for the sake of full disclosure, I have known Vaughn personally for years and collaborate often with him on the meetup. I’ve tried to be as impartial as possible in reviewing the book, basing my observations and opinions on the content alone.&lt;/p&gt;
-
-&lt;p&gt;I have been recommending &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; to my students mainly on the basis of the high quality of the aggregate design articles and presentations, and Vaughn’s many significant contributions to the DDD mailing list over the years. But now I am pleased to base my recommendation also on a full read of the &lt;a href=&quot;http://my.safaribooksonline.com/book/project-management/9780133039900&quot;&gt;Safari Books Online rough cut edition of Implementing DDD&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Distilled DDD Wisdom&lt;/h3&gt;
-
-&lt;p&gt;While there is plenty out there in the way of &lt;a href=&quot;#DDD%20Resources&quot;&gt;DDD Resources&lt;/a&gt;, what Vaughn has done with this book is to distill much of the wisdom of the DDD community into a single book that provides pragmatic, expert guidance on how best to succeed with implementing DDD.  This is the book I want DDD students purchasing and reading alongside &lt;a href=&quot;http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215&quot;&gt;the Blue Book&lt;/a&gt;.&lt;/p&gt;
-
+        <description>&lt;div class=&quot;imageblock left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/iddd_thumbnail.jpg&quot; alt=&quot;Implementing DDD&quot; width=&quot;150&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is a review of the book &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; by Vaughn Vernon, based on the &lt;a href=&quot;http://my.safaribooksonline.com/book/project-management/9780133039900&quot;&gt;Safari Books Online rough cut edition&lt;/a&gt;. The book is also &lt;a href=&quot;http://amzn.to/RN4qWJ&quot;&gt;available on Amazon.com&lt;/a&gt;. Rather than try to cover everything, I’ll be focusing on the parts of the book that I found most interesting and helpful: highlighting the things that stood out to me.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I have been a certified &lt;a href=&quot;http://www.domainlanguage.com/about&quot;&gt;Domain Language DDD instructor&lt;/a&gt; for over two years now, and the most common question I am asked is where to find solid, pragmatic advice on how to actually implement DDD using the frameworks and tools with which developers are already familiar. The good news is &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; more than adequately fills the lacuna.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;some-background&quot;&gt;Some Background&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;At the end of 2011 I was privileged to be a technical editor for Vaughn&amp;#8217;s &lt;a href=&quot;http://dddcommunity.org/library/vernon_2011&quot;&gt;Effective Aggregate Design series&lt;/a&gt;. Around the same time I also enjoyed hearing Vaughn present a series on effective aggregate design locally at our &lt;a href=&quot;#ddd-denver&quot;&gt;DDD Denver&lt;/a&gt; meetup. So, for the sake of full disclosure, I have known Vaughn personally for years and collaborate often with him on the meetup. I’ve tried to be as impartial as possible in reviewing the book, basing my observations and opinions on the content alone. &lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;This book is up-to-date, easily comprehensible, free from dogma and the advice it gives is firmly grounded in the real-world experience of one of DDD&amp;#8217;s foremost practitioners.&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I have been recommending &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; to my students mainly on the basis of the high quality of the aggregate design articles and presentations, and Vaughn’s many significant contributions to the DDD mailing list over the years. But now I am pleased to base my recommendation also on a full read of the Safari Books Online rough cut edition of Implementing DDD.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;distilled-ddd-wisdom&quot;&gt;Distilled DDD Wisdom&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;While there is plenty out there in the way of &lt;a href=&quot;#ddd-resources&quot;&gt;DDD Resources&lt;/a&gt;, what Vaughn has done with this book is to distill much of the wisdom of the DDD community into a single book that provides pragmatic, expert guidance on how best to succeed with implementing DDD.  This is the book I want DDD students purchasing and reading alongside &lt;a href=&quot;http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215&quot;&gt;the Blue Book&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I thoroughly appreciated the pretension-free way &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; approaches everything. For example, it introduces domain-driven design (DDD) by stating:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;DDD brings domain experts and software developers together in order to develop software that reflects the mental model of the business experts. This does not mean that effort is spent on modeling the “real world.” Rather, DDD delivers a model that is the most useful to the business. Sometimes useful and realistic models happen to intersect, but to the degree that they diverge, DDD chooses useful.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;Vaughn&amp;#39;s book comes across as guidance from a good friend, combining occasional corny cowboy jokes that keep it fun with detailed, solid advice on the deepest recesses of the mechanics of applying DDD using the tools and techniques of today. &lt;/p&gt;
-
-&lt;p&gt;The book&amp;#39;s approach of developing an application to support Scrum and walking through how the team approached the problems they were up against is very helpful, especially when Vaughn digs into the team&amp;#39;s mis-steps as they learn, adjust and improve. Contrary to any material online which might lead you to think that DDD is about overblown architectures, heavyweight frameworks and obfuscated approaches, in chapter one &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; counsels that:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Vaughn&amp;#8217;s book comes across as guidance from a good friend, combining occasional corny cowboy jokes that keep it fun with detailed, solid advice on the deepest recesses of the mechanics of applying DDD using the tools and techniques of today.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The book&amp;#8217;s approach of developing an application to support Scrum and walking through how the team approached the problems they were up against is very helpful, especially when Vaughn digs into the team&amp;#8217;s mis-steps as they learn, adjust and improve. Contrary to any material online which might lead you to think that DDD is about overblown architectures, heavyweight frameworks and obfuscated approaches, in chapter one &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; counsels that:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Use DDD to model a complex domain in the simplest possible way. Never use DDD to make your solution more complex.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;h3&gt;Knowing When and Knowing How&lt;/h3&gt;
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;knowing-when-and-knowing-how&quot;&gt;Knowing When and Knowing How&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;There is a very helpful chart that helps the reader identify whether DDD is the right approach in a particular situation. So much of what I read about DDD online seems to be applying it where it will add little value. So much emphasis on how to apply the DDD building block patterns where they are not needed. Sigh.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Some confuse DDD with &lt;a href=&quot;http://en.wikipedia.org/wiki/Big_Design_Up_Front&quot;&gt;Big Design Up Front (BDUF)&lt;/a&gt;, and thus struggle with understanding how DDD and agile relate. I was also pleased that &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; starts out by emphasizing the agile, iterative, continuous modeling with domain experts that is at the heart of DDD “done well.” For example:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The word “design” can evoke negative thoughts in the minds of business management. However, DDD is not a heavyweight, high ceremony design and development process. DDD is not about drawing diagrams. It is about carefully refining the mental model of domain experts into a useful model for the business. &lt;/p&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The word “design” can evoke negative thoughts in the minds of business management. However, DDD is not a heavyweight, high ceremony design and development process. DDD is not about drawing diagrams. It is about carefully refining the mental model of domain experts into a useful model for the business.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;h3&gt;Fundamental Concepts&lt;/h3&gt;
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;fundamental-concepts&quot;&gt;Fundamental Concepts&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The first chapter also does a good job of introducing the fundamental concepts of Ubiquitous Language, Bounded Context, and Core Domain. It also lays out clearly the costs and benefits of applying DDD, and how DDD as a lightweight, intentional approach to continous design is a natural fit for agile teams. For example:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;If developing a given Subdomain requires such a difficult, even precarious, assent, we’d bring the DDD tactical patterns along for the climb. A business initiative that matches the criteria of Core Domain should not quickly dismiss the use of the tactical patterns. The Core Domain is an unknown and complex area. The team is best protected against a disastrous mid-asset fall if using the right tactics.&lt;/p&gt;
-
-&lt;p&gt;...&lt;/p&gt;
-
-&lt;p&gt;First we want to focus on how the model will be used by clients, and these tests drive the model’s design. The good news is, it really is an agile approach. DDD promotes lightweight development, not ceremonious, heavy, upfront design. &lt;/p&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If developing a given Subdomain requires such a difficult, even precarious, assent, we’d bring the DDD tactical patterns along for the climb. A business initiative that matches the criteria of Core Domain should not quickly dismiss the use of the tactical patterns. The Core Domain is an unknown and complex area. The team is best protected against a disastrous mid-asset fall if using the right tactics&amp;#8230;&amp;#8203;
+First we want to focus on how the model will be used by clients, and these tests drive the model’s design. The good news is, it really is an agile approach. DDD promotes lightweight development, not ceremonious, heavy, upfront design.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;h3&gt;Strategic Design with DDD&lt;/h3&gt;
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;strategic-design-with-ddd&quot;&gt;Strategic Design with DDD&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;In chapter two, &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; covers strategic design. Vaughn’s explanation and application of the distinction between problem and solution space in this chapter is particularly helpful, and I intend to incorporate this approach into how I do strategic design from now on.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This helpful problem/solution distinction at the strategic design level reminds me somewhat of the distinction at the tactical level between the Scenario and Model and Code Probe steps in the &lt;a href=&quot;http://www.domainlanguage.com/ddd/whirlpool&quot;&gt;Model Exploration Whirlpool&lt;/a&gt;. In the Whirlpool the Scenario step is focused on learning and understanding the problem space, and the Model and Code Probe steps primarily address exploring and defining potential solutions. However, the entire process - every step in the whirlpool - is geared towards delving into a deeper understanding of the domain.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Putting strategic design right at the start of the book highlights the relative importance of getting the strategic aspects right: explaining why strategic design is important, and setting the stage for the reader to understand and explore careful application of the building block patterns.&lt;/p&gt;
-
-&lt;p&gt;I&amp;#39;ve encountered people who have (mistakedly) confused DDD with efforts to model the overall enterprise, so I heartily agreed with &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt;&amp;#39;s advice to avoid the temptation to create a single, enterprise model:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve encountered people who have (mistakedly) confused DDD with efforts to model the overall enterprise, so I heartily agreed with &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt;&#39;s advice to avoid the temptation to create a single, enterprise model:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;...developing a Domain Model is actually one way that we focus on only one specific area of the whole business domain. Any attempt to define the business of even a moderately complex organization in a single, all encompassing model, will be at best extremely difficult, and will usually fail... vigorously separating distinct areas of the whole business domain will help us succeed.&lt;/p&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&amp;#8230;&amp;#8203;developing a Domain Model is actually one way that we focus on only one specific area of the whole business domain. Any attempt to define the business of even a moderately complex organization in a single, all encompassing model, will be at best extremely difficult, and will usually fail&amp;#8230;&amp;#8203; vigorously separating distinct areas of the whole business domain will help us succeed.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This section also does a praiseworthy job of explaining Bounded Context as intrinsically a &lt;em&gt;linguistic concept&lt;/em&gt;: one tied to ubiquitous language and then supported by the technical implementation.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;When we employ DDD we strive for each Bounded Context to mark off where the meaning of every term used by the domain model is well understood, or at least should be if we’ve done a good job of modeling the software. &lt;em&gt;It’s chiefly a linguistic boundary.&lt;/em&gt; These contextual boundaries are a key to implementing DDD. [emphasis mine]&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I also appreciated the book’s emphasis on the primacy of focusing attention on the Core Domain, that:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;...part of the business domain that is of primary importance to the success of the organization. Strategically speaking, the business must excel with its Core Domain. It is of utmost importance to the ongoing success of the business. That project gets the highest priority, one or more domain experts with deep knowledge of that Subdomain, the best developers, and as much leeway and leverage as possible to give the close-knit team an unobstructed success path. Most of your DDD project efforts will be focused on the Core Domain.&lt;/p&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&amp;#8230;&amp;#8203;part of the business domain that is of primary importance to the success of the organization. Strategically speaking, the business must excel with its Core Domain. It is of utmost importance to the ongoing success of the business. That project gets the highest priority, one or more domain experts with deep knowledge of that Subdomain, the best developers, and as much leeway and leverage as possible to give the close-knit team an unobstructed success path. Most of your DDD project efforts will be focused on the Core Domain.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;However, in achieving this level of focus on the Core Domain, there is the possibility that teams may neglect Supporting and Generic subdomains, so &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt;&amp;#39;s advice in this respect is also timely:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;However, in achieving this level of focus on the Core Domain, there is the possibility that teams may neglect Supporting and Generic subdomains, so &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt;&#39;s advice in this respect is also timely:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Being Supporting or Generic doesn’t mean unimportant. These kinds of Subdomains are important to the success of the business, yet there is no need for the business to excel in these areas. It’s the Core Domain that requires excellence in implementation, since it will provide distinct advantages to the business.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;h3&gt;Balancing Understanding with Practicality&lt;/h3&gt;
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;balancing-understanding-with-practicality&quot;&gt;Balancing Understanding with Practicality&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;&lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; asks the reader to apply learning to her own domain, by sketching out Bounded Contexts, identifying her own Core Domain and so on in her own team’s situation. Nothing beats practice when it comes to developing new skills.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;In the process of applying that new learning, the team is to:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Include any relevant, high-level elements that will lead to vital team communication. On the other hand, push back when detail seems ceremonious.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Also, in my coaching I give similar advice to the following when a team tends to get “down in the weeds”:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Produce Context Maps that you can post on the wall. You can upload them to a team wiki as long as it’s not just the project’s attic where nobody ever goes. Keep discussions about the project flowing back to your Map to stimulate useful refinements.&lt;/p&gt;
-
-&lt;p&gt;...&lt;/p&gt;
-
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Produce Context Maps that you can post on the wall. You can upload them to a team wiki as long as it’s not just the project’s attic where nobody ever goes. Keep discussions about the project flowing back to your Map to stimulate useful refinements&amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The trick is to balance the need to understand with practicality, and not pile too much detail into this level. Remember that we are likely not going to keep a very detailed graphical Map up to date far into the project. We’ll benefit most from what can be posted up on a wall, enabling team members to point at them during discussions. If we reject ceremony and embrace simplicity and agility, we’ll produce useful Context Maps that help us move forward rather than bog down the project&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;h3&gt;DDD and Pragmatic Architecture&lt;/h3&gt;
-
-&lt;p&gt;It is regrettable that over the years DDD has somehow become more associated with overblown architectural approaches than with the strategic, lightweight collaborative modeling Eric Evans has always advocated. I&amp;#39;ve even seen people &lt;a href=&quot;http://stackoverflow.com/questions/12982680/gave-up-ddd-but-need-some-of-its-benefits&quot;&gt;rejecting heavy-handed architectural approaches&lt;/a&gt; and calling them DDD, when what they are rejecting is not DDD at all but rather the burden of carrying extraneous infrastructure and layer plumbing.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;ddd-and-pragmatic-architecture&quot;&gt;DDD and Pragmatic Architecture&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It is regrettable that over the years DDD has somehow become more associated with overblown architectural approaches than with the strategic, lightweight collaborative modeling Eric Evans has always advocated. I&amp;#8217;ve even seen people &lt;a href=&quot;http://stackoverflow.com/questions/12982680/gave-up-ddd-but-need-some-of-its-benefits&quot;&gt;rejecting heavy-handed architectural approaches&lt;/a&gt; and calling them DDD, when what they are rejecting is not DDD at all but rather the burden of carrying extraneous infrastructure and layer plumbing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Chapter four of &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; is targeted around architecture, and into our current climate of heavyweight, overblown and overengineered system architectural approaches, this chapter’s risk-driven and pragmatic approach to architecture blows a fresh breath of air:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Avoiding architecture overuse is just as important as using it. Allowing real, genuine quality demands to drive what we do with architecture is a beneficial risk-driven approach. That way we use architecture only to mitigate the risk of failure, not to increase our risk of failure by using an architectural style that cannot be justified. Thus, we must be able to justify every architectural style in use, or we eliminate the style from our system.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;The architectural chapter is comprehensive and dense, but very good. &lt;/p&gt;
-
-&lt;p&gt;I found the best description of ports and adaptors approach that I have read. There is also a good description of CQRS, combined with practical guidance on when and where to apply it as an architectural organizing approach, and how it relates to event sourcing. &lt;/p&gt;
-
-&lt;h3&gt;Building Block Patterns&lt;/h3&gt;
-
-&lt;p&gt;Each of the next chapters covers one of the &amp;quot;building block&amp;quot; patterns of DDD in depth: entities, value objects, domain events, aggregates, factories and repositories. In each chapter &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; explains what the pattern is, when to use it, and various ways to apply it. The book is careful to cover the relative merits and downsides of each approach, and gives technical implementations that show - by example - how to adopt them. &lt;/p&gt;
-
-&lt;p&gt;In particular, &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt;&amp;#39;s distinction between collection-oriented and persistence-oriented repositories was very helpful, and the examples with how to apply these styles for a variety of common persistence stores, including MongoDB and Coherence.&lt;/p&gt;
-
-&lt;h3&gt;Application Guidance&lt;/h3&gt;
-
-&lt;p&gt;In the application chapter I would have liked to see more code samples for UI approaches, but I realize that this wish is unrealistic: presentation layer design is a massive topic on its own. &lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The architectural chapter is comprehensive and dense, but very good.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I found the best description of ports and adaptors approach that I have read. There is also a good description of CQRS, combined with practical guidance on when and where to apply it as an architectural organizing approach, and how it relates to event sourcing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;building-block-patterns&quot;&gt;Building Block Patterns&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Each of the next chapters covers one of the &quot;building block&quot; patterns of DDD in depth: entities, value objects, domain events, aggregates, factories and repositories. In each chapter &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; explains what the pattern is, when to use it, and various ways to apply it. The book is careful to cover the relative merits and downsides of each approach, and gives technical implementations that show - by example - how to adopt them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In particular, &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt;&#39;s distinction between collection-oriented and persistence-oriented repositories was very helpful, and the examples with how to apply these styles for a variety of common persistence stores, including MongoDB and Coherence.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;application-guidance&quot;&gt;Application Guidance&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In the application chapter I would have liked to see more code samples for UI approaches, but I realize that this wish is unrealistic: presentation layer design is a massive topic on its own.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;There is an overwhelming and ever-changing diversity of frameworks, UI tooling and associated techniques, and there is only so much that can be included in such a book as this. &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; wisely lays out the various options and tradeoffs, guiding the reader towards making informed and judicious choices.&lt;/p&gt;
-
-&lt;h3&gt;A Pleasant Surprise&lt;/h3&gt;
-
-&lt;p&gt;Appendix A is an in-depth treatment of event sourcing, contributed by Rinat Abdullin. When I started the book I wasn&amp;#39;t sure about why the appendix was there (asking myself, &amp;quot;isn&amp;#39;t this material covered already in the main text?&amp;quot;), but it actually proved most helpful in understanding the mechanics, advantages and pitfalls of event sourcing. &lt;/p&gt;
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;a-pleasant-surprise&quot;&gt;A Pleasant Surprise&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Appendix A is an in-depth treatment of event sourcing, contributed by Rinat Abdullin. When I started the book I wasn&amp;#8217;t sure about why the appendix was there (asking myself, &quot;isn&amp;#8217;t this material covered already in the main text?&quot;), but it actually proved most helpful in understanding the mechanics, advantages and pitfalls of event sourcing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The event sourcing material here is a superb complement to the rest of the material, building on it in all the most important ways. This A+ES event sourcing chapter is the clearest and best description I’ve found on how event sourcing works. The coding examples provide expert cutting-edge guidance and tooling for getting an event store-based approach up and running quickly.&lt;/p&gt;
-
-&lt;h3&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;I have to say it, if it’s not already obvious: I’m a fan. &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; does a remarkable thing: it takes a sophisticated and substantial topic area in DDD and presentes it clearly, with nuance, fun and finesse.&lt;/p&gt;
-
-&lt;p&gt;This book is written in an engaging and friendly style, like a trusted advisor giving you expert counsel on how to accomplish what is most important. &amp;quot;By the time you finish the book you will be able to begin applying all the important concepts of DDD, and then some.  &amp;quot;&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I have to say it, if it’s not already obvious: I’m a fan. &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; does a remarkable thing: it takes a sophisticated and substantial topic area in DDD and presentes it clearly, with nuance, fun and finesse. &lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;By the time you finish the book you will be able to begin applying all the important concepts of DDD, and then some.&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This book is written in an engaging and friendly style, like a trusted advisor giving you expert counsel on how to accomplish what is most important.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;As I read, I found myself highlighting many sections, and will be getting a copy of &lt;em&gt;Implementing DDD&lt;/em&gt; for my bookshelf as soon as it is released. I will be referring back to it, and recommending it, often.&lt;/p&gt;
-
+&lt;/div&gt;
 &lt;hr&gt;
-
-&lt;p&gt;&lt;a id=&quot;DDD Denver&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h5&gt;DDD Denver&lt;/h5&gt;
-
-&lt;p&gt;Vaughn, Randy Stafford and I cofounded DDD Denver in April 2011. To join the meetup, go to the &lt;a href=&quot;http://bit.ly/ddd_denver&quot;&gt;our meetup home page&lt;/a&gt;. Most presentations at our meetup are recorded and posted online.&lt;/p&gt;
-
-&lt;p&gt;&lt;a id=&quot;DDD Resources&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h5&gt;DDD Resources&lt;/h5&gt;
-
-&lt;p&gt;For someone that wants to get up to speed with DDD there are a variety of complementary options. Firstly, those that want to explore on their own can find sample apps and an abundance of presentations and articles on the &lt;a href=&quot;http://dddcommunity.org&quot;&gt;DDD Community site&lt;/a&gt; and &lt;a href=&quot;http://www.infoq.com/domain-driven-design/&quot;&gt;InfoQ&lt;/a&gt;. There is also the &lt;a href=&quot;http://tech.groups.yahoo.com/group/domaindrivendesign/&quot;&gt;DDD mailing list&lt;/a&gt;, &lt;a href=&quot;http://stackoverflow.com/questions/tagged/domain-driven-design&quot;&gt;Stack Overflow feed&lt;/a&gt;, and blog posts by a variety of knowledgeable individuals. Finally, if you want to get up-to-speed quickly then attend one of the excellent public &lt;a href=&quot;http://www.domainlanguage.com/training&quot;&gt;Domain Language DDD classes&lt;/a&gt;, designed by Eric Evans himself. These classes are offered through &lt;a href=&quot;http://www.domainlanguage.com/about&quot;&gt;Domain Language&lt;/a&gt; and its training partners in New York City, Denver, London, Paris, Oslo and Stockholm.  The classes are also available as onsite offerings if you want to get your whole team trained.&lt;/p&gt;
-</description>
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;ddd-denver&quot;&gt;DDD Denver&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Vaughn, Randy Stafford and I cofounded DDD Denver in April 2011. To join the meetup, go to the [our meetup home page](&lt;a href=&quot;http://bit.ly/ddd_denver&quot; class=&quot;bare&quot;&gt;http://bit.ly/ddd_denver&lt;/a&gt;). Most presentations at our meetup are recorded and posted online.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;ddd-resources&quot;&gt;DDD Resources&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For someone that wants to get up to speed with DDD there are a variety of complementary options. Firstly, those that want to explore on their own can find sample apps and an abundance of presentations and articles on the &lt;a href=&quot;http://dddcommunity.org&quot;&gt;DDD Community site&lt;/a&gt; and &lt;a href=&quot;http://www.infoq.com/domain-driven-design/&quot;&gt;InfoQ&lt;/a&gt;. There is also the &lt;a href=&quot;http://tech.groups.yahoo.com/group/domaindrivendesign/&quot;&gt;DDD mailing list&lt;/a&gt;, &lt;a href=&quot;http://stackoverflow.com/questions/tagged/domain-driven-design&quot;&gt;Stack Overflow feed&lt;/a&gt;, and blog posts by a variety of knowledgeable individuals. Finally, if you want to get up-to-speed quickly then attend one of the excellent public &lt;a href=&quot;http://www.domainlanguage.com/training&quot;&gt;Domain Language DDD classes&lt;/a&gt;, designed by Eric Evans himself. These classes are offered through Domain Language and its training partners in New York City, Denver (i.e. me!), London, Paris, Oslo and Stockholm.  The classes are also available as onsite offerings if you want to get your whole team trained.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
         <pubDate>Fri, 01 Feb 2013 11:40:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/01/book-review-implementing-domain-driven-design.adoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/01/book-review-implementing-domain-driven-design.adoc/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/01/book-review-implementing-domain-driven-design/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/01/book-review-implementing-domain-driven-design/</guid>
+        
+        <category>DDD</category>
+        
+        <category>Reviews</category>
         
         
         <category>ddd</category>
         
         <category>reviews</category>
-        
-      </item>
-    
-      <item>
-        <title>Duplicate Entries using &#39;Open With&#39; on OS X</title>
-        <description>&lt;p&gt;I noticed today on my MBP running Mountain Lion that using &amp;quot;Open With&amp;quot; (control+click on a file in Finder) showed duplicate entries for the file. &lt;/p&gt;
-
-&lt;p&gt;I&amp;#39;m unsure as to what I did that caused this problem to happen, though &lt;a href=&quot;https://discussions.apple.com/thread/4250905?start=0&amp;amp;tstart=0&quot;&gt;a recent thread on Apple Support Communities&lt;/a&gt; indicates it has something to do with clone images. I recently updated XCode through the App Store, and now have a duplicate entry for XCode when I do &amp;quot;Open With,&amp;quot; so perhaps it&amp;#39;s happening when I update an application.&lt;/p&gt;
-
-&lt;p&gt;As one of the responses in the thread suggested, the solution for me was to run the following command in my Terminal window:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;I didn’t need to logout. I just relaunched Finder (control+option+click on Finder icon in the Dock) and the problem went away.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 02 Jan 2013 16:57:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/01/02/duplicate-entries-using-open-with.adoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/01/02/duplicate-entries-using-open-with.adoc/</guid>
-        
-        
-        <category>osx</category>
-        
-        <category>productivity</category>
         
       </item>
     

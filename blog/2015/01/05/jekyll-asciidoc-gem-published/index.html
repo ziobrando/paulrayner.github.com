@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Archive</title>
-  <meta name="description" content="Thinking about DDD, BDD, coding, software design and agile etc.">
+  <title>Build Jekyll-Based Blogs &amp; Websites with AsciiDoc</title>
+  <meta name="description" content="The jekyll-asciidoc gem has now been released and is available for download at RubyGems. Get it now, and add the richness of AsciiDoc markup to your Jekyll s...">
 
-  
+  <meta name="keywords" content="Asciidoc">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://thepaulrayner.com/archive.html">
+  <link rel="canonical" href="http://thepaulrayner.com/blog/2015/01/05/jekyll-asciidoc-gem-published/">
   <link rel="alternate" type="application/rss+xml" title="Paul Rayner's Blog" href="http://thepaulrayner.com/feed.xml" />
 </head>
 
@@ -79,26 +79,83 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Archive</h1>
+    <h1 class="post-title">Build Jekyll-Based Blogs &amp; Websites with AsciiDoc</h1>
+    <span class="post-meta">
+<i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Jan 5, 2015
+
+<i class="fa fa-tags fa-lg"></i>&nbsp;Asciidoc
+
+</span>
+
   </header>
 
   <article class="post-content">
-    <h2>Blog Posts</h2>
+    <div class="paragraph">
+<p>Announcing the release of <a href="https://github.com/asciidoctor/jekyll-asciidoc">jekyll-asciidoc</a>, a <a href="http://jekyllrb.com/">Jekyll</a> plugin that converts AsciiDoc files in your site source to HTML pages using <a href="http://asciidoctor.org">Asciidoctor</a>. The jekyll-asciidoc gem was written by Dan Allen (<a href="https://twitter.com/mojavelinux">@mojavelinux</a>) and I have <a href="https://rubygems.org/gems/jekyll-asciidoc">published the release 1.0.0 version to RubyGems</a>.</p>
+</div>
+<div class="paragraph">
+<p>Jekyll is a simple, blog-aware, static site generator, enabling you to convert plain text content into static websites and blogs. Until recently, Jekyll only supported <a href="http://daringfireball.net/projects/markdown/">Markdown</a> (or <a href="http://redcloth.org/textile">Textile</a>) formatted content.</p>
+</div>
+<div class="paragraph">
+<p>However, as <a href="https://github.com/blog/1939-how-github-uses-github-to-document-github">How GitHub uses GitHub to document GitHub</a> mentions:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Jekyll 2.0 introduced a new plugin type called a <a href="http://jekyllrb.com/docs/plugins/#converters">Converter</a> that transforms any markup into HTML. This frees the writer up to compose content however she chooses, and Jekyll will just serve the final HTML. For example, you can write your posts in AsciiDoc, if that&#8217;s your thing.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>By adding the Asciidoctor gem and jekyll-asciidoc plugin to your instance of Jekyll, you can start writing content using all the richness and clarity of AsciiDoc syntax.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+GitHub doesn’t (yet) whitelist the AsciiDoc plugin, so you can only run it on your own machine. I set up a Travis CI job to automate publishing of this site to GitHub Pages.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong><em>This post is actually written in AsciiDoc and is being rendered using jekyll-asciidoc!</em></strong></p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s the actual AsciiDoc content for this blog post. You can also see it at <a href="https://github.com/paulrayner/paulrayner.github.com/tree/jekyll/_posts">my website source repository on GitHub</a>.</p>
+</div>
+<div class="listingblock">
+<div class="title">post.adoc</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="asciidoc">---
+tags: Asciidoc
+excerpt: The jekyll-asciidoc gem has now been released and is available for download at RubyGems. Get it now, and add the richness of AsciiDoc markup to your Jekyll static site generation.
+---
+:title: Build Jekyll-Based Blogs &amp; Websites with AsciiDoc
+:layout: post
+:date: 2015-01-05 11:40
+:comments: true
+:sharing: true
 
-<ul>
-<li><p>05 Jan 2015 &raquo; <a href="/blog/2015/01/05/jekyll-asciidoc-gem-published/"> Build Jekyll-Based Blogs &amp; Websites with AsciiDoc </a></p></li>
-<li><p>20 Jun 2013 &raquo; <a href="/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange/"> Domain-Driven Design in Ruby at DDD Exchange 2013 in London </a></p></li>
-<li><p>07 May 2013 &raquo; <a href="/blog/2013/05/07/succeeding-with-ddd-documentation/"> Succeeding with DDD - Documentation </a></p></li>
-<li><p>15 Feb 2013 &raquo; <a href="/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd.adoc/"> Agile User stories and Domain-Driven Design (DDD) </a></p></li>
-<li><p>14 Feb 2013 &raquo; <a href="/blog/2013/02/14/word-to-asciidoc.adoc/"> Word Document to Asciidoc Conversion </a></p></li>
-<li><p>07 Feb 2013 &raquo; <a href="/blog/2013/02/07/colors-when-viewing-folders-in-terminal.adoc/"> Colors when viewing folders in Terminal </a></p></li>
-<li><p>07 Feb 2013 &raquo; <a href="/blog/2013/02/07/array-slicing-in-ruby.adoc/"> Array Slicing in Ruby </a></p></li>
-<li><p>06 Feb 2013 &raquo; <a href="/blog/2013/02/06/object-ids-in-ruby.adoc/"> Object Ids in Ruby </a></p></li>
-<li><p>04 Feb 2013 &raquo; <a href="/blog/2013/02/04/blogging-with-octopress-and-github-pages.adoc/"> Blogging with Octopress and Github Pages </a></p></li>
-<li><p>01 Feb 2013 &raquo; <a href="/blog/2013/02/01/book-review-implementing-domain-driven-design/"> Book Review: Implementing Domain-Driven Design </a></p></li>
-<li><p>02 Jan 2013 &raquo; <a href="/blog/2013/01/02/duplicate-entries-using-open-with.adoc/"> Duplicate Entries using &#39;Open With&#39; on OS X </a></p></li>
-</ul>
+http://jekyllrb.com/[Jekyll] is a simple, blog-aware, static site generator, enabling you to convert plain text content into static websites and blogs. Until recently, Jekyll only supported http://daringfireball.net/projects/markdown/[Markdown] (or http://redcloth.org/textile[Textile]) formatted content.
 
+However, as the GitHub blog article https://github.com/blog/1939-how-github-uses-github-to-document-github[How GitHub uses GitHub to document GitHub] mentions:
+
+[quote]
+____
+Jekyll 2.0 introduced a new plugin type called a http://jekyllrb.com/docs/plugins/#converters[Converter] that transforms any markup into HTML. This frees the writer up to compose content however she chooses, and Jekyll will just serve the final HTML. For example, you can write your posts in AsciiDoc, if that's your thing.
+____
+
+Dan Allen (https://twitter.com/mojavelinux[@mojavelinux]) recently authored https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc], a Jekyll plugin that converts AsciiDoc files in your site source to HTML pages using http://asciidoctor.org[Asciidoctor]. I have now published the release 1.0.0 version to RubyGems at https://rubygems.org/gems/jekyll-asciidoc.
+
+*_This post is actually written in AsciiDoc and is being rendered using jekyll-asciidoc!_*
+
+Here's the actual AsciiDoc content for this blog post. You can also see it at https://github.com/paulrayner/paulrayner.github.com/tree/jekyll/_posts[my website source repository on GitHub].</code></pre>
+</div>
+</div>
   </article>
 
 </div>

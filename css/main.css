@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 300;
   color: #111;
@@ -41,7 +41,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 10.5px; }
 
 /**
  * Lists
@@ -68,8 +68,7 @@ a {
   a:visited {
     color: #1756a9; }
   a:hover {
-    color: #111;
-    text-decoration: underline; }
+    color: #111; }
 
 /**
  * Blockquotes
@@ -92,7 +91,7 @@ code {
   font-size: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
-  background-color: #eef; }
+  background-color: #f7f7f7; }
 
 code {
   padding: 1px 5px; }
@@ -155,7 +154,9 @@ pre {
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left; }
+  float: left;
+  text-decoration: none;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
   .site-title, .site-title:visited {
     color: #424242; }
 
@@ -202,6 +203,18 @@ pre {
         padding: 5px 10px; } }
 
 /**
+ * Site contact list in header
+ */
+.site-contact, .site-contact:visited, .site-contact:hover {
+  color: #424242; }
+
+ul.site-contact {
+  list-style-type: none;
+  margin-left: 0; }
+  ul.site-contact li {
+    display: inline; }
+
+/**
  * Site footer
  */
 .site-footer {
@@ -209,7 +222,7 @@ pre {
   padding: 30px 0; }
 
 .footer-heading {
-  font-size: 18px;
+  font-size: 10px;
   margin-bottom: 15px; }
 
 .contact-list,
@@ -218,7 +231,7 @@ pre {
   margin-left: 0; }
 
 .footer-col-wrapper {
-  font-size: 15px;
+  font-size: 10;
   color: #828282;
   margin-left: -15px; }
 
@@ -232,12 +245,15 @@ pre {
   width: calc(35% - (30px / 2)); }
 
 .footer-col-2 {
-  width: -webkit-calc(20% - (30px / 2));
-  width: calc(20% - (30px / 2)); }
+  width: -webkit-calc(35% - (30px / 2));
+  width: calc(35% - (30px / 2)); }
 
 .footer-col-3 {
-  width: -webkit-calc(45% - (30px / 2));
-  width: calc(45% - (30px / 2)); }
+  width: -webkit-calc(30% - (30px / 2));
+  width: calc(30% - (30px / 2)); }
+
+.footer-brand {
+  height: 60px; }
 
 @media screen and (max-width: 800px) {
   .footer-col-1,
@@ -256,9 +272,6 @@ pre {
 /**
  * Page content
  */
-.page-content {
-  padding: 30px 0; }
-
 .page-heading {
   font-size: 20px; }
 
@@ -269,7 +282,7 @@ pre {
     margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 10.5px;
   color: #828282; }
 
 .post-link {
@@ -307,6 +320,11 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+.home h2 a {
+  color: #ba3925; }
+  .home h2 a:hover {
+    color: #ba3925; }
 
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 /* Remove the comments around the @import statement below when using this as a custom stylesheet */
@@ -534,7 +552,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, #toctitle, .sidebarblock > .content > .
 
 a {
   color: #2156a5;
-  text-decoration: underline;
+  text-decoration: none;
   line-height: inherit; }
 
 a:hover, a:focus {
@@ -1896,6 +1914,24 @@ p {
 
   .show-for-print {
     display: inherit !important; } }
+.pullquote-right:before,
+.pullquote-left:before {
+  display: block;
+  padding: 0;
+  border: none;
+  content: attr(data-pullquote);
+  float: right;
+  width: 45%;
+  margin: 0.5em -2.5% 1em 1.5em;
+  position: relative;
+  top: 7px;
+  font-size: 1.4em;
+  line-height: 1.45em; }
+
+.pullquote-left:before {
+  float: left;
+  margin: 0.5em 1.5em 1em -2.5%; }
+
 /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
 /*pre.CodeRay {background-color:#f7f7f8;}*/
 .CodeRay .line-numbers {
