@@ -9,7 +9,7 @@
   <title>Word Document to Asciidoc Conversion</title>
   <meta name="description" content="I had content in Word documents that I needed to convert to Asciidoc for our book. Here are the steps I found to work best:">
 
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Writing, Tools, Productivity, AsciiDoc">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/about/">About Paul</a>
           
         
           
@@ -55,7 +55,22 @@
     </nav>
 
   </div>
-
+<div class="wrapper">
+    <p class="text">Thinking about DDD, BDD, coding, software design and agile etc.</p>
+  </div>
+  <div class="wrapper">
+    <ul class="site-contact">
+      <li><i class="fa fa-twitter fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://twitter.com/thepaulrayner">Twitter</a></li>
+      <li>|</li>
+      <li><i class="fa fa-github fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://github.com/paulrayner">GitHub</a></li>
+      <li>|</li>
+      <li><i class="fa fa-linkedin fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.linkedin.com/in/thepaulrayner">LinkedIn</a></li>
+      <li>|</li>
+      <li><i class="fa fa-facebook fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.facebook.com/paul.rayner.7798">Facebook</a></li>
+      <li>|</li>
+      <li><i class="fa fa-rss fa-lg text-error"></i>&nbsp;<a target="_blank" class="site-contact" href="http://thepaulrayner.com/feed.xml">RSS</a></li>
+    </ul>
+  </div>
 </header>
 
 
@@ -68,60 +83,117 @@
     <span class="post-meta">
 <i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Feb 14, 2013
 
-<i class="fa fa-tags fa-lg"></i>&nbsp;
+<i class="fa fa-tags fa-lg"></i>&nbsp;Writing, Tools, Productivity, AsciiDoc
 
 </span>
 
   </header>
 
   <article class="post-content">
-    <p>I had content in Word documents that I needed to convert to Asciidoc for our book. Here are the steps I found to work best:</p>
-
-<ol>
-<li>Save Word doc as HTML</li>
-<li>Encode as UTF-8</li>
-<li>Use pandoc to convert from HTML to AsciiDoc</li>
-<li>Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things</li>
-<li>Use Sublime Text 2 to perform any remaining formatting</li>
+    <div class="paragraph">
+<p>I had content in Word documents that I needed to convert to Asciidoc for our book. Here are the steps I found to work best:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Save Word doc as HTML</p>
+</li>
+<li>
+<p>Encode as UTF-8</p>
+</li>
+<li>
+<p>Use pandoc to convert from HTML to AsciiDoc</p>
+</li>
+<li>
+<p>Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things</p>
+</li>
+<li>
+<p>Use Sublime Text 2 to perform any remaining formatting</p>
+</li>
 </ol>
-
-<h2>Save Word doc as HTML</h2>
-
-<p>Open the document in Word, and then save as a web page. <em>Select the &quot;Save only Display Information into HTML&quot; option when saving.</em> Exit from Word (and wave it goodbye as you do!).</p>
-
-<h2>Encode as UTF-8</h2>
-
+</div>
+<div class="sect1">
+<h2 id="save-word-doc-as-html">Save Word doc as HTML</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Open the document in Word, and then save as a web page. <em>Select the "Save only Display Information into HTML" option when saving.</em> Exit from Word (and wave it goodbye as you do!).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="encode-as-utf-8">Encode as UTF-8</h2>
+<div class="sectionbody">
+<div class="paragraph">
 <p>Open the html file in Sublime Text 2. Avert your eyes at the horror that is Word-formatted HTML. Reopen with encoding UTF-8 and save the file:</p>
-
-<p><img src="http://thepaulrayner.com/assets/sublime-text-utf8.png" alt="Sublime Text 2 Reopen with Encoding"></p>
-
-<p>If I don&#39;t recode as UTF-8, then the next step will fail with the error:</p>
-
-<p><code>pandoc: Cannot decode byte &#39;\x6f&#39;: Data.Text.Encoding.decodeUtf8: Invalid UTF-8 stream</code></p>
-
-<h2>Use Pandoc to convert from HTML to AsciiDoc</h2>
-
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/assets/sublime-text-utf8.png" alt="Sublime Text 2 Reopen with Encoding">
+</div>
+</div>
+<div class="paragraph">
+<p>If I don&#8217;t recode as UTF-8, then the next step will fail with the error:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>pandoc: Cannot decode byte '\x6f': Data.Text.Encoding.decodeUtf8: Invalid UTF-8 stream</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="use-pandoc-to-convert-from-html-to-asciidoc">Use Pandoc to convert from HTML to AsciiDoc</h2>
+<div class="sectionbody">
+<div class="paragraph">
 <p>Run <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>. For example, the following command takes <code>ConventionSheet.htm</code> and converts it to the AsciiDoc file <code>file.asc</code>:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">pandoc -f html -t asciidoc -o file.asc ConventionSheet.htm
-</code></pre></div>
-<h2>Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things</h2>
-
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>pandoc -f html -t asciidoc -o file.asc ConventionSheet.htm</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="use-sublime-text-2-search-and-replace-using-some-regular-expressions-to-strip-out-crazy-things">Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things</h2>
+<div class="sectionbody">
+<div class="paragraph">
 <p>Weird single quotes need to go:</p>
-
-<p><img src="http://thepaulrayner.com/assets/sublime-text-backtick-replace.png" alt="Sublime Text 2 Replace backtick with single quote"></p>
-
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/assets/sublime-text-backtick-replace.png" alt="Sublime Text 2 Replace backtick with single quote">
+</div>
+</div>
+<div class="paragraph">
 <p>If you had reviewing turned on in Word, then reviewer comments and changes will likely be present in the HTML. Remove these using a search and replace with the following Regex in the search field:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">\[line-through\]\*(.+)\*
-</code></pre></div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>\[line-through\]\*(.+)\*</pre>
+</div>
+</div>
+<div class="paragraph">
 <p>When matched lines cross line breaks then you can use the single line option (<code>?s</code>) in your regex for search and replace:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">(?s)\[line-through\]\*.(.*?)\*
-</code></pre></div>
-<h2>Use Sublime Text 2 to perform any remaining AsciiDoc formatting</h2>
-
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>(?s)\[line-through\]\*.(.*?)\*</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="use-sublime-text-2-to-perform-any-remaining-asciidoc-formatting">Use Sublime Text 2 to perform any remaining AsciiDoc formatting</h2>
+<div class="sectionbody">
+<div class="paragraph">
 <p>Monospace any regex or other special characters (these will cause problems for the AsciiDoc parser) in the document.</p>
-
+</div>
+<div class="paragraph">
 <p>Edit the AsciiDoc document as you wish! Note that GitHub now natively displays AsciiDoc files (using <a href="http://asciidoctor.org/news/asciidoctor-announcement.html">AsciiDoctor</a> behind the scenes), just as it does for Markdown.</p>
-
+</div>
+</div>
+</div>
   </article>
 
 </div>
@@ -150,8 +222,6 @@
     <footer class="site-footer">
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">Paul Rayner's Blog</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
@@ -194,12 +264,22 @@
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">Paul Rayner's blog on DDD, BDD and agile.</p>
+      <div class="footer-col footer-col-3">
+      <span>
+      <a href="http://www.virtual-genius.com/" imageanchor="1"><img  class="footer-brand" alt="Virtual Genius LLC." src="/assets/vg_logo.png" title="Virtual Genius LLC" /></a>
       </div>
+      </span>
     </div>
-    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-
+    <div>
+    <hr>
+    <span>
+        <i class="fa fa-gear fa-lg">&nbsp;</i>Powered by <a target="_blank" href="http://pages.github.com/">GitHub Pages</a>, <a target="_blank" href="http://jekyllrb.com">Jekyll</a> and <a target="_blank" href="http://asciidoctor.org/">AsciiDoctor</a>
+    </div>
+    </span>
+    <div>
+    <hr>
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:1" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+    </div>
   </div>
 
 </footer>

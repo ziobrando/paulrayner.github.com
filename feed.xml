@@ -5,8 +5,8 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Jan 2015 23:12:04 +0000</pubDate>
-    <lastBuildDate>Thu, 08 Jan 2015 23:12:04 +0000</lastBuildDate>
+    <pubDate>Thu, 08 Jan 2015 23:41:50 +0000</pubDate>
+    <lastBuildDate>Thu, 08 Jan 2015 23:41:50 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -724,292 +724,560 @@ much technical detail you incorporate.&lt;/p&gt;
     
       <item>
         <title>Agile User stories and Domain-Driven Design (DDD)</title>
-        <description>&lt;p&gt;On Monday night at our DDD Denver meetup we ended up having a valuable and lively group discussion using a modified &lt;a href=&quot;http://systemagility.com/2012/04/16/enjoy-a-lean-coffee/&quot;&gt;&amp;quot;Lean Coffee&amp;quot; format&lt;/a&gt;. The four questions we covered (in order) were:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Where to start in developing a domain model?&lt;/li&gt;
-&lt;li&gt;What is the biggest hurdle for a team adopting DDD?&lt;/li&gt;
-&lt;li&gt;What is the intersection of DDD &amp;amp; agile user stories?&lt;/li&gt;
-&lt;li&gt;Techniques for implementing DDD across geographically dispersed teams&lt;/li&gt;
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;On Monday night at our DDD Denver meetup we ended up having a valuable and lively group discussion using a modified &lt;a href=&quot;http://systemagility.com/2012/04/16/enjoy-a-lean-coffee/&quot;&gt;Lean Coffee&lt;/a&gt;. The four questions we covered (in order) were:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Where to start in developing a domain model?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is the biggest hurdle for a team adopting DDD?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is the intersection of DDD &amp;amp; agile user stories?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Techniques for implementing DDD across geographically dispersed teams&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;As we discussed the intersection of DDD and user stories, I mentioned a quick reference guide that I have used for my own coaching and training over the years. There seemed to be a lot of interest in having me share the resource more widely.&lt;/p&gt;
-
-&lt;p&gt;So I am now making my &amp;quot;Stories for Design and Delivery&amp;quot; reference freely and publicly available.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;So I am now making my &quot;Stories for Design and Delivery&quot; reference freely and publicly available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This double-sided quick-reference provides a wealth of distilled content about how to integrate stories and design, including making decisions about splitting based on business subdomain.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Click on either thumbnail below to download the full-size PDF version.&lt;/p&gt;
-
-&lt;h3&gt;Front&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://thepaulrayner.com/assets/stories-for-design-and-delivery-thumbnail1.png&quot; alt=&quot;Stories for design and delivery&quot;&gt;&lt;/p&gt;
-
-&lt;h3&gt;Back&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://thepaulrayner.com/assets/stories-for-design-and-delivery-thumbnail2.png&quot; alt=&quot;Stories for design and delivery&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.virtual-genius.com/resources/Stories-for-design-and-delivery.pdf&quot;&gt;get the PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3&gt;History&lt;/h3&gt;
-
-&lt;p&gt;I put the first version of the guide together back in 2009 as a quick reference guide for Mike Cohn&amp;#39;s &lt;em&gt;User Stories Applied&lt;/em&gt;. I needed an easier way to get the whole team to understand user stories without forcing them all to read the book (as good as it is, this wasn&amp;#39;t going to happen). I printed and laminated a bunch of copies and distributed them to the team.&lt;/p&gt;
-
-&lt;p&gt;Iteration two was several years ago when Richard Lawrence published his excellent &lt;a href=&quot;http://www.richardlawrence.info/2009/10/28/patterns-for-splitting-user-stories/&quot;&gt;Patterns for Splitting User Stories post&lt;/a&gt; (also referenced as a footnote on the guide&amp;#39;s second page). At that time I incorporated Richard&amp;#39;s material into the second page, greatly improving the guidance around splitting stories.&lt;/p&gt;
-
-&lt;p&gt;I&amp;#39;ve used this guide many times over the years in my classes and coaching, teaching teams how to collaboratively and creatively decompose their functionality into manageable increments.&lt;/p&gt;
-
-&lt;p&gt;Iteration three was almost a year ago, when I decided to move away from the conventional agile community&amp;#39;s terminology and emphasis on process, and focus on how stories can support design, rather than fragment it. I tried to approach it first and foremost as a DDD practitioner, concerned about putting design first. So I incorporated my current understanding of how domain modeling, tactical design practices and strategic design (i.e. mainly subdomain distillation) fits with how most teams manage their work items.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Note: I&amp;#39;ve deliberately defied convention by not calling them _user&lt;/em&gt; stories. Stories - as I conceive of them - may relate directly to customers, users, stakeholders and even predominantly technical considerations, not just end users. Some heavily design-focused stories, such as building an anti-corruption layer in front of a back-end system, might only be exposed to users tangentially via seemingly unrelated functionality (from their perspective)._&lt;/p&gt;
-
-&lt;h3&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;Just recently, Richard has reworked his story splitting guide into an excellent flow chart: &lt;a href=&quot;http://www.richardlawrence.info/2012/01/27/new-story-splitting-resource/&quot;&gt;How to Split a User Story&lt;/a&gt;, which I highly recommend as a more process-focused complement to mine.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;front&quot;&gt;Front&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;imageblock dropshadow&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://www.virtual-genius.com/resources/Stories-for-design-and-delivery.pdf&quot;&gt;&lt;img src=&quot;/assets/stories-for-design-and-delivery-thumbnail1.png&quot; alt=&quot;Stories for design and delivery - Front&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;back&quot;&gt;Back&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;imageblock dropshadow&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://www.virtual-genius.com/resources/Stories-for-design-and-delivery.pdf&quot;&gt;&lt;img src=&quot;/assets/stories-for-design-and-delivery-thumbnail2.png&quot; alt=&quot;Stories for design and delivery - Back&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I put the first version of the guide together back in 2009 as a quick reference guide for Mike Cohn&amp;#8217;s &lt;em&gt;User Stories Applied&lt;/em&gt;. I needed an easier way to get the whole team to understand user stories without forcing them all to read the book (as good as it is, this wasn&amp;#8217;t going to happen). I printed and laminated a bunch of copies and distributed them to the team.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Iteration two was several years ago when Richard Lawrence published his excellent &lt;a href=&quot;http://www.richardlawrence.info/2009/10/28/patterns-for-splitting-user-stories/&quot;&gt;Patterns for Splitting User Stories post&lt;/a&gt; (also referenced as a footnote on the guide&amp;#8217;s second page). At that time I incorporated Richard&amp;#8217;s material into the second page, greatly improving the guidance around splitting stories.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve used this guide many times over the years in my classes and coaching, teaching teams how to collaboratively and creatively decompose their functionality into manageable increments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Iteration three was almost a year ago, when I decided to move away from the conventional agile community&amp;#8217;s terminology and emphasis on process, and focus on how stories can support design, rather than fragment it. I tried to approach it first and foremost as a DDD practitioner, concerned about putting design first. So I incorporated my current understanding of how domain modeling, tactical design practices and strategic design (i.e. mainly subdomain distillation) fits with how most teams manage their work items.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;Note: I&amp;#8217;ve deliberately defied convention by not calling them _user&lt;/em&gt; stories. Stories - as I conceive of them - may relate directly to customers, users, stakeholders and even predominantly technical considerations, not just end users. Some heavily design-focused stories, such as building an anti-corruption layer in front of a back-end system, might only be exposed to users tangentially via seemingly unrelated functionality (from their perspective)._&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Just recently, Richard has reworked his story splitting guide into an excellent flow chart: &lt;a href=&quot;http://www.richardlawrence.info/2012/01/27/new-story-splitting-resource&quot;&gt;How to Split a User Story&lt;/a&gt;, which I highly recommend as a more process-focused complement to mine.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I hope this is as helpful to others as it has been to me. Let me know in the comments if you do find this useful. And please let me know any ways I might improve the quick reference guide.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;&lt;em&gt;The document is designed to be printed double-sided. I recommend laminating your copies before you hand them out so they last longer and are less likely to get lost in a pile of paper.&lt;/em&gt;&lt;/p&gt;
-</description>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
         <pubDate>Fri, 15 Feb 2013 21:14:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd.adoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd.adoc/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/</guid>
         
+        <category>DDD</category>
         
-        <category>ddd</category>
+        <category>Agile</category>
         
-        <category>agile</category>
         
       </item>
     
       <item>
         <title>Word Document to Asciidoc Conversion</title>
-        <description>&lt;p&gt;I had content in Word documents that I needed to convert to Asciidoc for our book. Here are the steps I found to work best:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Save Word doc as HTML&lt;/li&gt;
-&lt;li&gt;Encode as UTF-8&lt;/li&gt;
-&lt;li&gt;Use pandoc to convert from HTML to AsciiDoc&lt;/li&gt;
-&lt;li&gt;Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things&lt;/li&gt;
-&lt;li&gt;Use Sublime Text 2 to perform any remaining formatting&lt;/li&gt;
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I had content in Word documents that I needed to convert to Asciidoc for our book. Here are the steps I found to work best:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Save Word doc as HTML&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Encode as UTF-8&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use pandoc to convert from HTML to AsciiDoc&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Sublime Text 2 to perform any remaining formatting&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;h2&gt;Save Word doc as HTML&lt;/h2&gt;
-
-&lt;p&gt;Open the document in Word, and then save as a web page. &lt;em&gt;Select the &amp;quot;Save only Display Information into HTML&amp;quot; option when saving.&lt;/em&gt; Exit from Word (and wave it goodbye as you do!).&lt;/p&gt;
-
-&lt;h2&gt;Encode as UTF-8&lt;/h2&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;save-word-doc-as-html&quot;&gt;Save Word doc as HTML&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Open the document in Word, and then save as a web page. &lt;em&gt;Select the &quot;Save only Display Information into HTML&quot; option when saving.&lt;/em&gt; Exit from Word (and wave it goodbye as you do!).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;encode-as-utf-8&quot;&gt;Encode as UTF-8&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Open the html file in Sublime Text 2. Avert your eyes at the horror that is Word-formatted HTML. Reopen with encoding UTF-8 and save the file:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://thepaulrayner.com/assets/sublime-text-utf8.png&quot; alt=&quot;Sublime Text 2 Reopen with Encoding&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;If I don&amp;#39;t recode as UTF-8, then the next step will fail with the error:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc: Cannot decode byte &amp;#39;\x6f&amp;#39;: Data.Text.Encoding.decodeUtf8: Invalid UTF-8 stream&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2&gt;Use Pandoc to convert from HTML to AsciiDoc&lt;/h2&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/sublime-text-utf8.png&quot; alt=&quot;Sublime Text 2 Reopen with Encoding&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If I don&amp;#8217;t recode as UTF-8, then the next step will fail with the error:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;pandoc: Cannot decode byte &#39;\x6f&#39;: Data.Text.Encoding.decodeUtf8: Invalid UTF-8 stream&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;use-pandoc-to-convert-from-html-to-asciidoc&quot;&gt;Use Pandoc to convert from HTML to AsciiDoc&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Run &lt;a href=&quot;http://johnmacfarlane.net/pandoc/&quot;&gt;pandoc&lt;/a&gt;. For example, the following command takes &lt;code&gt;ConventionSheet.htm&lt;/code&gt; and converts it to the AsciiDoc file &lt;code&gt;file.asc&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;pandoc -f html -t asciidoc -o file.asc ConventionSheet.htm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things&lt;/h2&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;pandoc -f html -t asciidoc -o file.asc ConventionSheet.htm&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;use-sublime-text-2-search-and-replace-using-some-regular-expressions-to-strip-out-crazy-things&quot;&gt;Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Weird single quotes need to go:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://thepaulrayner.com/assets/sublime-text-backtick-replace.png&quot; alt=&quot;Sublime Text 2 Replace backtick with single quote&quot;&gt;&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/sublime-text-backtick-replace.png&quot; alt=&quot;Sublime Text 2 Replace backtick with single quote&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;If you had reviewing turned on in Word, then reviewer comments and changes will likely be present in the HTML. Remove these using a search and replace with the following Regex in the search field:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;\[line-through\]\*(.+)\*
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;\[line-through\]\*(.+)\*&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;When matched lines cross line breaks then you can use the single line option (&lt;code&gt;?s&lt;/code&gt;) in your regex for search and replace:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;(?s)\[line-through\]\*.(.*?)\*
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Use Sublime Text 2 to perform any remaining AsciiDoc formatting&lt;/h2&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;(?s)\[line-through\]\*.(.*?)\*&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;use-sublime-text-2-to-perform-any-remaining-asciidoc-formatting&quot;&gt;Use Sublime Text 2 to perform any remaining AsciiDoc formatting&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Monospace any regex or other special characters (these will cause problems for the AsciiDoc parser) in the document.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Edit the AsciiDoc document as you wish! Note that GitHub now natively displays AsciiDoc files (using &lt;a href=&quot;http://asciidoctor.org/news/asciidoctor-announcement.html&quot;&gt;AsciiDoctor&lt;/a&gt; behind the scenes), just as it does for Markdown.&lt;/p&gt;
-</description>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
         <pubDate>Thu, 14 Feb 2013 15:35:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc.adoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc.adoc/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc/</guid>
         
+        <category>Writing</category>
         
-        <category>writing</category>
+        <category>Tools</category>
         
-        <category>tools</category>
+        <category>Productivity</category>
+        
+        <category>AsciiDoc</category>
+        
         
       </item>
     
       <item>
         <title>Colors when viewing folders in Terminal</title>
-        <description>&lt;p&gt;Saw directory listing coloring at Golden Ruby Users Group this week, and needed to have it!&lt;/p&gt;
-
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Saw directory listing coloring at Golden Ruby Users Group this week, and needed to have it!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;http://linux-sxs.org/housekeeping/lscolors.html&quot;&gt;LsColors&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;LS_COLORS=&amp;#39;di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90&amp;#39;
-export LS_COLORS
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;LS_COLORS=&#39;di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90&#39;
+export LS_COLORS&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;http://norbauer.com/notebooks/code/notes/ls-colors-and-terminal-app&quot;&gt;ls, colors and Terminal.app&lt;/a&gt;&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Customize Your Colors&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The values in LSCOLORS are codes corresponding to different colors for different types of files. The letter you use indicates which color to use, and the position in the string indicates what type of file should be that color. Each color comes in pairs – a foreground color and a background color. Here is a list of color values:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;a = black&lt;/li&gt;
-&lt;li&gt;b = red&lt;/li&gt;
-&lt;li&gt;c = green&lt;/li&gt;
-&lt;li&gt;d = brown&lt;/li&gt;
-&lt;li&gt;e = blue&lt;/li&gt;
-&lt;li&gt;f = magenta&lt;/li&gt;
-&lt;li&gt;g = cyan&lt;/li&gt;
-&lt;li&gt;h = grey&lt;/li&gt;
-&lt;li&gt;A = dark grey&lt;/li&gt;
-&lt;li&gt;B = bold red&lt;/li&gt;
-&lt;li&gt;C = bold green&lt;/li&gt;
-&lt;li&gt;D = yellow&lt;/li&gt;
-&lt;li&gt;E = bold blue&lt;/li&gt;
-&lt;li&gt;F = magenta&lt;/li&gt;
-&lt;li&gt;G = cyan&lt;/li&gt;
-&lt;li&gt;H = white&lt;/li&gt;
-&lt;li&gt;x = default&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a = black&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;b = red&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;c = green&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;d = brown&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;e = blue&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;f = magenta&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;g = cyan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;h = grey&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A = dark grey&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B = bold red&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C = bold green&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;D = yellow&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;E = bold blue&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;F = magenta&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;G = cyan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;H = white&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;x = default&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;And here is a list of the positions in LSCOLORS:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;directory&lt;/li&gt;
-&lt;li&gt;symbolic link&lt;/li&gt;
-&lt;li&gt;socket&lt;/li&gt;
-&lt;li&gt;pipe&lt;/li&gt;
-&lt;li&gt;executable&lt;/li&gt;
-&lt;li&gt;block device&lt;/li&gt;
-&lt;li&gt;character device&lt;/li&gt;
-&lt;li&gt;executable with setuid set&lt;/li&gt;
-&lt;li&gt;executable with setguid set&lt;/li&gt;
-&lt;li&gt;directory writable by others, with sticky bit&lt;/li&gt;
-&lt;li&gt;directory writable by others, without sticky bit&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;directory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;symbolic link&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;socket&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pipe&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;executable&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;block device&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;character device&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;executable with setuid set&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;executable with setguid set&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;directory writable by others, with sticky bit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;directory writable by others, without sticky bit&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/&quot;&gt;Colors for Dark Terminal Themes&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
         <pubDate>Thu, 07 Feb 2013 15:33:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal.adoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal.adoc/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal/</guid>
+        
+        <category>Coding</category>
+        
+        <category>Productivity</category>
         
         
       </item>
     
       <item>
         <title>Array Slicing in Ruby</title>
-        <description>&lt;p&gt;I&amp;#39;ve found the Ruby Koans to be brilliant for exposing a learner to aspects of the language that are not obvious, or even weird, at first glance. &lt;/p&gt;
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve found the Ruby Koans to be brilliant for exposing a learner to aspects of the language that are not obvious, or even weird, at first glance.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;indexing-ruby-arrays&quot;&gt;Indexing Ruby Arrays&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For example, let&amp;#8217;s look at a koan for accessing array elements:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;CodeRay highlight&quot;&gt;&lt;code data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;test_accessing_array_elements&lt;/span&gt;
+  array = [&lt;span class=&quot;symbol&quot;&gt;:peanut&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:butter&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:and&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:jelly&lt;/span&gt;]
 
-&lt;h5&gt;Indexing Ruby Arrays&lt;/h5&gt;
-
-&lt;p&gt;For example, let&amp;#39;s look at a koan for accessing array elements:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;def test_accessing_array_elements
-  array = [:peanut, :butter, :and, :jelly]
-
-  assert_equal :peanut, array[0]
-  assert_equal :peanut, array.first
-  assert_equal :jelly, array[3]
-  assert_equal :jelly, array.last
-  assert_equal :jelly, array[-1]
-  assert_equal :butter, array[-3]
-end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  assert_equal &lt;span class=&quot;symbol&quot;&gt;:peanut&lt;/span&gt;, array[&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;]
+  assert_equal &lt;span class=&quot;symbol&quot;&gt;:peanut&lt;/span&gt;, array.first
+  assert_equal &lt;span class=&quot;symbol&quot;&gt;:jelly&lt;/span&gt;, array[&lt;span class=&quot;integer&quot;&gt;3&lt;/span&gt;]
+  assert_equal &lt;span class=&quot;symbol&quot;&gt;:jelly&lt;/span&gt;, array.last
+  assert_equal &lt;span class=&quot;symbol&quot;&gt;:jelly&lt;/span&gt;, array[&lt;span class=&quot;integer&quot;&gt;-1&lt;/span&gt;]
+  assert_equal &lt;span class=&quot;symbol&quot;&gt;:butter&lt;/span&gt;, array[&lt;span class=&quot;integer&quot;&gt;-3&lt;/span&gt;]
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This is my first time seeing negative array references in any language. I was able to surmise (correctly) that they refer to entries counting backwards from the end of the array.&lt;/p&gt;
-
-&lt;p&gt;Core API Documents - Array, http://www.ruby-doc.org/core-1.9.3/Array.html
-A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ruby-doc.org/core-1.9.3/Array.html&quot;&gt;Core API Documents - Array&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;According to the Core API docs, indexing an array can also give us &lt;code&gt;nil&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ary[index] → obj or nil
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Getting a &lt;code&gt;nil&lt;/code&gt; would seem to be the likely behavior if we try to index beyond the boundary of the array. Let&amp;#39;s try it:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; array [4]
-=&amp;gt; nil 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;As expected, we get &lt;code&gt;nil&lt;/code&gt;. &lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;ary[index] → obj or nil&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Getting a &lt;code&gt;nil&lt;/code&gt; would seem to be the likely behavior if we try to index beyond the boundary of the array. Let&amp;#8217;s try it:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;&amp;gt; array [4]
+=&amp;gt; nil&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As expected, we get &lt;code&gt;nil&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;So far, so good. Indexing seems to work in a way mostly familiar from past experience in other languages.&lt;/p&gt;
-
-&lt;h5&gt;Slicing Ruby Arrays&lt;/h5&gt;
-
-&lt;p&gt;Now let&amp;#39;s try slicing, not indexing, arrays. The call, according to the Core API docs, is of the form:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ary[start, length] → new_ary or nil
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;slicing-ruby-arrays&quot;&gt;Slicing Ruby Arrays&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now let&amp;#8217;s try slicing, not indexing, arrays. The call, according to the Core API docs, is of the form:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;ary[start, length] → new_ary or nil&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;So the array[s, n] syntax means: retrieve n elements from the array starting by the s-th position, unless there is some reason to return &lt;code&gt;nil&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;#39;s use the same array as before, adding it in IRB:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; array = [:peanut, :butter, :and, :jelly]
- =&amp;gt; [:peanut, :butter, :and, :jelly] 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Let&amp;#39;s get the first array element:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; array[0, 1]
-=&amp;gt; [:peanut] 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Which says, get me the relevant slice of the array starting at position zero, with a length of one. No difficulties so far. &lt;/p&gt;
-
-&lt;p&gt;If you try to access elements from the array using n=0, you will get [] as a result (within the range of the array).&lt;/p&gt;
-
-&lt;p&gt;Now, let&amp;#39;s try &lt;em&gt;slicing&lt;/em&gt; (instead of accessing via index) beyond the end of the array:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; array [5,0]
-=&amp;gt; nil 
-
-&amp;gt; array [6,10]
-=&amp;gt; nil 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Let&amp;#8217;s use the same array as before, adding it in IRB:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;&amp;gt; array = [:peanut, :butter, :and, :jelly]
+ =&amp;gt; [:peanut, :butter, :and, :jelly]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Let&amp;#8217;s get the first array element:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;&amp;gt; array[0, 1]
+=&amp;gt; [:peanut]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Which says, get me the relevant slice of the array starting at position zero, with a length of one. No difficulties so far.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;If you try to access elements from the array using n=0, you will get [] as a result (within the range of the array).&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now, let&amp;#8217;s try &lt;em&gt;slicing&lt;/em&gt; (instead of accessing via index) beyond the end of the array:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;&amp;gt; array [5,0]
+=&amp;gt; nil&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;&amp;gt; array [6,10]
+=&amp;gt; nil&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;No matter what starting point we try after 5, or what length we specify, we will get &lt;code&gt;nil&lt;/code&gt;. Once again, straightforward and expected behavior.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;#39;s where it got a little weird for me:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; array [4,0]
-=&amp;gt; [] 
-
-&amp;gt; array [4,1]
-=&amp;gt; [] 
-
-&amp;gt; array [4,100]
-=&amp;gt; []
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;When we specify a starting point of 4, we get an empty array, regardless of how many elements we request. The semantics are subtly different at this boundary point. According to the Core API docs, it&amp;#39;s a special case.&lt;/p&gt;
-
-&lt;p&gt;The issue arises because I&amp;#39;m used to thinking about accessing arrays, but this is slicing. The way to think about slicing needs to be different. As a &lt;a href=&quot;http://stackoverflow.com/questions/3568222/array-slicing-in-ruby-looking-for-explanation-for-illogical-behaviour-taken-fr&quot;&gt;response to this question on Stack Overflow points out&lt;/a&gt;, treat the first number when you slice not as identifying the element, but &lt;em&gt;places between elements&lt;/em&gt;, in order to be able to define spans (and not elements themselves):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;  :peanut   :butter   :and   :jelly
-0         1         2      3        4
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;What this means is that 4 is still within the array, from a slicing perspective; if you request 0 elements, you get the empty end of the array. But since there is no index 5, it&amp;#39;s outside the bounds of the array, you can&amp;#39;t slice from there. Indexing, of course, refers to the elements themselves.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here&amp;#8217;s where it got a little weird for me:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;&amp;gt; array [4,0]
+=&amp;gt; []&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;&amp;gt; array [4,1]
+=&amp;gt; []&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;&amp;gt; array [4,100]
+=&amp;gt; []&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;When we specify a starting point of 4, we get an empty array, regardless of how many elements we request. The semantics are subtly different at this boundary point. According to the Core API docs, it&amp;#8217;s a special case.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The issue arises because I&amp;#8217;m used to thinking about accessing arrays, but this is slicing. The way to think about slicing needs to be different. As a &lt;a href=&quot;http://stackoverflow.com/questions/3568222/array-slicing-in-ruby-looking-for-explanation-for-illogical-behaviour-taken-fr&quot;&gt;response to this question on Stack Overflow points out&lt;/a&gt;, treat the first number when you slice not as identifying the element, but &lt;strong&gt;places between elements&lt;/strong&gt;, in order to be able to define spans (and not elements themselves):&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;  :peanut   :butter   :and   :jelly
+0         1         2      3        4&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;What this means is that 4 is still within the array, from a slicing perspective; if you request 0 elements, you get the empty end of the array. But since there is no index 5, it&amp;#8217;s outside the bounds of the array, you can&amp;#8217;t slice from there. Indexing, of course, refers to the elements themselves.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;One &lt;a href=&quot;http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/380637&quot;&gt;final example&lt;/a&gt;, using assignment:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;t = &amp;#39;hi&amp;#39;
-t[0,0] = &amp;#39;(&amp;#39;
-t[3,0] = &amp;#39;)&amp;#39;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;CodeRay highlight&quot;&gt;&lt;code data-lang=&quot;ruby&quot;&gt;t = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;hi&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+t[&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;] = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+t[&lt;span class=&quot;integer&quot;&gt;3&lt;/span&gt;,&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;] = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
 t
-=&amp;gt; &amp;quot;(hi)&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+=&amp;gt; &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;(hi)&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;In Ruby Koans these are the tests that highlight the differences:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;def test_slicing_arrays
-  array = [:peanut, :butter, :and, :jelly]
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;CodeRay highlight&quot;&gt;&lt;code data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;test_slicing_arrays&lt;/span&gt;
+  array = [&lt;span class=&quot;symbol&quot;&gt;:peanut&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:butter&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:and&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:jelly&lt;/span&gt;]
 
-  assert_equal [:peanut], array[0, 1]
-  assert_equal [:peanut, :butter], array[0, 2]
-  assert_equal [:and, :jelly], array[2, 2]
-  assert_equal [:and, :jelly], array[2, 20]
-  assert_equal [], array[4,0]
-  assert_equal [], array[4,100]
-  assert_equal nil, array[5,0]
-end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;hr&gt;
-
+  assert_equal [&lt;span class=&quot;symbol&quot;&gt;:peanut&lt;/span&gt;], array[&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;integer&quot;&gt;1&lt;/span&gt;]
+  assert_equal [&lt;span class=&quot;symbol&quot;&gt;:peanut&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:butter&lt;/span&gt;], array[&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;integer&quot;&gt;2&lt;/span&gt;]
+  assert_equal [&lt;span class=&quot;symbol&quot;&gt;:and&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:jelly&lt;/span&gt;], array[&lt;span class=&quot;integer&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;integer&quot;&gt;2&lt;/span&gt;]
+  assert_equal [&lt;span class=&quot;symbol&quot;&gt;:and&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:jelly&lt;/span&gt;], array[&lt;span class=&quot;integer&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;integer&quot;&gt;20&lt;/span&gt;]
+  assert_equal [], array[&lt;span class=&quot;integer&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;]
+  assert_equal [], array[&lt;span class=&quot;integer&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;integer&quot;&gt;100&lt;/span&gt;]
+  assert_equal &lt;span class=&quot;predefined-constant&quot;&gt;nil&lt;/span&gt;, array[&lt;span class=&quot;integer&quot;&gt;5&lt;/span&gt;,&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;]
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Thanks also to the &lt;a href=&quot;http://mybrainstormings.wordpress.com/2012/09/10/arrays-in-ruby/&quot;&gt;My Brainstormings blog&lt;/a&gt; for additional help with understanding how arrays work in Ruby.&lt;/p&gt;
-</description>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
         <pubDate>Thu, 07 Feb 2013 10:03:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/07/array-slicing-in-ruby.adoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/07/array-slicing-in-ruby.adoc/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/07/array-slicing-in-ruby/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/07/array-slicing-in-ruby/</guid>
+        
+        <category>Ruby</category>
+        
+        <category>Coding</category>
         
         
         <category>ruby</category>
@@ -1020,51 +1288,90 @@ end
     
       <item>
         <title>Object Ids in Ruby</title>
-        <description>&lt;p&gt;In my effort to master Ruby this year, I started this morning working through &lt;a href=&quot;http://rubykoans.com&quot;&gt;Ruby Koans&lt;/a&gt;. I just completed these tests and was intrigued by the comment in the second koan:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;def test_some_system_objects_always_have_the_same_id
-  assert_equal 0, false.object_id
-  assert_equal 2, true.object_id
-  assert_equal 4, nil.object_id
-end
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In my effort to master Ruby this year, I started this morning working through &lt;a href=&quot;http://rubykoans.com&quot;&gt;Ruby Koans&lt;/a&gt;. I just completed these tests and was intrigued by the comment in the second koan:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;CodeRay highlight&quot;&gt;&lt;code data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;test_some_system_objects_always_have_the_same_id&lt;/span&gt;
+  assert_equal &lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;.object_id
+  assert_equal &lt;span class=&quot;integer&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;.object_id
+  assert_equal &lt;span class=&quot;integer&quot;&gt;4&lt;/span&gt;, &lt;span class=&quot;predefined-constant&quot;&gt;nil&lt;/span&gt;.object_id
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
 
-def test_small_integers_have_fixed_ids
-  assert_equal 1, 0.object_id
-  assert_equal 3, 1.object_id
-  assert_equal 5, 2.object_id
-  assert_equal 201, 100.object_id
+&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;test_small_integers_have_fixed_ids&lt;/span&gt;
+  assert_equal &lt;span class=&quot;integer&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;.object_id
+  assert_equal &lt;span class=&quot;integer&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;integer&quot;&gt;1&lt;/span&gt;.object_id
+  assert_equal &lt;span class=&quot;integer&quot;&gt;5&lt;/span&gt;, &lt;span class=&quot;integer&quot;&gt;2&lt;/span&gt;.object_id
+  assert_equal &lt;span class=&quot;integer&quot;&gt;201&lt;/span&gt;, &lt;span class=&quot;integer&quot;&gt;100&lt;/span&gt;.object_id
 
-  # THINK ABOUT IT:
-  # What pattern do the object IDs for small integers follow?
-end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;span class=&quot;comment&quot;&gt;# THINK ABOUT IT:&lt;/span&gt;
+  &lt;span class=&quot;comment&quot;&gt;# What pattern do the object IDs for small integers follow?&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;To put it another way:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt;&amp;gt; (0..50).each { |i| print i.object_id, &amp;#39; &amp;#39; }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;&amp;gt;&amp;gt; (0..50).each { |i| print i.object_id, &#39; &#39; }&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;What would you expect to see as output? You can find the answer in &lt;a href=&quot;http://stackoverflow.com/questions/3952730/fixed-object-id-for-system-objects-and-small-integers-in-ruby&quot;&gt;Fixed Object Id for System Objects and Small Integers in Ruby&lt;/a&gt;.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;But why does this happen? I did a little digging and found these 2006 articles by Caleb Tennis on &lt;a href=&quot;http://www.oreillynet.com/ruby/blog/2006/01/the_ruby_value_1.html&quot;&gt;The Ruby VALUE&lt;/a&gt; and &lt;a href=&quot;http://www.oreillynet.com/ruby/blog/2006/02/ruby_values_and_object_ids.html&quot;&gt;Ruby Values and object_ids&lt;/a&gt;. In the first article he points out that:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The first point of interest is the VALUE - Ruby’s internal representation of its objects. In the general sense, a VALUE is just a C pointer to a Ruby object data type. We use VALUEs in the C code like we would use objects in the Ruby code.&lt;/p&gt;
-
-&lt;p&gt;...for performance purposes, Ruby doesn’t use the VALUE as a pointer in every instance. For Fixnums, Ruby stores the number value directly in the VALUE itself. That keeps us from having to keep a lookup table of every possible Fixnum in the system.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;There is also a good Stack Overflow answer to this question of &lt;a href=&quot;http://stackoverflow.com/questions/3430280/ruby-how-does-object-id-assignment-work&quot;&gt;how object assignment works in Ruby&lt;/a&gt;:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;In MRI the &lt;code&gt;object_id&lt;/code&gt; of an object is the same as the &lt;code&gt;VALUE&lt;/code&gt; that represents the object on the C level. For most kinds of objects this &lt;code&gt;VALUE&lt;/code&gt; is a pointer to a location in memory where the actual object data is stored. Obviously this will be different during multiple runs because it only depends on where the system decided to allocate the memory, not on any property of the object itself.&lt;/p&gt;
-
-&lt;p&gt;However for performance reasons &lt;code&gt;true&lt;/code&gt;, &lt;code&gt;false&lt;/code&gt;, &lt;code&gt;nil&lt;/code&gt; and &lt;code&gt;Fixnum&lt;/code&gt;s are handled specially. For these objects there isn&amp;#39;t actually a struct with the object&amp;#39;s data in memory. All of the object&amp;#39;s data is encoded in the &lt;code&gt;VALUE&lt;/code&gt; itself. As you already figured out the values for &lt;code&gt;false&lt;/code&gt;, &lt;code&gt;true&lt;/code&gt;, &lt;code&gt;nil&lt;/code&gt; and any &lt;code&gt;Fixnum&lt;/code&gt; &lt;code&gt;i&lt;/code&gt;, are &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;2&lt;/code&gt;, &lt;code&gt;4&lt;/code&gt; and &lt;code&gt;i*2+1&lt;/code&gt; respectively.&lt;/p&gt;
-
-&lt;p&gt;The reason that this works is that on any systems that MRI runs on, &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;2&lt;/code&gt;, &lt;code&gt;4&lt;/code&gt; and &lt;code&gt;i*2+1&lt;/code&gt; are never valid addresses for an object on the heap, so there&amp;#39;s no overlap with pointers to object data.&lt;/p&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&amp;#8230;&amp;#8203;for performance purposes, Ruby doesn’t use the VALUE as a pointer in every instance. For Fixnums, Ruby stores the number value directly in the VALUE itself. That keeps us from having to keep a lookup table of every possible Fixnum in the system.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;I highly recommend using a koan-based approach to learning the details of a new language. There&amp;#39;s a good list of links for various languages in &lt;a href=&quot;http://rubygeek.github.com/2011/01/22/koan-a-copia/&quot;&gt;&amp;quot;Koan-a-Copia!&amp;quot;&lt;/a&gt; article by &lt;a href=&quot;https://twitter.com/rubygeekdotcom&quot;&gt;Nola Stowe&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There is also a good Stack Overflow answer to this question of &lt;a href=&quot;http://stackoverflow.com/questions/3430280/ruby-how-does-object-id-assignment-work&quot;&gt;how object assignment works in Ruby&lt;/a&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In MRI the &lt;code&gt;object_id&lt;/code&gt; of an object is the same as the &lt;code&gt;VALUE&lt;/code&gt; that represents the object on the C level. For most kinds of objects this &lt;code&gt;VALUE&lt;/code&gt; is a pointer to a location in memory where the actual object data is stored. Obviously this will be different during multiple runs because it only depends on where the system decided to allocate the memory, not on any property of the object itself.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;However for performance reasons &lt;code&gt;true&lt;/code&gt;, &lt;code&gt;false&lt;/code&gt;, &lt;code&gt;nil&lt;/code&gt; and &lt;code&gt;Fixnum`s are handled specially. For these objects there isn&amp;#8217;t actually a struct with the object&amp;#8217;s data in memory. All of the object&amp;#8217;s data is encoded in the `VALUE&lt;/code&gt; itself. As you already figured out the values for &lt;code&gt;false&lt;/code&gt;, &lt;code&gt;true&lt;/code&gt;, &lt;code&gt;nil&lt;/code&gt; and any &lt;code&gt;Fixnum&lt;/code&gt; &lt;code&gt;i&lt;/code&gt;, are &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;2&lt;/code&gt;, &lt;code&gt;4&lt;/code&gt; and &lt;code&gt;i*2+1&lt;/code&gt; respectively.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The reason that this works is that on any systems that MRI runs on, &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;2&lt;/code&gt;, &lt;code&gt;4&lt;/code&gt; and &lt;code&gt;i*2+1&lt;/code&gt; are never valid addresses for an object on the heap, so there&amp;#8217;s no overlap with pointers to object data.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I highly recommend using a koan-based approach to learning the details of a new language. There&amp;#8217;s a good list of links for various languages in &lt;a href=&quot;http://rubygeek.github.com/2011/01/22/koan-a-copia/&quot;&gt;Koan-a-Copia!&lt;/a&gt; article by &lt;a href=&quot;https://twitter.com/rubygeekdotcom&quot;&gt;Nola Stowe&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;</description>
         <pubDate>Wed, 06 Feb 2013 11:26:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/06/object-ids-in-ruby.adoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/06/object-ids-in-ruby.adoc/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/06/object-ids-in-ruby/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/06/object-ids-in-ruby/</guid>
+        
+        <category>Ruby</category>
+        
+        <category>Coding</category>
         
         
         <category>ruby</category>
@@ -1075,105 +1382,200 @@ end
     
       <item>
         <title>Blogging with Octopress and Github Pages</title>
-        <description>&lt;p&gt;Here are &lt;a href=&quot;http://alblue.bandlem.com/2012/02/advantages-of-octopress.html&quot;&gt;4 good reasons from AlBlue&amp;#39;s blog&lt;/a&gt; to consider using Octopress for a technical blog: &lt;/p&gt;
-
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here are &lt;a href=&quot;http://alblue.bandlem.com/2012/02/advantages-of-octopress.html&quot;&gt;4 good reasons from AlBlue&amp;#8217;s blog&lt;/a&gt; to consider using Octopress for a technical blog:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;Jekyll-based&lt;/li&gt;
-&lt;li&gt;Markdown content&lt;/li&gt;
-&lt;li&gt;Stylish&lt;/li&gt;
-&lt;li&gt;Plugins&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jekyll-based&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Markdown content&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stylish&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Plugins&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;See also &lt;a href=&quot;http://www.neilsmithline.com/blog/2012/05/26/octopress-is-pretty-great/&quot;&gt;Octopress Is Pretty Great&lt;/a&gt;, which has a great description of not only the positives of Octopress, but also a good step-by-step summary of how to configure Octopress for your environment.&lt;/p&gt;
-
-&lt;h2&gt;Why Octopress?&lt;/h2&gt;
-
-&lt;p&gt;The Jekyll-style approach is to write content in an author-friendly text format (i.e. &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;) that is then translated to HTML and served up as such is gaining more and more momentum over the more common CMS-style approach. Tom Preston Werner &lt;a href=&quot;http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html&quot;&gt;wrote Jekyll back in 2008&lt;/a&gt;, and it is now used to &lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages&quot;&gt;serve content on Github Pages&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;With my previous blog I had been using BlogEngine.NET, which is a nice full-featured .NET-based blogging engine that didn&amp;#39;t require me to install and configure SQL Server on my virtual host. I generally liked BlogEngine.NET, but found the authoring experience tedious, and the updates a hassle. &lt;/p&gt;
-
-&lt;p&gt;In writing blog posts on my MBP I struggled with using OSX-based HTML editors, finding they only got in the way of the writing process. I really wanted to move to tools I am either more comfortable with already, or interested in mastering: Ruby, Rake, SASS, Jekyll, Markdown, Sublime Text 2, Byword, Marked, and Git. As Joel Hooks says on his &lt;a href=&quot;http://joelhooks.com/blog/2012/07/25/fresh-start-migrating-wordpress-octopress/&quot;&gt;&amp;quot;Fresh Start&amp;quot;&lt;/a&gt; blog post:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;why-octopress&quot;&gt;Why Octopress?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Jekyll-style approach is to write content in an author-friendly text format (i.e. &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;) that is then translated to HTML and served up as such is gaining more and more momentum over the more common CMS-style approach. Tom Preston Werner &lt;a href=&quot;http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html&quot;&gt;wrote Jekyll back in 2008&lt;/a&gt;, and it is now used to &lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages&quot;&gt;serve content on Github Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With my previous blog I had been using BlogEngine.NET, which is a nice full-featured .NET-based blogging engine that didn&amp;#8217;t require me to install and configure SQL Server on my virtual host. I generally liked BlogEngine.NET, but found the authoring experience tedious, and the updates a hassle.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In writing blog posts on my MBP I struggled with using OSX-based HTML editors, finding they only got in the way of the writing process. I really wanted to move to tools I am either more comfortable with already, or interested in mastering: Ruby, Rake, SASS, Jekyll, Markdown, Sublime Text 2, Byword, Marked, and Git. As Joel Hooks says on his &lt;a href=&quot;http://joelhooks.com/blog/2012/07/25/fresh-start-migrating-wordpress-octopress/&quot;&gt;Fresh Start&lt;/a&gt; blog post:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;[Octopress]...falls well into the &lt;a href=&quot;http://redsquirrel.com/dave/work/a2j/patterns/BreakableToys.html&quot;&gt;breakable toy&lt;/a&gt; category of things, and that is something I can use right now as I learn new tools. I’m looking forward to improving this space with quality content about modern standards-based web development with open source tools.&lt;/p&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;[Octopress]&amp;#8230;&amp;#8203;falls well into the &lt;a href=&quot;http://redsquirrel.com/dave/work/a2j/patterns/BreakableToys.html&quot;&gt;breakable toy&lt;/a&gt; category of things, and that is something I can use right now as I learn new tools. I’m looking forward to improving this space with quality content about modern standards-based web development with open source tools.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The Jekyll-based toolset really suits my workflow. I can write my posts in Markdown lightweight plain text format with Sublime Text 2 or Byword, manage all my changes in Git with full support for lightweight branching and additive changes, preview it with a &lt;code&gt;Rake Preview&lt;/code&gt; and serve it all up with a &lt;code&gt;Rake Deploy&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Potential Downside?&lt;/h2&gt;
-
-&lt;p&gt;To be fair, AlBlue&amp;#39;s blog also lists some &lt;a href=&quot;http://alblue.bandlem.com/2012/02/disadvantages-of-octopress.html&quot;&gt;possible disadvantages of Octopress&lt;/a&gt;. Part of what he mentions is the lack of separation between content and plumbing, in that there’s really five sets of things to manage:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;The source posts (in Markdown format)&lt;/li&gt;
-&lt;li&gt;The layout and supporting scaffolding (in HTML/Liquid templates)&lt;/li&gt;
-&lt;li&gt;The plugins for Jekyll to know how to process the Liquid templates)&lt;/li&gt;
-&lt;li&gt;The Octopress supporting management code&lt;/li&gt;
-&lt;li&gt;The published HTML&lt;/li&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;potential-downside&quot;&gt;Potential Downside?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To be fair, AlBlue&amp;#8217;s blog also lists some &lt;a href=&quot;http://alblue.bandlem.com/2012/02/disadvantages-of-octopress.html&quot;&gt;possible disadvantages of Octopress&lt;/a&gt;. Part of what he mentions is the lack of separation between content and plumbing, in that there’s really five sets of things to manage:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;The source posts (in Markdown format)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The layout and supporting scaffolding (in HTML/Liquid templates)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The plugins for Jekyll to know how to process the Liquid templates)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Octopress supporting management code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The published HTML&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;His point is that the first two items (the source posts, layout and templates) should be in source control, but the:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;plugins and octopress management code really need to live in a different Git repository, though, so that they can be upgraded independently.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;This makes a lot of sense, but I don&amp;#39;t feel bothered by this at the moment, and fully expect the gap here to be addressed sometime in the near future.&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This makes a lot of sense, but I don&amp;#8217;t feel bothered by this at the moment, and fully expect the gap here to be addressed sometime in the near future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Getting a new theme installed was certainly a very straightforward exercise.&lt;/p&gt;
-
-&lt;h2&gt;Getting Started with Octopress&lt;/h2&gt;
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;getting-started-with-octopress&quot;&gt;Getting Started with Octopress&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Thanks to the following blog posts for help with getting this set up:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.tomordonez.com/blog/2012/06/04/creating-a-github-blog-using-octopress/&quot;&gt;Creating a Github blog with Octopress&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://mattgemmell.com/2011/09/12/blogging-with-octopress/&quot;&gt;Mett Gemmell on blogging with Octopress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.tomordonez.com/blog/2012/06/04/creating-a-github-blog-using-octopress/&quot;&gt;Creating a Github blog with Octopress&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://mattgemmell.com/2011/09/12/blogging-with-octopress/&quot;&gt;Matt Gemmell on blogging with Octopress&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;and thanks also for very timely Twitter help from GitHubber &lt;a href=&quot;https://twitter.com/matthewmccull&quot;&gt;Matthew McCullough&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/github-pages-user-versus-project-pages.png&quot; alt=&quot;Twitter Conversation with @matthewmccull&quot;&gt;&lt;/p&gt;
-
-&lt;h2&gt;More Cool Octopress Resources&lt;/h2&gt;
-
-&lt;p&gt;In the process of researching Octopress, I stumbled across some other helpful resources, so I&amp;#39;ve put them here in the hope they might be helpful to others too:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/github-pages-user-versus-project-pages.png&quot; alt=&quot;Twitter Conversation with @matthewmccull&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;more-cool-octopress-resources&quot;&gt;More Cool Octopress Resources&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In the process of researching Octopress, I stumbled across some other helpful resources, so I&amp;#8217;ve put them here in the hope they might be helpful to others too:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://adampreble.net/blog/2012/09/another-octopress-blog/&quot;&gt;Switching from Wordpress to Octopress&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/12328828/directory-structure-of-octopress&quot;&gt;Directory structure of Octopress&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.scottw.com/octopress-tips&quot;&gt;Octopress tips by Scott Watermasysk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://adampreble.net/blog/2012/09/another-octopress-blog/&quot;&gt;Switching from Wordpress to Octopress&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/12328828/directory-structure-of-octopress&quot;&gt;Directory structure of Octopress&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.scottw.com/octopress-tips&quot;&gt;Octopress tips by Scott Watermasysk&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;Github pages aren&amp;#39;t the only game in town, as &lt;a href=&quot;http://twitter.com/aeroplanesoft&quot;&gt;@aeroplanesoft&lt;/a&gt; pointed out:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/hosting-octopress-s3.png&quot; alt=&quot;Hosting Octopress on Amazon S3&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#39;re using &lt;code&gt;rbenv&lt;/code&gt;, as I was initially, then start with &lt;a href=&quot;http://kvz.io/blog/2012/09/25/blog-with-octopress/&quot;&gt;Blog with Octopress and Github Pages&lt;/a&gt; for a good description of working with &lt;code&gt;rbenv&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Customize your Blog!&lt;/h2&gt;
-
-&lt;p&gt;As Wynn Netherland points out, &lt;a href=&quot;http://wynnnetherland.com/journal/octopress-classic-is-the-new-kubrick&quot;&gt;Octopress Classic is the new Kubrick&lt;/a&gt;, so customize your blog. Make it your own. Take a look at some of the &lt;a href=&quot;http://www.meatleasing.com/octopress-hidden-features/index.html&quot;&gt;Octopress &amp;quot;hidden&amp;quot; features&lt;/a&gt; and get creative (I really like the Octopress theme fellow DDD Denver member Leo Gorodinski is using &lt;a href=&quot;http://gorodinski.com&quot;&gt;on his blog&lt;/a&gt;). Or, if you are front-end design-challenged like me, get an expert like &lt;a href=&quot;https://twitter.com/thejordanmcc&quot;&gt;Jordan McCullough&lt;/a&gt; to develop a theme for you. &amp;quot; Friends don&amp;#39;t let friends stick with the Octopress default template. &amp;quot;&lt;/p&gt;
-
-&lt;p&gt;This started out as a post about installing Octopress, and became something much more for me. I&amp;#39;ve found since I stopped blogging that I have amassed a huge amount of notes and sites captured in Evernote, but I haven&amp;#39;t been sharing my discoveries back with the wider community. So I&amp;#39;ve resolved to write a blog post instead of stashing away things I find into my own private area, add commentary when I can, and write substantial informational posts of my own from time to time. That way others can benefit from what I&amp;#39;m learning.&lt;/p&gt;
-
-&lt;h2&gt;Serve the Community&lt;/h2&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Github pages aren&amp;#8217;t the only game in town, as &lt;a href=&quot;http://twitter.com/aeroplanesoft&quot;&gt;@aeroplanesoft&lt;/a&gt; pointed out:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/hosting-octopress-s3.png&quot; alt=&quot;Hosting Octopress on Amazon S3&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;re using &lt;code&gt;rbenv&lt;/code&gt;, as I was initially, then start with &lt;a href=&quot;http://kvz.io/blog/2012/09/25/blog-with-octopress/&quot;&gt;Blog with Octopress and Github Pages&lt;/a&gt; for a good description of working with &lt;code&gt;rbenv&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;customize-your-blog&quot;&gt;Customize your Blog!&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As Wynn Netherland points out, &lt;a href=&quot;http://wynnnetherland.com/journal/octopress-classic-is-the-new-kubrick&quot;&gt;Octopress Classic is the new Kubrick&lt;/a&gt;, so customize your blog. Make it your own. Take a look at some of the &lt;a href=&quot;http://www.meatleasing.com/octopress-hidden-features/index.html&quot;&gt;Octopress &quot;hidden&quot; features&lt;/a&gt; and get creative (I really like the Octopress theme fellow DDD Denver member Leo Gorodinski is using &lt;a href=&quot;http://gorodinski.com&quot;&gt;on his blog&lt;/a&gt;). Or, if you are front-end design-challenged like me, get an expert like &lt;a href=&quot;https://twitter.com/thejordanmcc&quot;&gt;Jordan McCullough&lt;/a&gt; to develop a theme for you. &quot; Friends don&amp;#8217;t let friends stick with the Octopress default template. &quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This started out as a post about installing Octopress, and became something much more for me. I&amp;#8217;ve found since I stopped blogging that I have amassed a huge amount of notes and sites captured in Evernote, but I haven&amp;#8217;t been sharing my discoveries back with the wider community. So I&amp;#8217;ve resolved to write a blog post instead of stashing away things I find into my own private area, add commentary when I can, and write substantial informational posts of my own from time to time. That way others can benefit from what I&amp;#8217;m learning.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;serve-the-community&quot;&gt;Serve the Community&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;As Scott Hanselman said in &lt;a href=&quot;http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx&quot;&gt;Your Blog is the Engine of Community&lt;/a&gt;:&lt;/p&gt;
-
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;I would encourage you &lt;em&gt;all&lt;/em&gt; to blog more. Tweet less.&lt;/strong&gt; Blogs are owned by you. They are easily found, easily linked to, and great conversations happen with great blog posts. The river of social media rushes on and those conversations are long forgotten. A great blog post is forever. Today&amp;#39;s real-time social media is quickly forgotten.&lt;/p&gt;
+I would encourage you &lt;em&gt;all&lt;/em&gt; to blog more. Tweet less.** Blogs are owned by you. They are easily found, easily linked to, and great conversations happen with great blog posts. The river of social media rushes on and those conversations are long forgotten. A great blog post is forever. Today&amp;#8217;s real-time social media is quickly forgotten.
 &lt;/blockquote&gt;
-
-&lt;p&gt;I&amp;#39;ll never even come close to being as prolific as Scott Hanselman or Ayende Rahien (I don&amp;#39;t know how they do it), but I&amp;#39;ll aim for something of a sustainable cadence to my posts. Don&amp;#39;t make the same mistake I&amp;#39;ve been making by stashing useful content and your valuable knowledge in a private location. &lt;a href=&quot;http://www.hanselman.com/blog/YourWordsAreWasted.aspx&quot;&gt;Own your own content&lt;/a&gt;, and don&amp;#39;t be afraid to share it widely so that others can learn.&lt;/p&gt;
-
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Scott Hanselman&lt;br&gt;
+&lt;cite&gt;http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx]&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ll never even come close to being as prolific as Scott Hanselman or Ayende Rahien (I don&amp;#8217;t know how they do it), but I&amp;#8217;ll aim for something of a sustainable cadence to my posts. Don&amp;#8217;t make the same mistake I&amp;#8217;ve been making by stashing useful content and your valuable knowledge in a private location. &lt;a href=&quot;http://www.hanselman.com/blog/YourWordsAreWasted.aspx&quot;&gt;Own your own content&lt;/a&gt;, and don&amp;#8217;t be afraid to share it widely so that others can learn.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Don&amp;#39;t be a meme, be a movement. - &lt;a href=&quot;http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx&quot;&gt;Scott Hanselman&lt;/a&gt;&lt;/p&gt;
+Don&amp;#8217;t be a meme, be a movement
 &lt;/blockquote&gt;
-</description>
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Scott Hanselman&lt;br&gt;
+&lt;cite&gt;http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
         <pubDate>Mon, 04 Feb 2013 12:26:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages.adoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages.adoc/</guid>
+        <link>http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages/</guid>
+        
+        <category>Writing</category>
+        
+        <category>Productivity</category>
         
         
         <category>writing</category>

@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Array Slicing in Ruby</title>
-  <meta name="description" content="I&#39;ve found the Ruby Koans to be brilliant for exposing a learner to aspects of the language that are not obvious, or even weird, at first glance. ">
+  <meta name="description" content="I&#8217;ve found the Ruby Koans to be brilliant for exposing a learner to aspects of the language that are not obvious, or even weird, at first glance.">
 
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Ruby, Coding">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/about/">About Paul</a>
           
         
           
@@ -55,7 +55,22 @@
     </nav>
 
   </div>
-
+<div class="wrapper">
+    <p class="text">Thinking about DDD, BDD, coding, software design and agile etc.</p>
+  </div>
+  <div class="wrapper">
+    <ul class="site-contact">
+      <li><i class="fa fa-twitter fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://twitter.com/thepaulrayner">Twitter</a></li>
+      <li>|</li>
+      <li><i class="fa fa-github fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://github.com/paulrayner">GitHub</a></li>
+      <li>|</li>
+      <li><i class="fa fa-linkedin fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.linkedin.com/in/thepaulrayner">LinkedIn</a></li>
+      <li>|</li>
+      <li><i class="fa fa-facebook fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.facebook.com/paul.rayner.7798">Facebook</a></li>
+      <li>|</li>
+      <li><i class="fa fa-rss fa-lg text-error"></i>&nbsp;<a target="_blank" class="site-contact" href="http://thepaulrayner.com/feed.xml">RSS</a></li>
+    </ul>
+  </div>
 </header>
 
 
@@ -68,115 +83,203 @@
     <span class="post-meta">
 <i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Feb 7, 2013
 
-<i class="fa fa-tags fa-lg"></i>&nbsp;
+<i class="fa fa-tags fa-lg"></i>&nbsp;Ruby, Coding
 
 </span>
 
   </header>
 
   <article class="post-content">
-    <p>I&#39;ve found the Ruby Koans to be brilliant for exposing a learner to aspects of the language that are not obvious, or even weird, at first glance. </p>
+    <div class="paragraph">
+<p>I&#8217;ve found the Ruby Koans to be brilliant for exposing a learner to aspects of the language that are not obvious, or even weird, at first glance.</p>
+</div>
+<div class="sect1">
+<h2 id="indexing-ruby-arrays">Indexing Ruby Arrays</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For example, let&#8217;s look at a koan for accessing array elements:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="ruby"><span class="keyword">def</span> <span class="function">test_accessing_array_elements</span>
+  array = [<span class="symbol">:peanut</span>, <span class="symbol">:butter</span>, <span class="symbol">:and</span>, <span class="symbol">:jelly</span>]
 
-<h5>Indexing Ruby Arrays</h5>
-
-<p>For example, let&#39;s look at a koan for accessing array elements:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">def test_accessing_array_elements
-  array = [:peanut, :butter, :and, :jelly]
-
-  assert_equal :peanut, array[0]
-  assert_equal :peanut, array.first
-  assert_equal :jelly, array[3]
-  assert_equal :jelly, array.last
-  assert_equal :jelly, array[-1]
-  assert_equal :butter, array[-3]
-end
-</code></pre></div>
+  assert_equal <span class="symbol">:peanut</span>, array[<span class="integer">0</span>]
+  assert_equal <span class="symbol">:peanut</span>, array.first
+  assert_equal <span class="symbol">:jelly</span>, array[<span class="integer">3</span>]
+  assert_equal <span class="symbol">:jelly</span>, array.last
+  assert_equal <span class="symbol">:jelly</span>, array[<span class="integer">-1</span>]
+  assert_equal <span class="symbol">:butter</span>, array[<span class="integer">-3</span>]
+<span class="keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
 <p>This is my first time seeing negative array references in any language. I was able to surmise (correctly) that they refer to entries counting backwards from the end of the array.</p>
-
-<p>Core API Documents - Array, http://www.ruby-doc.org/core-1.9.3/Array.html
-A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.</p>
-
+</div>
+<div class="paragraph">
+<p><a href="http://www.ruby-doc.org/core-1.9.3/Array.html">Core API Documents - Array</a></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
 <p>According to the Core API docs, indexing an array can also give us <code>nil</code>:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ary[index] → obj or nil
-</code></pre></div>
-<p>Getting a <code>nil</code> would seem to be the likely behavior if we try to index beyond the boundary of the array. Let&#39;s try it:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; array [4]
-=&gt; nil 
-</code></pre></div>
-<p>As expected, we get <code>nil</code>. </p>
-
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>ary[index] → obj or nil</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Getting a <code>nil</code> would seem to be the likely behavior if we try to index beyond the boundary of the array. Let&#8217;s try it:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&gt; array [4]
+=&gt; nil</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As expected, we get <code>nil</code>.</p>
+</div>
+<div class="paragraph">
 <p>So far, so good. Indexing seems to work in a way mostly familiar from past experience in other languages.</p>
-
-<h5>Slicing Ruby Arrays</h5>
-
-<p>Now let&#39;s try slicing, not indexing, arrays. The call, according to the Core API docs, is of the form:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ary[start, length] → new_ary or nil
-</code></pre></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="slicing-ruby-arrays">Slicing Ruby Arrays</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now let&#8217;s try slicing, not indexing, arrays. The call, according to the Core API docs, is of the form:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>ary[start, length] → new_ary or nil</pre>
+</div>
+</div>
+<div class="paragraph">
 <p>So the array[s, n] syntax means: retrieve n elements from the array starting by the s-th position, unless there is some reason to return <code>nil</code>.</p>
-
-<p>Let&#39;s use the same array as before, adding it in IRB:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; array = [:peanut, :butter, :and, :jelly]
- =&gt; [:peanut, :butter, :and, :jelly] 
-</code></pre></div>
-<p>Let&#39;s get the first array element:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; array[0, 1]
-=&gt; [:peanut] 
-</code></pre></div>
-<p>Which says, get me the relevant slice of the array starting at position zero, with a length of one. No difficulties so far. </p>
-
-<p>If you try to access elements from the array using n=0, you will get [] as a result (within the range of the array).</p>
-
-<p>Now, let&#39;s try <em>slicing</em> (instead of accessing via index) beyond the end of the array:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; array [5,0]
-=&gt; nil 
-
-&gt; array [6,10]
-=&gt; nil 
-</code></pre></div>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s use the same array as before, adding it in IRB:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&gt; array = [:peanut, :butter, :and, :jelly]
+ =&gt; [:peanut, :butter, :and, :jelly]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s get the first array element:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&gt; array[0, 1]
+=&gt; [:peanut]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Which says, get me the relevant slice of the array starting at position zero, with a length of one. No difficulties so far.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>If you try to access elements from the array using n=0, you will get [] as a result (within the range of the array).</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now, let&#8217;s try <em>slicing</em> (instead of accessing via index) beyond the end of the array:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&gt; array [5,0]
+=&gt; nil</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&gt; array [6,10]
+=&gt; nil</pre>
+</div>
+</div>
+<div class="paragraph">
 <p>No matter what starting point we try after 5, or what length we specify, we will get <code>nil</code>. Once again, straightforward and expected behavior.</p>
-
-<p>Here&#39;s where it got a little weird for me:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; array [4,0]
-=&gt; [] 
-
-&gt; array [4,1]
-=&gt; [] 
-
-&gt; array [4,100]
-=&gt; []
-</code></pre></div>
-<p>When we specify a starting point of 4, we get an empty array, regardless of how many elements we request. The semantics are subtly different at this boundary point. According to the Core API docs, it&#39;s a special case.</p>
-
-<p>The issue arises because I&#39;m used to thinking about accessing arrays, but this is slicing. The way to think about slicing needs to be different. As a <a href="http://stackoverflow.com/questions/3568222/array-slicing-in-ruby-looking-for-explanation-for-illogical-behaviour-taken-fr">response to this question on Stack Overflow points out</a>, treat the first number when you slice not as identifying the element, but <em>places between elements</em>, in order to be able to define spans (and not elements themselves):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">  :peanut   :butter   :and   :jelly
-0         1         2      3        4
-</code></pre></div>
-<p>What this means is that 4 is still within the array, from a slicing perspective; if you request 0 elements, you get the empty end of the array. But since there is no index 5, it&#39;s outside the bounds of the array, you can&#39;t slice from there. Indexing, of course, refers to the elements themselves.</p>
-
+</div>
+<div class="paragraph">
+<p>Here&#8217;s where it got a little weird for me:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&gt; array [4,0]
+=&gt; []</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&gt; array [4,1]
+=&gt; []</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&gt; array [4,100]
+=&gt; []</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When we specify a starting point of 4, we get an empty array, regardless of how many elements we request. The semantics are subtly different at this boundary point. According to the Core API docs, it&#8217;s a special case.</p>
+</div>
+<div class="paragraph">
+<p>The issue arises because I&#8217;m used to thinking about accessing arrays, but this is slicing. The way to think about slicing needs to be different. As a <a href="http://stackoverflow.com/questions/3568222/array-slicing-in-ruby-looking-for-explanation-for-illogical-behaviour-taken-fr">response to this question on Stack Overflow points out</a>, treat the first number when you slice not as identifying the element, but <strong>places between elements</strong>, in order to be able to define spans (and not elements themselves):</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  :peanut   :butter   :and   :jelly
+0         1         2      3        4</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>What this means is that 4 is still within the array, from a slicing perspective; if you request 0 elements, you get the empty end of the array. But since there is no index 5, it&#8217;s outside the bounds of the array, you can&#8217;t slice from there. Indexing, of course, refers to the elements themselves.</p>
+</div>
+<div class="paragraph">
 <p>One <a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/380637">final example</a>, using assignment:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">t = &#39;hi&#39;
-t[0,0] = &#39;(&#39;
-t[3,0] = &#39;)&#39;
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="ruby">t = <span class="string"><span class="delimiter">'</span><span class="content">hi</span><span class="delimiter">'</span></span>
+t[<span class="integer">0</span>,<span class="integer">0</span>] = <span class="string"><span class="delimiter">'</span><span class="content">(</span><span class="delimiter">'</span></span>
+t[<span class="integer">3</span>,<span class="integer">0</span>] = <span class="string"><span class="delimiter">'</span><span class="content">)</span><span class="delimiter">'</span></span>
 t
-=&gt; &quot;(hi)&quot;
-</code></pre></div>
+=&gt; <span class="string"><span class="delimiter">&quot;</span><span class="content">(hi)</span><span class="delimiter">&quot;</span></span></code></pre>
+</div>
+</div>
+<div class="paragraph">
 <p>In Ruby Koans these are the tests that highlight the differences:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">def test_slicing_arrays
-  array = [:peanut, :butter, :and, :jelly]
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="ruby"><span class="keyword">def</span> <span class="function">test_slicing_arrays</span>
+  array = [<span class="symbol">:peanut</span>, <span class="symbol">:butter</span>, <span class="symbol">:and</span>, <span class="symbol">:jelly</span>]
 
-  assert_equal [:peanut], array[0, 1]
-  assert_equal [:peanut, :butter], array[0, 2]
-  assert_equal [:and, :jelly], array[2, 2]
-  assert_equal [:and, :jelly], array[2, 20]
-  assert_equal [], array[4,0]
-  assert_equal [], array[4,100]
-  assert_equal nil, array[5,0]
-end
-</code></pre></div>
-<hr>
-
+  assert_equal [<span class="symbol">:peanut</span>], array[<span class="integer">0</span>, <span class="integer">1</span>]
+  assert_equal [<span class="symbol">:peanut</span>, <span class="symbol">:butter</span>], array[<span class="integer">0</span>, <span class="integer">2</span>]
+  assert_equal [<span class="symbol">:and</span>, <span class="symbol">:jelly</span>], array[<span class="integer">2</span>, <span class="integer">2</span>]
+  assert_equal [<span class="symbol">:and</span>, <span class="symbol">:jelly</span>], array[<span class="integer">2</span>, <span class="integer">20</span>]
+  assert_equal [], array[<span class="integer">4</span>,<span class="integer">0</span>]
+  assert_equal [], array[<span class="integer">4</span>,<span class="integer">100</span>]
+  assert_equal <span class="predefined-constant">nil</span>, array[<span class="integer">5</span>,<span class="integer">0</span>]
+<span class="keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
 <p>Thanks also to the <a href="http://mybrainstormings.wordpress.com/2012/09/10/arrays-in-ruby/">My Brainstormings blog</a> for additional help with understanding how arrays work in Ruby.</p>
-
+</div>
+</div>
+</div>
   </article>
 
 </div>
@@ -205,8 +308,6 @@ end
     <footer class="site-footer">
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">Paul Rayner's Blog</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
@@ -249,12 +350,22 @@ end
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">Paul Rayner's blog on DDD, BDD and agile.</p>
+      <div class="footer-col footer-col-3">
+      <span>
+      <a href="http://www.virtual-genius.com/" imageanchor="1"><img  class="footer-brand" alt="Virtual Genius LLC." src="/assets/vg_logo.png" title="Virtual Genius LLC" /></a>
       </div>
+      </span>
     </div>
-    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-
+    <div>
+    <hr>
+    <span>
+        <i class="fa fa-gear fa-lg">&nbsp;</i>Powered by <a target="_blank" href="http://pages.github.com/">GitHub Pages</a>, <a target="_blank" href="http://jekyllrb.com">Jekyll</a> and <a target="_blank" href="http://asciidoctor.org/">AsciiDoctor</a>
+    </div>
+    </span>
+    <div>
+    <hr>
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:1" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+    </div>
   </div>
 
 </footer>

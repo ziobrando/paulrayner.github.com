@@ -9,7 +9,7 @@
   <title>Object Ids in Ruby</title>
   <meta name="description" content="In my effort to master Ruby this year, I started this morning working through Ruby Koans. I just completed these tests and was intrigued by the comment in th...">
 
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Ruby, Coding">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/about/">About Paul</a>
           
         
           
@@ -55,7 +55,22 @@
     </nav>
 
   </div>
-
+<div class="wrapper">
+    <p class="text">Thinking about DDD, BDD, coding, software design and agile etc.</p>
+  </div>
+  <div class="wrapper">
+    <ul class="site-contact">
+      <li><i class="fa fa-twitter fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://twitter.com/thepaulrayner">Twitter</a></li>
+      <li>|</li>
+      <li><i class="fa fa-github fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://github.com/paulrayner">GitHub</a></li>
+      <li>|</li>
+      <li><i class="fa fa-linkedin fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.linkedin.com/in/thepaulrayner">LinkedIn</a></li>
+      <li>|</li>
+      <li><i class="fa fa-facebook fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.facebook.com/paul.rayner.7798">Facebook</a></li>
+      <li>|</li>
+      <li><i class="fa fa-rss fa-lg text-error"></i>&nbsp;<a target="_blank" class="site-contact" href="http://thepaulrayner.com/feed.xml">RSS</a></li>
+    </ul>
+  </div>
 </header>
 
 
@@ -68,55 +83,90 @@
     <span class="post-meta">
 <i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Feb 6, 2013
 
-<i class="fa fa-tags fa-lg"></i>&nbsp;
+<i class="fa fa-tags fa-lg"></i>&nbsp;Ruby, Coding
 
 </span>
 
   </header>
 
   <article class="post-content">
-    <p>In my effort to master Ruby this year, I started this morning working through <a href="http://rubykoans.com">Ruby Koans</a>. I just completed these tests and was intrigued by the comment in the second koan:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">def test_some_system_objects_always_have_the_same_id
-  assert_equal 0, false.object_id
-  assert_equal 2, true.object_id
-  assert_equal 4, nil.object_id
-end
+    <div class="paragraph">
+<p>In my effort to master Ruby this year, I started this morning working through <a href="http://rubykoans.com">Ruby Koans</a>. I just completed these tests and was intrigued by the comment in the second koan:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="ruby"><span class="keyword">def</span> <span class="function">test_some_system_objects_always_have_the_same_id</span>
+  assert_equal <span class="integer">0</span>, <span class="predefined-constant">false</span>.object_id
+  assert_equal <span class="integer">2</span>, <span class="predefined-constant">true</span>.object_id
+  assert_equal <span class="integer">4</span>, <span class="predefined-constant">nil</span>.object_id
+<span class="keyword">end</span>
 
-def test_small_integers_have_fixed_ids
-  assert_equal 1, 0.object_id
-  assert_equal 3, 1.object_id
-  assert_equal 5, 2.object_id
-  assert_equal 201, 100.object_id
+<span class="keyword">def</span> <span class="function">test_small_integers_have_fixed_ids</span>
+  assert_equal <span class="integer">1</span>, <span class="integer">0</span>.object_id
+  assert_equal <span class="integer">3</span>, <span class="integer">1</span>.object_id
+  assert_equal <span class="integer">5</span>, <span class="integer">2</span>.object_id
+  assert_equal <span class="integer">201</span>, <span class="integer">100</span>.object_id
 
-  # THINK ABOUT IT:
-  # What pattern do the object IDs for small integers follow?
-end
-</code></pre></div>
+  <span class="comment"># THINK ABOUT IT:</span>
+  <span class="comment"># What pattern do the object IDs for small integers follow?</span>
+<span class="keyword">end</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
 <p>To put it another way:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&gt;&gt; (0..50).each { |i| print i.object_id, &#39; &#39; }
-</code></pre></div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&gt;&gt; (0..50).each { |i| print i.object_id, ' ' }</pre>
+</div>
+</div>
+<div class="paragraph">
 <p>What would you expect to see as output? You can find the answer in <a href="http://stackoverflow.com/questions/3952730/fixed-object-id-for-system-objects-and-small-integers-in-ruby">Fixed Object Id for System Objects and Small Integers in Ruby</a>.</p>
-
+</div>
+<div class="paragraph">
 <p>But why does this happen? I did a little digging and found these 2006 articles by Caleb Tennis on <a href="http://www.oreillynet.com/ruby/blog/2006/01/the_ruby_value_1.html">The Ruby VALUE</a> and <a href="http://www.oreillynet.com/ruby/blog/2006/02/ruby_values_and_object_ids.html">Ruby Values and object_ids</a>. In the first article he points out that:</p>
-
+</div>
+<div class="quoteblock">
 <blockquote>
+<div class="paragraph">
 <p>The first point of interest is the VALUE - Ruby’s internal representation of its objects. In the general sense, a VALUE is just a C pointer to a Ruby object data type. We use VALUEs in the C code like we would use objects in the Ruby code.</p>
-
-<p>...for performance purposes, Ruby doesn’t use the VALUE as a pointer in every instance. For Fixnums, Ruby stores the number value directly in the VALUE itself. That keeps us from having to keep a lookup table of every possible Fixnum in the system.</p>
+</div>
 </blockquote>
-
-<p>There is also a good Stack Overflow answer to this question of <a href="http://stackoverflow.com/questions/3430280/ruby-how-does-object-id-assignment-work">how object assignment works in Ruby</a>:</p>
-
+</div>
+<div class="quoteblock">
 <blockquote>
-<p>In MRI the <code>object_id</code> of an object is the same as the <code>VALUE</code> that represents the object on the C level. For most kinds of objects this <code>VALUE</code> is a pointer to a location in memory where the actual object data is stored. Obviously this will be different during multiple runs because it only depends on where the system decided to allocate the memory, not on any property of the object itself.</p>
-
-<p>However for performance reasons <code>true</code>, <code>false</code>, <code>nil</code> and <code>Fixnum</code>s are handled specially. For these objects there isn&#39;t actually a struct with the object&#39;s data in memory. All of the object&#39;s data is encoded in the <code>VALUE</code> itself. As you already figured out the values for <code>false</code>, <code>true</code>, <code>nil</code> and any <code>Fixnum</code> <code>i</code>, are <code>0</code>, <code>2</code>, <code>4</code> and <code>i*2+1</code> respectively.</p>
-
-<p>The reason that this works is that on any systems that MRI runs on, <code>0</code>, <code>2</code>, <code>4</code> and <code>i*2+1</code> are never valid addresses for an object on the heap, so there&#39;s no overlap with pointers to object data.</p>
+<div class="paragraph">
+<p>&#8230;&#8203;for performance purposes, Ruby doesn’t use the VALUE as a pointer in every instance. For Fixnums, Ruby stores the number value directly in the VALUE itself. That keeps us from having to keep a lookup table of every possible Fixnum in the system.</p>
+</div>
 </blockquote>
-
-<p>I highly recommend using a koan-based approach to learning the details of a new language. There&#39;s a good list of links for various languages in <a href="http://rubygeek.github.com/2011/01/22/koan-a-copia/">&quot;Koan-a-Copia!&quot;</a> article by <a href="https://twitter.com/rubygeekdotcom">Nola Stowe</a>.</p>
-
+</div>
+<div class="paragraph">
+<p>There is also a good Stack Overflow answer to this question of <a href="http://stackoverflow.com/questions/3430280/ruby-how-does-object-id-assignment-work">how object assignment works in Ruby</a>:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>In MRI the <code>object_id</code> of an object is the same as the <code>VALUE</code> that represents the object on the C level. For most kinds of objects this <code>VALUE</code> is a pointer to a location in memory where the actual object data is stored. Obviously this will be different during multiple runs because it only depends on where the system decided to allocate the memory, not on any property of the object itself.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>However for performance reasons <code>true</code>, <code>false</code>, <code>nil</code> and <code>Fixnum`s are handled specially. For these objects there isn&#8217;t actually a struct with the object&#8217;s data in memory. All of the object&#8217;s data is encoded in the `VALUE</code> itself. As you already figured out the values for <code>false</code>, <code>true</code>, <code>nil</code> and any <code>Fixnum</code> <code>i</code>, are <code>0</code>, <code>2</code>, <code>4</code> and <code>i*2+1</code> respectively.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>The reason that this works is that on any systems that MRI runs on, <code>0</code>, <code>2</code>, <code>4</code> and <code>i*2+1</code> are never valid addresses for an object on the heap, so there&#8217;s no overlap with pointers to object data.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>I highly recommend using a koan-based approach to learning the details of a new language. There&#8217;s a good list of links for various languages in <a href="http://rubygeek.github.com/2011/01/22/koan-a-copia/">Koan-a-Copia!</a> article by <a href="https://twitter.com/rubygeekdotcom">Nola Stowe</a>.</p>
+</div>
   </article>
 
 </div>
@@ -145,8 +195,6 @@ end
     <footer class="site-footer">
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">Paul Rayner's Blog</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
@@ -189,12 +237,22 @@ end
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">Paul Rayner's blog on DDD, BDD and agile.</p>
+      <div class="footer-col footer-col-3">
+      <span>
+      <a href="http://www.virtual-genius.com/" imageanchor="1"><img  class="footer-brand" alt="Virtual Genius LLC." src="/assets/vg_logo.png" title="Virtual Genius LLC" /></a>
       </div>
+      </span>
     </div>
-    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-
+    <div>
+    <hr>
+    <span>
+        <i class="fa fa-gear fa-lg">&nbsp;</i>Powered by <a target="_blank" href="http://pages.github.com/">GitHub Pages</a>, <a target="_blank" href="http://jekyllrb.com">Jekyll</a> and <a target="_blank" href="http://asciidoctor.org/">AsciiDoctor</a>
+    </div>
+    </span>
+    <div>
+    <hr>
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:1" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+    </div>
   </div>
 
 </footer>

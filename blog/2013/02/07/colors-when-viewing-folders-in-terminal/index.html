@@ -9,7 +9,7 @@
   <title>Colors when viewing folders in Terminal</title>
   <meta name="description" content="Saw directory listing coloring at Golden Ruby Users Group this week, and needed to have it!">
 
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Coding, Productivity">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/about/">About Paul</a>
           
         
           
@@ -55,7 +55,22 @@
     </nav>
 
   </div>
-
+<div class="wrapper">
+    <p class="text">Thinking about DDD, BDD, coding, software design and agile etc.</p>
+  </div>
+  <div class="wrapper">
+    <ul class="site-contact">
+      <li><i class="fa fa-twitter fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://twitter.com/thepaulrayner">Twitter</a></li>
+      <li>|</li>
+      <li><i class="fa fa-github fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://github.com/paulrayner">GitHub</a></li>
+      <li>|</li>
+      <li><i class="fa fa-linkedin fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.linkedin.com/in/thepaulrayner">LinkedIn</a></li>
+      <li>|</li>
+      <li><i class="fa fa-facebook fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.facebook.com/paul.rayner.7798">Facebook</a></li>
+      <li>|</li>
+      <li><i class="fa fa-rss fa-lg text-error"></i>&nbsp;<a target="_blank" class="site-contact" href="http://thepaulrayner.com/feed.xml">RSS</a></li>
+    </ul>
+  </div>
 </header>
 
 
@@ -68,65 +83,138 @@
     <span class="post-meta">
 <i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Feb 7, 2013
 
-<i class="fa fa-tags fa-lg"></i>&nbsp;
+<i class="fa fa-tags fa-lg"></i>&nbsp;Coding, Productivity
 
 </span>
 
   </header>
 
   <article class="post-content">
-    <p>Saw directory listing coloring at Golden Ruby Users Group this week, and needed to have it!</p>
-
+    <div class="paragraph">
+<p>Saw directory listing coloring at Golden Ruby Users Group this week, and needed to have it!</p>
+</div>
+<div class="paragraph">
 <p><a href="http://linux-sxs.org/housekeeping/lscolors.html">LsColors</a></p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">LS_COLORS=&#39;di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90&#39;
-export LS_COLORS
-</code></pre></div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
+export LS_COLORS</pre>
+</div>
+</div>
+<div class="paragraph">
 <p><a href="http://norbauer.com/notebooks/code/notes/ls-colors-and-terminal-app">ls, colors and Terminal.app</a></p>
-
+</div>
+<div class="paragraph">
 <p>Customize Your Colors</p>
-
+</div>
+<div class="paragraph">
 <p>The values in LSCOLORS are codes corresponding to different colors for different types of files. The letter you use indicates which color to use, and the position in the string indicates what type of file should be that color. Each color comes in pairs – a foreground color and a background color. Here is a list of color values:</p>
-
+</div>
+<div class="ulist">
 <ul>
-<li>a = black</li>
-<li>b = red</li>
-<li>c = green</li>
-<li>d = brown</li>
-<li>e = blue</li>
-<li>f = magenta</li>
-<li>g = cyan</li>
-<li>h = grey</li>
-<li>A = dark grey</li>
-<li>B = bold red</li>
-<li>C = bold green</li>
-<li>D = yellow</li>
-<li>E = bold blue</li>
-<li>F = magenta</li>
-<li>G = cyan</li>
-<li>H = white</li>
-<li>x = default</li>
+<li>
+<p>a = black</p>
+</li>
+<li>
+<p>b = red</p>
+</li>
+<li>
+<p>c = green</p>
+</li>
+<li>
+<p>d = brown</p>
+</li>
+<li>
+<p>e = blue</p>
+</li>
+<li>
+<p>f = magenta</p>
+</li>
+<li>
+<p>g = cyan</p>
+</li>
+<li>
+<p>h = grey</p>
+</li>
+<li>
+<p>A = dark grey</p>
+</li>
+<li>
+<p>B = bold red</p>
+</li>
+<li>
+<p>C = bold green</p>
+</li>
+<li>
+<p>D = yellow</p>
+</li>
+<li>
+<p>E = bold blue</p>
+</li>
+<li>
+<p>F = magenta</p>
+</li>
+<li>
+<p>G = cyan</p>
+</li>
+<li>
+<p>H = white</p>
+</li>
+<li>
+<p>x = default</p>
+</li>
 </ul>
-
+</div>
+<div class="paragraph">
 <p>And here is a list of the positions in LSCOLORS:</p>
-
+</div>
+<div class="ulist">
 <ul>
-<li>directory</li>
-<li>symbolic link</li>
-<li>socket</li>
-<li>pipe</li>
-<li>executable</li>
-<li>block device</li>
-<li>character device</li>
-<li>executable with setuid set</li>
-<li>executable with setguid set</li>
-<li>directory writable by others, with sticky bit</li>
-<li>directory writable by others, without sticky bit</li>
+<li>
+<p>directory</p>
+</li>
+<li>
+<p>symbolic link</p>
+</li>
+<li>
+<p>socket</p>
+</li>
+<li>
+<p>pipe</p>
+</li>
+<li>
+<p>executable</p>
+</li>
+<li>
+<p>block device</p>
+</li>
+<li>
+<p>character device</p>
+</li>
+<li>
+<p>executable with setuid set</p>
+</li>
+<li>
+<p>executable with setguid set</p>
+</li>
+<li>
+<p>directory writable by others, with sticky bit</p>
+</li>
+<li>
+<p>directory writable by others, without sticky bit</p>
+</li>
 </ul>
-
+</div>
+<div class="paragraph">
 <p><a href="http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/">Colors for Dark Terminal Themes</a>:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-</code></pre></div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced</pre>
+</div>
+</div>
   </article>
 
 </div>
@@ -155,8 +243,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
     <footer class="site-footer">
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">Paul Rayner's Blog</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
@@ -199,12 +285,22 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">Paul Rayner's blog on DDD, BDD and agile.</p>
+      <div class="footer-col footer-col-3">
+      <span>
+      <a href="http://www.virtual-genius.com/" imageanchor="1"><img  class="footer-brand" alt="Virtual Genius LLC." src="/assets/vg_logo.png" title="Virtual Genius LLC" /></a>
       </div>
+      </span>
     </div>
-    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-
+    <div>
+    <hr>
+    <span>
+        <i class="fa fa-gear fa-lg">&nbsp;</i>Powered by <a target="_blank" href="http://pages.github.com/">GitHub Pages</a>, <a target="_blank" href="http://jekyllrb.com">Jekyll</a> and <a target="_blank" href="http://asciidoctor.org/">AsciiDoctor</a>
+    </div>
+    </span>
+    <div>
+    <hr>
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:1" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+    </div>
   </div>
 
 </footer>
