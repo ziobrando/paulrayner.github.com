@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Duplicate Entries using 'Open With' on OS X</title>
-  <meta name="description" content="I noticed today on my MBP running Mountain Lion that using &quot;Open With&quot; (control+click on a file in Finder) showed duplicate entries for the file. ">
+  <meta name="description" content="I noticed today on my MBP running Mountain Lion that using "Open With" (control+click on a file in Finder) showed duplicate entries for the file.">
 
-  <meta name="keywords" content="">
+  <meta name="keywords" content="OSX, Productivity">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/about/">About Paul</a>
           
         
           
@@ -55,7 +55,22 @@
     </nav>
 
   </div>
-
+<div class="wrapper">
+    <p class="text">Thinking about DDD, BDD, coding, software design and agile etc.</p>
+  </div>
+  <div class="wrapper">
+    <ul class="site-contact">
+      <li><i class="fa fa-twitter fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://twitter.com/thepaulrayner">Twitter</a></li>
+      <li>|</li>
+      <li><i class="fa fa-github fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://github.com/paulrayner">GitHub</a></li>
+      <li>|</li>
+      <li><i class="fa fa-linkedin fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.linkedin.com/in/thepaulrayner">LinkedIn</a></li>
+      <li>|</li>
+      <li><i class="fa fa-facebook fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.facebook.com/paul.rayner.7798">Facebook</a></li>
+      <li>|</li>
+      <li><i class="fa fa-rss fa-lg text-error"></i>&nbsp;<a target="_blank" class="site-contact" href="http://thepaulrayner.com/feed.xml">RSS</a></li>
+    </ul>
+  </div>
 </header>
 
 
@@ -68,22 +83,30 @@
     <span class="post-meta">
 <i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Jan 2, 2013
 
-<i class="fa fa-tags fa-lg"></i>&nbsp;
+<i class="fa fa-tags fa-lg"></i>&nbsp;OSX, Productivity
 
 </span>
 
   </header>
 
   <article class="post-content">
-    <p>I noticed today on my MBP running Mountain Lion that using &quot;Open With&quot; (control+click on a file in Finder) showed duplicate entries for the file. </p>
-
-<p>I&#39;m unsure as to what I did that caused this problem to happen, though <a href="https://discussions.apple.com/thread/4250905?start=0&amp;tstart=0">a recent thread on Apple Support Communities</a> indicates it has something to do with clone images. I recently updated XCode through the App Store, and now have a duplicate entry for XCode when I do &quot;Open With,&quot; so perhaps it&#39;s happening when I update an application.</p>
-
+    <div class="paragraph">
+<p>I noticed today on my MBP running Mountain Lion that using "Open With" (control+click on a file in Finder) showed duplicate entries for the file.</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;m unsure as to what I did that caused this problem to happen, though <a href="https://discussions.apple.com/thread/4250905?start=0&amp;tstart=0">a recent thread on Apple Support Communities</a> indicates it has something to do with clone images. I recently updated XCode through the App Store, and now have a duplicate entry for XCode when I do "Open With," so perhaps it&#8217;s happening when I update an application.</p>
+</div>
+<div class="paragraph">
 <p>As one of the responses in the thread suggested, the solution for me was to run the following command in my Terminal window:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user
-</code></pre></div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user</pre>
+</div>
+</div>
+<div class="paragraph">
 <p>I didn’t need to logout. I just relaunched Finder (control+option+click on Finder icon in the Dock) and the problem went away.</p>
-
+</div>
   </article>
 
 </div>
@@ -112,8 +135,6 @@
     <footer class="site-footer">
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">Paul Rayner's Blog</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
@@ -156,12 +177,22 @@
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">Paul Rayner's blog on DDD, BDD and agile.</p>
+      <div class="footer-col footer-col-3">
+      <span>
+      <a href="http://www.virtual-genius.com/" imageanchor="1"><img  class="footer-brand" alt="Virtual Genius LLC." src="/assets/vg_logo.png" title="Virtual Genius LLC" /></a>
       </div>
+      </span>
     </div>
-    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-
+    <div>
+    <hr>
+    <span>
+        <i class="fa fa-gear fa-lg">&nbsp;</i>Powered by <a target="_blank" href="http://pages.github.com/">GitHub Pages</a>, <a target="_blank" href="http://jekyllrb.com">Jekyll</a> and <a target="_blank" href="http://asciidoctor.org/">AsciiDoctor</a>
+    </div>
+    </span>
+    <div>
+    <hr>
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:1" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+    </div>
   </div>
 
 </footer>
