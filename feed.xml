@@ -5,9 +5,75 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Jan 2015 21:11:02 +0000</pubDate>
-    <lastBuildDate>Mon, 12 Jan 2015 21:11:02 +0000</lastBuildDate>
+    <pubDate>Mon, 12 Jan 2015 21:48:21 +0000</pubDate>
+    <lastBuildDate>Mon, 12 Jan 2015 21:48:21 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Agile and FDA-Regulated Medical Device Software Development Resources</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here is a (lightly) annotated list of online resources available dealing with adopting and applying agile practices when developing FDA-regulated medical device software. This list will be updated as new resources are discovered or become available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph left&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;image left&quot;&gt;&lt;a class=&quot;image&quot; href=&quot;https://my.aami.org/store/detail.aspx?id=TIR45&quot;&gt;&lt;img src=&quot;/assets/aami_tir45.png&quot; alt=&quot;AAMI TIR45:2012 Cover&quot; width=&quot;100&quot; height=&quot;100&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The definitive work is now &lt;a href=&quot;https://my.aami.org/store/detail.aspx?id=TIR45&quot;&gt;AAMI TIR45:2012&lt;/a&gt;, a technical information report created by the AAMI to provide guidance on the use of agile practices in the development of medical device software. It is currently $150 to download a pdf ($90 for AAMI members). You can also &lt;a href=&quot;http://marketplace.aami.org/eseries/scriptcontent/docs/Preview%20Files/TIR45_1208_preview.pdf&quot;&gt;download a preview&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://agile2009.agilealliance.org/files/session_pdfs/Moving%20to%20Agile%20in%20an%20FDA%20Environment.pdf&quot;&gt;Moving to Agile in an FDA Environment
+An Experience Report&lt;/a&gt; - Agile 2009 presentation for Abbott. See also &lt;a href=&quot;http://www.computer.org/csdl/proceedings/agile/2009/3768/00/3768a151-abs.html&quot;&gt;IEEE article&lt;/a&gt;, which requires payment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://ronrammage.wordpress.com/2010/11/06/agile-medical-device-software-development/&quot;&gt;Agile Medical Device Software Development?&lt;/a&gt; - Published Nov 6, 2010 on Ron Rammage&amp;#8217;s Blog&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://rdn-consulting.com/blog/2013/09/23/fda-regulation-of-mobile-medical-apps/&quot;&gt;FDA Regulation of Mobile Medical Apps&lt;/a&gt; - Published September 23, 2013 on Bob on Medical Device Software Blog&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://rdn-consulting.com/blog/2010/10/16/agile-software-development-in-regulated-environments/&quot;&gt;Agile Software Development in Regulated Environments&lt;/a&gt; - Published October 16, 2010 on Bob on Medical Device Software Blog&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://scalingsoftwareagilityblog.com/software-verification-and-validation-in-high-assurance-agile-development-verification/&quot;&gt;Software Verification and Validation in High Assurance Agile Development: Verification: SRS and User Stories&lt;/a&gt; - Published December 17, 2010 by Dean Leffingwell. Has good notes from Brian Shoemaker in the comments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Other resources, yet to be annotated.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://users.encs.concordia.ca/~abdelw/sba/papers/SERA10-FDAToXP.pdf&quot; class=&quot;bare&quot;&gt;http://users.encs.concordia.ca/~abdelw/sba/papers/SERA10-FDAToXP.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.mddionline.com/article/fda-endorses-agile-what-does-mean&quot; class=&quot;bare&quot;&gt;http://www.mddionline.com/article/fda-endorses-agile-what-does-mean&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.academia.edu/1871584/Barriers_to_Adopting_Agile_Practices_when_Developing_Medical_Device_Software&quot; class=&quot;bare&quot;&gt;http://www.academia.edu/1871584/Barriers_to_Adopting_Agile_Practices_when_Developing_Medical_Device_Software&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;agile-traceability&quot;&gt;Agile Traceability&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/news/2008/06/agile-traceability-matrix&quot;&gt;Traceability Matrix in an Agile Project - InfoQ&lt;/a&gt;
+&lt;a href=&quot;http://pagilista.blogspot.com/2012/07/requirements-traceability-in-agile.html&quot; class=&quot;bare&quot;&gt;http://pagilista.blogspot.com/2012/07/requirements-traceability-in-agile.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.agilemodeling.com/essays/agileRequirementsBestPractices.htm&quot;&gt;Agile Requirements Best Practices&lt;/a&gt; - Scott Ambler&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/blog/2015/01/12/agile-and-fda-regulated-medical-device-software-development-resources/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2015/01/12/agile-and-fda-regulated-medical-device-software-development-resources/</guid>
+        
+        <category>Agile</category>
+        
+        <category>FDA</category>
+        
+        
+      </item>
     
       <item>
         <title>Refreshing Your Site&#39;s Favicon</title>
@@ -1409,210 +1475,6 @@ t
         <category>ruby</category>
         
         <category>coding</category>
-        
-      </item>
-    
-      <item>
-        <title>Blogging with Octopress and Github Pages</title>
-        <description>&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here are &lt;a href=&quot;http://alblue.bandlem.com/2012/02/advantages-of-octopress.html&quot;&gt;4 good reasons from AlBlue&amp;#8217;s blog&lt;/a&gt; to consider using Octopress for a technical blog:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Jekyll-based&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Markdown content&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Stylish&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Plugins&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;See also &lt;a href=&quot;http://www.neilsmithline.com/blog/2012/05/26/octopress-is-pretty-great/&quot;&gt;Octopress Is Pretty Great&lt;/a&gt;, which has a great description of not only the positives of Octopress, but also a good step-by-step summary of how to configure Octopress for your environment.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;why-octopress&quot;&gt;Why Octopress?&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The Jekyll-style approach is to write content in an author-friendly text format (i.e. &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;) that is then translated to HTML and served up as such is gaining more and more momentum over the more common CMS-style approach. Tom Preston Werner &lt;a href=&quot;http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html&quot;&gt;wrote Jekyll back in 2008&lt;/a&gt;, and it is now used to &lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages&quot;&gt;serve content on Github Pages&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;With my previous blog I had been using BlogEngine.NET, which is a nice full-featured .NET-based blogging engine that didn&amp;#8217;t require me to install and configure SQL Server on my virtual host. I generally liked BlogEngine.NET, but found the authoring experience tedious, and the updates a hassle.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In writing blog posts on my MBP I struggled with using OSX-based HTML editors, finding they only got in the way of the writing process. I really wanted to move to tools I am either more comfortable with already, or interested in mastering: Ruby, Rake, SASS, Jekyll, Markdown, Sublime Text 2, Byword, Marked, and Git. As Joel Hooks says on his &lt;a href=&quot;http://joelhooks.com/blog/2012/07/25/fresh-start-migrating-wordpress-octopress/&quot;&gt;Fresh Start&lt;/a&gt; blog post:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;[Octopress]&amp;#8230;&amp;#8203;falls well into the &lt;a href=&quot;http://redsquirrel.com/dave/work/a2j/patterns/BreakableToys.html&quot;&gt;breakable toy&lt;/a&gt; category of things, and that is something I can use right now as I learn new tools. I’m looking forward to improving this space with quality content about modern standards-based web development with open source tools.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The Jekyll-based toolset really suits my workflow. I can write my posts in Markdown lightweight plain text format with Sublime Text 2 or Byword, manage all my changes in Git with full support for lightweight branching and additive changes, preview it with a &lt;code&gt;Rake Preview&lt;/code&gt; and serve it all up with a &lt;code&gt;Rake Deploy&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;potential-downside&quot;&gt;Potential Downside?&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;To be fair, AlBlue&amp;#8217;s blog also lists some &lt;a href=&quot;http://alblue.bandlem.com/2012/02/disadvantages-of-octopress.html&quot;&gt;possible disadvantages of Octopress&lt;/a&gt;. Part of what he mentions is the lack of separation between content and plumbing, in that there’s really five sets of things to manage:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;The source posts (in Markdown format)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The layout and supporting scaffolding (in HTML/Liquid templates)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The plugins for Jekyll to know how to process the Liquid templates)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The Octopress supporting management code&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The published HTML&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;His point is that the first two items (the source posts, layout and templates) should be in source control, but the:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;plugins and octopress management code really need to live in a different Git repository, though, so that they can be upgraded independently.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;This makes a lot of sense, but I don&amp;#8217;t feel bothered by this at the moment, and fully expect the gap here to be addressed sometime in the near future.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Getting a new theme installed was certainly a very straightforward exercise.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;getting-started-with-octopress&quot;&gt;Getting Started with Octopress&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Thanks to the following blog posts for help with getting this set up:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.tomordonez.com/blog/2012/06/04/creating-a-github-blog-using-octopress/&quot;&gt;Creating a Github blog with Octopress&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://mattgemmell.com/2011/09/12/blogging-with-octopress/&quot;&gt;Matt Gemmell on blogging with Octopress&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;and thanks also for very timely Twitter help from GitHubber &lt;a href=&quot;https://twitter.com/matthewmccull&quot;&gt;Matthew McCullough&lt;/a&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;/assets/github-pages-user-versus-project-pages.png&quot; alt=&quot;Twitter Conversation with @matthewmccull&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;more-cool-octopress-resources&quot;&gt;More Cool Octopress Resources&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In the process of researching Octopress, I stumbled across some other helpful resources, so I&amp;#8217;ve put them here in the hope they might be helpful to others too:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://adampreble.net/blog/2012/09/another-octopress-blog/&quot;&gt;Switching from Wordpress to Octopress&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/12328828/directory-structure-of-octopress&quot;&gt;Directory structure of Octopress&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.scottw.com/octopress-tips&quot;&gt;Octopress tips by Scott Watermasysk&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Github pages aren&amp;#8217;t the only game in town, as &lt;a href=&quot;http://twitter.com/aeroplanesoft&quot;&gt;@aeroplanesoft&lt;/a&gt; pointed out:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;/assets/hosting-octopress-s3.png&quot; alt=&quot;Hosting Octopress on Amazon S3&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;If you&amp;#8217;re using &lt;code&gt;rbenv&lt;/code&gt;, as I was initially, then start with &lt;a href=&quot;http://kvz.io/blog/2012/09/25/blog-with-octopress/&quot;&gt;Blog with Octopress and Github Pages&lt;/a&gt; for a good description of working with &lt;code&gt;rbenv&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;customize-your-blog&quot;&gt;Customize your Blog!&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;As Wynn Netherland points out, &lt;a href=&quot;http://wynnnetherland.com/journal/octopress-classic-is-the-new-kubrick&quot;&gt;Octopress Classic is the new Kubrick&lt;/a&gt;, so customize your blog. Make it your own. Take a look at some of the &lt;a href=&quot;http://www.meatleasing.com/octopress-hidden-features/index.html&quot;&gt;Octopress &quot;hidden&quot; features&lt;/a&gt; and get creative (I really like the Octopress theme fellow DDD Denver member Leo Gorodinski is using &lt;a href=&quot;http://gorodinski.com&quot;&gt;on his blog&lt;/a&gt;). Or, if you are front-end design-challenged like me, get an expert like &lt;a href=&quot;https://twitter.com/thejordanmcc&quot;&gt;Jordan McCullough&lt;/a&gt; to develop a theme for you. &quot; Friends don&amp;#8217;t let friends stick with the Octopress default template. &quot;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;This started out as a post about installing Octopress, and became something much more for me. I&amp;#8217;ve found since I stopped blogging that I have amassed a huge amount of notes and sites captured in Evernote, but I haven&amp;#8217;t been sharing my discoveries back with the wider community. So I&amp;#8217;ve resolved to write a blog post instead of stashing away things I find into my own private area, add commentary when I can, and write substantial informational posts of my own from time to time. That way others can benefit from what I&amp;#8217;m learning.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;serve-the-community&quot;&gt;Serve the Community&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;As Scott Hanselman said in &lt;a href=&quot;http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx&quot;&gt;Your Blog is the Engine of Community&lt;/a&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-I would encourage you &lt;em&gt;all&lt;/em&gt; to blog more. Tweet less.** Blogs are owned by you. They are easily found, easily linked to, and great conversations happen with great blog posts. The river of social media rushes on and those conversations are long forgotten. A great blog post is forever. Today&amp;#8217;s real-time social media is quickly forgotten.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; Scott Hanselman&lt;br&gt;
-&lt;cite&gt;http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx]&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I&amp;#8217;ll never even come close to being as prolific as Scott Hanselman or Ayende Rahien (I don&amp;#8217;t know how they do it), but I&amp;#8217;ll aim for something of a sustainable cadence to my posts. Don&amp;#8217;t make the same mistake I&amp;#8217;ve been making by stashing useful content and your valuable knowledge in a private location. &lt;a href=&quot;http://www.hanselman.com/blog/YourWordsAreWasted.aspx&quot;&gt;Own your own content&lt;/a&gt;, and don&amp;#8217;t be afraid to share it widely so that others can learn.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Don&amp;#8217;t be a meme, be a movement
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; Scott Hanselman&lt;br&gt;
-&lt;cite&gt;http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        <pubDate>Mon, 04 Feb 2013 12:26:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages/</guid>
-        
-        <category>Writing</category>
-        
-        <category>Productivity</category>
-        
-        
-        <category>writing</category>
-        
-        <category>productivity</category>
         
       </item>
     
