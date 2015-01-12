@@ -5,9 +5,41 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 09 Jan 2015 04:35:43 +0000</pubDate>
-    <lastBuildDate>Fri, 09 Jan 2015 04:35:43 +0000</lastBuildDate>
+    <pubDate>Mon, 12 Jan 2015 21:11:02 +0000</pubDate>
+    <lastBuildDate>Mon, 12 Jan 2015 21:11:02 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Refreshing Your Site&#39;s Favicon</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is based on one of the answers to the Stack Overflow question &lt;a href=&quot;http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh&quot;&gt;How do I force a favicon refresh&lt;/a&gt;? Last time I had to do this for a Rails app my Google-fu was apparentely too week to find the answer, so I&amp;#8217;m posting the solution for next time I have to do it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Once you&amp;#8217;ve updated &lt;code&gt;favicon.ico&lt;/code&gt;, which lives in &lt;code&gt;/public&lt;/code&gt; for a Rails app, the two simple steps are:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Type in &lt;code&gt;www.yoursite.com/favicon.ico&lt;/code&gt; for the browser URL and press Enter &amp;#8592; where &lt;code&gt;www.yoursite.com&lt;/code&gt; is the URL for your app, which could be something like &lt;code&gt;localhost:3000&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press Ctrl+f5&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now when you navigate to the URL for your website the &lt;code&gt;favicon.ico&lt;/code&gt; icon which shows in the browser tab should be the new one. Works for me!&lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/blog/2015/01/12/Refreshing-Your-Sites-Favicon/</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/2015/01/12/Refreshing-Your-Sites-Favicon/</guid>
+        
+        <category>Coding</category>
+        
+        <category>Rails</category>
+        
+        
+      </item>
     
       <item>
         <title>Build Jekyll-Based Blogs &amp;amp; Websites with AsciiDoc</title>
@@ -1581,284 +1613,6 @@ Don&amp;#8217;t be a meme, be a movement
         <category>writing</category>
         
         <category>productivity</category>
-        
-      </item>
-    
-      <item>
-        <title>Book Review: Implementing Domain-Driven Design</title>
-        <description>&lt;div class=&quot;imageblock left&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;/assets/iddd_thumbnail.jpg&quot; alt=&quot;Implementing DDD&quot; width=&quot;150&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;This is a review of the book &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; by Vaughn Vernon, based on the &lt;a href=&quot;http://my.safaribooksonline.com/book/project-management/9780133039900&quot;&gt;Safari Books Online rough cut edition&lt;/a&gt;. The book is also &lt;a href=&quot;http://amzn.to/RN4qWJ&quot;&gt;available on Amazon.com&lt;/a&gt;. Rather than try to cover everything, I’ll be focusing on the parts of the book that I found most interesting and helpful: highlighting the things that stood out to me.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I have been a certified &lt;a href=&quot;http://www.domainlanguage.com/about&quot;&gt;Domain Language DDD instructor&lt;/a&gt; for over two years now, and the most common question I am asked is where to find solid, pragmatic advice on how to actually implement DDD using the frameworks and tools with which developers are already familiar. The good news is &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; more than adequately fills the lacuna.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;some-background&quot;&gt;Some Background&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;At the end of 2011 I was privileged to be a technical editor for Vaughn&amp;#8217;s &lt;a href=&quot;http://dddcommunity.org/library/vernon_2011&quot;&gt;Effective Aggregate Design series&lt;/a&gt;. Around the same time I also enjoyed hearing Vaughn present a series on effective aggregate design locally at our &lt;a href=&quot;#ddd-denver&quot;&gt;DDD Denver&lt;/a&gt; meetup. So, for the sake of full disclosure, I have known Vaughn personally for years and collaborate often with him on the meetup. I’ve tried to be as impartial as possible in reviewing the book, basing my observations and opinions on the content alone. &lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;This book is up-to-date, easily comprehensible, free from dogma and the advice it gives is firmly grounded in the real-world experience of one of DDD&amp;#8217;s foremost practitioners.&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I have been recommending &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; to my students mainly on the basis of the high quality of the aggregate design articles and presentations, and Vaughn’s many significant contributions to the DDD mailing list over the years. But now I am pleased to base my recommendation also on a full read of the Safari Books Online rough cut edition of Implementing DDD.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;distilled-ddd-wisdom&quot;&gt;Distilled DDD Wisdom&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;While there is plenty out there in the way of &lt;a href=&quot;#ddd-resources&quot;&gt;DDD Resources&lt;/a&gt;, what Vaughn has done with this book is to distill much of the wisdom of the DDD community into a single book that provides pragmatic, expert guidance on how best to succeed with implementing DDD.  This is the book I want DDD students purchasing and reading alongside &lt;a href=&quot;http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215&quot;&gt;the Blue Book&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I thoroughly appreciated the pretension-free way &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; approaches everything. For example, it introduces domain-driven design (DDD) by stating:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;DDD brings domain experts and software developers together in order to develop software that reflects the mental model of the business experts. This does not mean that effort is spent on modeling the “real world.” Rather, DDD delivers a model that is the most useful to the business. Sometimes useful and realistic models happen to intersect, but to the degree that they diverge, DDD chooses useful.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Vaughn&amp;#8217;s book comes across as guidance from a good friend, combining occasional corny cowboy jokes that keep it fun with detailed, solid advice on the deepest recesses of the mechanics of applying DDD using the tools and techniques of today.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The book&amp;#8217;s approach of developing an application to support Scrum and walking through how the team approached the problems they were up against is very helpful, especially when Vaughn digs into the team&amp;#8217;s mis-steps as they learn, adjust and improve. Contrary to any material online which might lead you to think that DDD is about overblown architectures, heavyweight frameworks and obfuscated approaches, in chapter one &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; counsels that:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Use DDD to model a complex domain in the simplest possible way. Never use DDD to make your solution more complex.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;knowing-when-and-knowing-how&quot;&gt;Knowing When and Knowing How&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;There is a very helpful chart that helps the reader identify whether DDD is the right approach in a particular situation. So much of what I read about DDD online seems to be applying it where it will add little value. So much emphasis on how to apply the DDD building block patterns where they are not needed. Sigh.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Some confuse DDD with &lt;a href=&quot;http://en.wikipedia.org/wiki/Big_Design_Up_Front&quot;&gt;Big Design Up Front (BDUF)&lt;/a&gt;, and thus struggle with understanding how DDD and agile relate. I was also pleased that &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; starts out by emphasizing the agile, iterative, continuous modeling with domain experts that is at the heart of DDD “done well.” For example:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The word “design” can evoke negative thoughts in the minds of business management. However, DDD is not a heavyweight, high ceremony design and development process. DDD is not about drawing diagrams. It is about carefully refining the mental model of domain experts into a useful model for the business.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;fundamental-concepts&quot;&gt;Fundamental Concepts&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The first chapter also does a good job of introducing the fundamental concepts of Ubiquitous Language, Bounded Context, and Core Domain. It also lays out clearly the costs and benefits of applying DDD, and how DDD as a lightweight, intentional approach to continous design is a natural fit for agile teams. For example:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;If developing a given Subdomain requires such a difficult, even precarious, assent, we’d bring the DDD tactical patterns along for the climb. A business initiative that matches the criteria of Core Domain should not quickly dismiss the use of the tactical patterns. The Core Domain is an unknown and complex area. The team is best protected against a disastrous mid-asset fall if using the right tactics&amp;#8230;&amp;#8203;
-First we want to focus on how the model will be used by clients, and these tests drive the model’s design. The good news is, it really is an agile approach. DDD promotes lightweight development, not ceremonious, heavy, upfront design.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;strategic-design-with-ddd&quot;&gt;Strategic Design with DDD&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In chapter two, &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; covers strategic design. Vaughn’s explanation and application of the distinction between problem and solution space in this chapter is particularly helpful, and I intend to incorporate this approach into how I do strategic design from now on.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;This helpful problem/solution distinction at the strategic design level reminds me somewhat of the distinction at the tactical level between the Scenario and Model and Code Probe steps in the &lt;a href=&quot;http://www.domainlanguage.com/ddd/whirlpool&quot;&gt;Model Exploration Whirlpool&lt;/a&gt;. In the Whirlpool the Scenario step is focused on learning and understanding the problem space, and the Model and Code Probe steps primarily address exploring and defining potential solutions. However, the entire process - every step in the whirlpool - is geared towards delving into a deeper understanding of the domain.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Putting strategic design right at the start of the book highlights the relative importance of getting the strategic aspects right: explaining why strategic design is important, and setting the stage for the reader to understand and explore careful application of the building block patterns.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I&amp;#8217;ve encountered people who have (mistakedly) confused DDD with efforts to model the overall enterprise, so I heartily agreed with &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt;&#39;s advice to avoid the temptation to create a single, enterprise model:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&amp;#8230;&amp;#8203;developing a Domain Model is actually one way that we focus on only one specific area of the whole business domain. Any attempt to define the business of even a moderately complex organization in a single, all encompassing model, will be at best extremely difficult, and will usually fail&amp;#8230;&amp;#8203; vigorously separating distinct areas of the whole business domain will help us succeed.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;This section also does a praiseworthy job of explaining Bounded Context as intrinsically a &lt;em&gt;linguistic concept&lt;/em&gt;: one tied to ubiquitous language and then supported by the technical implementation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;When we employ DDD we strive for each Bounded Context to mark off where the meaning of every term used by the domain model is well understood, or at least should be if we’ve done a good job of modeling the software. &lt;em&gt;It’s chiefly a linguistic boundary.&lt;/em&gt; These contextual boundaries are a key to implementing DDD. [emphasis mine]&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I also appreciated the book’s emphasis on the primacy of focusing attention on the Core Domain, that:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&amp;#8230;&amp;#8203;part of the business domain that is of primary importance to the success of the organization. Strategically speaking, the business must excel with its Core Domain. It is of utmost importance to the ongoing success of the business. That project gets the highest priority, one or more domain experts with deep knowledge of that Subdomain, the best developers, and as much leeway and leverage as possible to give the close-knit team an unobstructed success path. Most of your DDD project efforts will be focused on the Core Domain.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;However, in achieving this level of focus on the Core Domain, there is the possibility that teams may neglect Supporting and Generic subdomains, so &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt;&#39;s advice in this respect is also timely:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Being Supporting or Generic doesn’t mean unimportant. These kinds of Subdomains are important to the success of the business, yet there is no need for the business to excel in these areas. It’s the Core Domain that requires excellence in implementation, since it will provide distinct advantages to the business.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;balancing-understanding-with-practicality&quot;&gt;Balancing Understanding with Practicality&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; asks the reader to apply learning to her own domain, by sketching out Bounded Contexts, identifying her own Core Domain and so on in her own team’s situation. Nothing beats practice when it comes to developing new skills.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In the process of applying that new learning, the team is to:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Include any relevant, high-level elements that will lead to vital team communication. On the other hand, push back when detail seems ceremonious.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Also, in my coaching I give similar advice to the following when a team tends to get “down in the weeds”:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Produce Context Maps that you can post on the wall. You can upload them to a team wiki as long as it’s not just the project’s attic where nobody ever goes. Keep discussions about the project flowing back to your Map to stimulate useful refinements&amp;#8230;&amp;#8203;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The trick is to balance the need to understand with practicality, and not pile too much detail into this level. Remember that we are likely not going to keep a very detailed graphical Map up to date far into the project. We’ll benefit most from what can be posted up on a wall, enabling team members to point at them during discussions. If we reject ceremony and embrace simplicity and agility, we’ll produce useful Context Maps that help us move forward rather than bog down the project&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;ddd-and-pragmatic-architecture&quot;&gt;DDD and Pragmatic Architecture&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;It is regrettable that over the years DDD has somehow become more associated with overblown architectural approaches than with the strategic, lightweight collaborative modeling Eric Evans has always advocated. I&amp;#8217;ve even seen people &lt;a href=&quot;http://stackoverflow.com/questions/12982680/gave-up-ddd-but-need-some-of-its-benefits&quot;&gt;rejecting heavy-handed architectural approaches&lt;/a&gt; and calling them DDD, when what they are rejecting is not DDD at all but rather the burden of carrying extraneous infrastructure and layer plumbing.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Chapter four of &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; is targeted around architecture, and into our current climate of heavyweight, overblown and overengineered system architectural approaches, this chapter’s risk-driven and pragmatic approach to architecture blows a fresh breath of air:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Avoiding architecture overuse is just as important as using it. Allowing real, genuine quality demands to drive what we do with architecture is a beneficial risk-driven approach. That way we use architecture only to mitigate the risk of failure, not to increase our risk of failure by using an architectural style that cannot be justified. Thus, we must be able to justify every architectural style in use, or we eliminate the style from our system.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The architectural chapter is comprehensive and dense, but very good.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I found the best description of ports and adaptors approach that I have read. There is also a good description of CQRS, combined with practical guidance on when and where to apply it as an architectural organizing approach, and how it relates to event sourcing.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;building-block-patterns&quot;&gt;Building Block Patterns&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Each of the next chapters covers one of the &quot;building block&quot; patterns of DDD in depth: entities, value objects, domain events, aggregates, factories and repositories. In each chapter &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; explains what the pattern is, when to use it, and various ways to apply it. The book is careful to cover the relative merits and downsides of each approach, and gives technical implementations that show - by example - how to adopt them.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In particular, &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt;&#39;s distinction between collection-oriented and persistence-oriented repositories was very helpful, and the examples with how to apply these styles for a variety of common persistence stores, including MongoDB and Coherence.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;application-guidance&quot;&gt;Application Guidance&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In the application chapter I would have liked to see more code samples for UI approaches, but I realize that this wish is unrealistic: presentation layer design is a massive topic on its own.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;There is an overwhelming and ever-changing diversity of frameworks, UI tooling and associated techniques, and there is only so much that can be included in such a book as this. &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; wisely lays out the various options and tradeoffs, guiding the reader towards making informed and judicious choices.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;a-pleasant-surprise&quot;&gt;A Pleasant Surprise&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Appendix A is an in-depth treatment of event sourcing, contributed by Rinat Abdullin. When I started the book I wasn&amp;#8217;t sure about why the appendix was there (asking myself, &quot;isn&amp;#8217;t this material covered already in the main text?&quot;), but it actually proved most helpful in understanding the mechanics, advantages and pitfalls of event sourcing.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The event sourcing material here is a superb complement to the rest of the material, building on it in all the most important ways. This A+ES event sourcing chapter is the clearest and best description I’ve found on how event sourcing works. The coding examples provide expert cutting-edge guidance and tooling for getting an event store-based approach up and running quickly.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I have to say it, if it’s not already obvious: I’m a fan. &lt;em&gt;Implementing Domain-Driven Design&lt;/em&gt; does a remarkable thing: it takes a sophisticated and substantial topic area in DDD and presentes it clearly, with nuance, fun and finesse. &lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;By the time you finish the book you will be able to begin applying all the important concepts of DDD, and then some.&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;This book is written in an engaging and friendly style, like a trusted advisor giving you expert counsel on how to accomplish what is most important.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;As I read, I found myself highlighting many sections, and will be getting a copy of &lt;em&gt;Implementing DDD&lt;/em&gt; for my bookshelf as soon as it is released. I will be referring back to it, and recommending it, often.&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;ddd-denver&quot;&gt;DDD Denver&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Vaughn, Randy Stafford and I cofounded DDD Denver in April 2011. To join the meetup, go to the [our meetup home page](&lt;a href=&quot;http://bit.ly/ddd_denver&quot; class=&quot;bare&quot;&gt;http://bit.ly/ddd_denver&lt;/a&gt;). Most presentations at our meetup are recorded and posted online.&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;ddd-resources&quot;&gt;DDD Resources&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;For someone that wants to get up to speed with DDD there are a variety of complementary options. Firstly, those that want to explore on their own can find sample apps and an abundance of presentations and articles on the &lt;a href=&quot;http://dddcommunity.org&quot;&gt;DDD Community site&lt;/a&gt; and &lt;a href=&quot;http://www.infoq.com/domain-driven-design/&quot;&gt;InfoQ&lt;/a&gt;. There is also the &lt;a href=&quot;http://tech.groups.yahoo.com/group/domaindrivendesign/&quot;&gt;DDD mailing list&lt;/a&gt;, &lt;a href=&quot;http://stackoverflow.com/questions/tagged/domain-driven-design&quot;&gt;Stack Overflow feed&lt;/a&gt;, and blog posts by a variety of knowledgeable individuals. Finally, if you want to get up-to-speed quickly then attend one of the excellent public &lt;a href=&quot;http://www.domainlanguage.com/training&quot;&gt;Domain Language DDD classes&lt;/a&gt;, designed by Eric Evans himself. These classes are offered through Domain Language and its training partners in New York City, Denver (i.e. me!), London, Paris, Oslo and Stockholm.  The classes are also available as onsite offerings if you want to get your whole team trained.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        <pubDate>Fri, 01 Feb 2013 11:40:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/01/book-review-implementing-domain-driven-design/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/01/book-review-implementing-domain-driven-design/</guid>
-        
-        <category>DDD</category>
-        
-        <category>Reviews</category>
-        
-        
-        <category>ddd</category>
-        
-        <category>reviews</category>
         
       </item>
     
