@@ -5,8 +5,8 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Jan 2015 21:48:21 +0000</pubDate>
-    <lastBuildDate>Mon, 12 Jan 2015 21:48:21 +0000</lastBuildDate>
+    <pubDate>Mon, 12 Jan 2015 23:06:13 +0000</pubDate>
+    <lastBuildDate>Mon, 12 Jan 2015 23:06:13 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -78,6 +78,9 @@ An Experience Report&lt;/a&gt; - Agile 2009 presentation for Abbott. See also &l
       <item>
         <title>Refreshing Your Site&#39;s Favicon</title>
         <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;What do you do when you&amp;#8217;ve updated the &lt;code&gt;favicon.ico&lt;/code&gt; file on your server, but your browser is still showing the old one? It&amp;#8217;s probably browser caching issue, so if you need to do a local refresh, look no further (see below if it&amp;#8217;s actually a server issue). This post will teach you how to force a favicon refresh, using a technique that works locally and doesn&amp;#8217;t require code changes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This is based on one of the answers to the Stack Overflow question &lt;a href=&quot;http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh&quot;&gt;How do I force a favicon refresh&lt;/a&gt;? Last time I had to do this for a Rails app my Google-fu was apparentely too week to find the answer, so I&amp;#8217;m posting the solution for next time I have to do it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -95,6 +98,17 @@ An Experience Report&lt;/a&gt; - Agile 2009 presentation for Abbott. See also &l
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Now when you navigate to the URL for your website the &lt;code&gt;favicon.ico&lt;/code&gt; icon which shows in the browser tab should be the new one. Works for me!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You should be able to force browsers to download a new version using the link tag and a querystring on your filename, such as:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;&amp;lt;link rel=&quot;shortcut icon&quot; href=&quot;http://www.yoursite.com/favicon.ico?v=2&quot; /&amp;gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is especially helpful in production environments to make sure your users get the update. If this still doesn&amp;#8217;t work, you might want to look at &lt;a href=&quot;http://stackoverflow.com/questions/1077041/refresh-image-with-a-new-one-at-the-same-url&quot;&gt;context expiration of some kind&lt;/a&gt;. You may still need to use the technique above to get your local browser to update though.&lt;/p&gt;
 &lt;/div&gt;</description>
         <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
         <link>http://thepaulrayner.com/blog/2015/01/12/Refreshing-Your-Sites-Favicon/</link>
