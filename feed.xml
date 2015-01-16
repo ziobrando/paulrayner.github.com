@@ -5,9 +5,114 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Jan 2015 00:18:54 +0000</pubDate>
-    <lastBuildDate>Fri, 16 Jan 2015 00:18:54 +0000</lastBuildDate>
+    <pubDate>Fri, 16 Jan 2015 00:19:34 +0000</pubDate>
+    <lastBuildDate>Fri, 16 Jan 2015 00:19:34 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Waterfall versus Agile Development</title>
+        <description>&lt;div class=&quot;imageblock left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/ddredhillsr_1.jpg&quot; alt=&quot;William Red Hill&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A recent question from a client: &lt;em&gt;&quot;I attended your Agile for Teams class about two years ago for my company. What are the criteria for determining if a project should be run in a waterfall or Scrum methodology? I am continuing to get beat up by C-level executives stating that if we just run the project in mini waterfalls we can be agile and responsive to stakeholders as well.&quot;&lt;/em&gt; What would &lt;em&gt;you&lt;/em&gt; say?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here is my response to him:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Waterfall assumes you have comprehensive knowledge ahead-of-time of what your software product needs to be, before you actually write the software, which means before you validate it, and certainly before your customers start using it. Everything else, such as phase gate approval, serial handovers, siloed specialties, heavy documentation and rigorous change control procedures flow from this central assumption. After all, if you know this up-front, then you want to avoid anyone making changes further downstream. In waterfall the emphasis is on following the project plan and avoiding change as much as possible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;Organize your process around being responsive to change at every stage as much as possible&quot;&gt;&lt;/span&gt;Agile assumes that not only do you not have this kind of knowledge up-front, but you should organize your process around being responsive to change at every stage as much as possible, so that you can incorporate significant new knowledge whenever it arises, for the advantage of your customers. So you maximize feedback loops, focus on growing teams of committed and skilled individuals, and repeatedly seek to get better at delivering valuable, quality working software as fast and frequently as possible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;So, my question is: &lt;em&gt;Which assumption is true in your case in your business?&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock right&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/carlisle-graham1.jpg&quot; alt=&quot;Carlisle Graham&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m curious what is meant by &quot;mini-waterfalls.&quot; I&amp;#8217;m assuming you mean cramming all the typical waterfall phases into a series of several-week blocks. Is that what your C-level executives mean by that? I&amp;#8217;m curious how would they see a mini-waterfall enabling them to &quot;be agile&quot; (what do they mean by &lt;em&gt;that&lt;/em&gt;?) and responsive to stakeholders too.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Mini-waterfalls will likely be an improvement over the long (1+ year) feedback loops of traditional waterfall, but often end up with a &quot;frankenstein&quot; process that is trying to be optimized for two different things. Some teams seem to have to pass through an intermediate &quot;mini-waterfall&quot; stage on their way to agile, but I try to avoid this happening with the teams I coach, as it is a painful, unnecessary stage.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve been corresponding with someone else wanting to begin transitioning their waterfall-based company to agile. Last month she asked me: &lt;em&gt;&quot;Paul, wondering if you have slides/resources that talk about the pros and cons for both waterfall and agile methodologies. There is obviously a lot on Google, but wanted to ask in case you have something readily available.&quot;&lt;/em&gt; Here&amp;#8217;s what I sent her way, so hopefully some of this will help you too&amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For the last 8 years the company Version One has done a &lt;a href=&quot;http://stateofagile.versionone.com/why-agile/&quot;&gt;State of Agile&lt;/a&gt; and compiled the results.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;The iteration-less waterfall approach is&amp;#8230;&amp;#8203;risky and invites failure - Winston W. Royce (1970)&quot;&gt;&lt;/span&gt;In 1970 Winston Royce wrote a whole paper describing why the iteration-less waterfall approach &quot;is risky and invites failure&quot; (Winston W. Royce (1970)&lt;span class=&quot;footnote&quot;&gt;[&lt;a id=&quot;_footnoteref_1&quot; class=&quot;footnote&quot; href=&quot;#_footnote_1&quot; title=&quot;View footnote.&quot;&gt;1&lt;/a&gt;]&lt;/span&gt; I am not aware of a single case where waterfall has outperformed agile, but there is overwhelming evidence for the contrary. In 25 years of developing software myself I have never seen a waterfall project achieve its time, scope, budget and quality objectives. However, I have coded for, led, and coached numerous successful agile projects at a wide variety of companies.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A good resource to consult is &lt;a href=&quot;http://davidfrico.com/rico-apm-roi.pdf&quot;&gt;The Business Value of Using Agile Project Management for New Products and Services&lt;/a&gt; by Dr. David F. Rico. It is a concise and well documented survey of data in support of Agile as a “study of studies” summarizing the agile impact. You might be able to draw on some of the charts in there.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;See &lt;a href=&quot;http://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf&quot;&gt;Iterative and Incremental Development: A Brief History&lt;/a&gt;. Page 9 says:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In 1998, the Standish Group issued its widely cited “CHAOS: Charting the Seas of Information Technology,” a report that analyzed 23,000 projects to determine failure factors. The top reasons for project failure, according to the report, were associated with waterfall practices. It also concluded that IID practices tended to ameliorate the failures. One of the report’s key conclusions was to adopt IID [Iterative and Incremental Development]: Research also indicates that smaller time frames, with delivery of software components early and often, will increase the success rate. Shorter time frames result in an iterative process of design, prototype, develop, test, and deploy small elements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Craig Larman
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Further to my last email, is waterfall working so well for your organization that you would want to hold on to it? Are your projects are always successful because the business and customer outcomes are met with good cost management? Do employees feel energized and productive? Is the software high quality because the users love it and it&amp;#8217;s easy to maintain, plus rework is minimal? And is your organization is continually getting more productive at delivering?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/annie_taylor.jpg&quot; alt=&quot;Annie Taylor&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If all these conditions are being met then waterfall may be working for you as well as agile can. I&amp;#8217;ve never yet to see an organization where this is the case. The opposite is always the case, waterfall is slow and inefficient to take software to the customers, customers and users are unhappy with the software and long lead times to get updates. Waterfall creates organizational silos, where the business and software people compete and argue over scope. Waterfall minimizes feedback loops, delaying the delivery of working software until extremely late in the process, maximizing the risk of building the wrong product. And waterfall imposes a heavy process burden with excessive and wasteful documentation standards.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I am working with teams doing agile that measure lead time (time from concept into users hands) in days rather than years. They collaborate together daily in teams across roles and specialties, focusing on delivery a feature or two at a time with high quality, and get fast feedback from their customers and stakeholders about whether they are on the right track or not based on actual usage of the software. They meet regularly to reflect on their process, run experiments and tweak their process, and are improving their productivity as a result. They are learning all the time and adjusting their direction as needed based on stakeholder needs, market changes, technology improvements and design insights. They keep ceremony and process to a minimum so they can focus on their primary job of delivering high quality, working software to customers as fast and frequently as possible. This is the reality of the teams I work with.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Is you would remember from what we covered on day one of your Agile for Teams class, the agile manifesto says in software development things like contracts, documentation, planning and processes are all important, but they are a means to an end, because there are other things that are even more important: Customer collaboration, people and interactions, responding to change and working software. Agile practices are geared towards these values. Does your organization want to be geared towards these same higher values? The same goes for the lean disciplines, which we also covered in class. Waterfall processes are typically not aligned well with the lean disciplines like &quot;deliver fast&quot; and &quot;build quality in.&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock note&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;i class=&quot;fa icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+Maybe your executives would have been interested in attending the &lt;a href=&quot;http://www.waterfall2006.com/&quot;&gt;Waterfall 2006 conference&lt;/a&gt; at Niagara Falls, NY. I&amp;#8217;m sure they would get a kick out of doing the barrel ride like these 19th century daredevils.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;Images sourced from historical photos of Niagara Falls barrel riders at &lt;a href=&quot;https://dklevick.wordpress.com/2012/06/19/the-spirit-of-blondin-lives-in-wallenda/&quot;&gt;The Spirit of Blondin Lives in Wallenda!&lt;/a&gt;, published June 19, 2012 by dk Levick. Carlisle Graham - first to go through the Whirlpool Rapids in barrel 1886 from &lt;a href=&quot;http://www.nflibrary.ca/nfplindex/show.asp?id=89284&amp;amp;b=1&quot;&gt;Niagara Falls Public Library&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;div class=&quot;footnote&quot; id=&quot;_footnote_1&quot;&gt;
+&lt;a href=&quot;#_footnoteref_1&quot;&gt;1&lt;/a&gt; &quot;Managing the Development of Large Software Systems&quot; in: In: Technical Papers of Western Electronic Show and Convention(WesCon) August 25–28, 1970, Los Angeles, USA.)
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Fri, 16 Jan 2015 00:17:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/blog/waterfall-versus-agile-development</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/waterfall-versus-agile-development</guid>
+        
+        <category>Agile</category>
+        
+        
+      </item>
     
       <item>
         <title>Lean Thinking and Software Design</title>
@@ -1323,144 +1428,6 @@ much technical detail you incorporate.&lt;/p&gt;
         <category>Productivity</category>
         
         <category>AsciiDoc</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Colors when viewing folders in Terminal</title>
-        <description>&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Saw directory listing coloring at Golden Ruby Users Group this week, and needed to have it!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://linux-sxs.org/housekeeping/lscolors.html&quot;&gt;LsColors&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;literalblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;LS_COLORS=&#39;di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90&#39;
-export LS_COLORS&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://norbauer.com/notebooks/code/notes/ls-colors-and-terminal-app&quot;&gt;ls, colors and Terminal.app&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Customize Your Colors&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The values in LSCOLORS are codes corresponding to different colors for different types of files. The letter you use indicates which color to use, and the position in the string indicates what type of file should be that color. Each color comes in pairs – a foreground color and a background color. Here is a list of color values:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;a = black&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;b = red&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;c = green&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;d = brown&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;e = blue&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;f = magenta&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;g = cyan&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;h = grey&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A = dark grey&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;B = bold red&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;C = bold green&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;D = yellow&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;E = bold blue&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;F = magenta&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;G = cyan&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;H = white&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;x = default&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;And here is a list of the positions in LSCOLORS:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;directory&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;symbolic link&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;socket&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;pipe&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;executable&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;block device&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;character device&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;executable with setuid set&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;executable with setguid set&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;directory writable by others, with sticky bit&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;directory writable by others, without sticky bit&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/&quot;&gt;Colors for Dark Terminal Themes&lt;/a&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;literalblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        <pubDate>Thu, 07 Feb 2013 15:33:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/07/colors-when-viewing-folders-in-terminal/</guid>
-        
-        <category>Coding</category>
-        
-        <category>Productivity</category>
         
         
       </item>
