@@ -5,9 +5,34 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Jan 2015 11:17:28 +0000</pubDate>
-    <lastBuildDate>Fri, 16 Jan 2015 11:17:28 +0000</lastBuildDate>
+    <pubDate>Fri, 16 Jan 2015 13:31:14 +0000</pubDate>
+    <lastBuildDate>Fri, 16 Jan 2015 13:31:14 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Design is Easy</title>
+        <description>&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;/assets/cartoons/design_is_easy.jpg&quot;&gt;&lt;img src=&quot;/assets/cartoons/design_is_easy.jpg&quot; alt=&quot;Design is Easy&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Welcome to my new comic, &lt;strong&gt;&lt;em&gt;Leading by Design&lt;/em&gt;&lt;/strong&gt;. Like this blog, it is licensed &lt;a href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;under a Creative Commons Attribution-ShareAlike 4.0 International License.&lt;/a&gt; Please share!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;Click cartoon to enlarge.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I really do like Marty&amp;#8217;s work, and enjoyed reading &lt;a href=&quot;http://www.amazon.com/Zag-Number-Strategy-High-Performance-Brands/dp/0321426770/ref=asap_bc?ie=UTF8&quot;&gt;Zag&lt;/a&gt; and &lt;a href=&quot;http://www.amazon.com/Designful-Company-culture-nonstop-innovation/dp/0321580060/ref=asap_bc?ie=UTF8&quot;&gt;The Designful Company&lt;/a&gt;. Follow &lt;a href=&quot;https://twitter.com/martyneumeier&quot;&gt;Marty&lt;/a&gt; on twitter.&lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Fri, 16 Jan 2015 13:30:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/blog/design-is-easy</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/design-is-easy</guid>
+        
+        <category>Design</category>
+        
+        
+      </item>
     
       <item>
         <title>Waterfall versus Agile Development</title>
@@ -1487,127 +1512,6 @@ much technical detail you incorporate.&lt;/p&gt;
         <category>DDD</category>
         
         <category>Agile</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Word Document to Asciidoc Conversion</title>
-        <description>&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I had content in Word documents that I needed to convert to Asciidoc for our book. Here are the steps I found to work best:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Save Word doc as HTML&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Encode as UTF-8&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use pandoc to convert from HTML to AsciiDoc&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Sublime Text 2 to perform any remaining formatting&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;save-word-doc-as-html&quot;&gt;Save Word doc as HTML&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Open the document in Word, and then save as a web page. &lt;em&gt;Select the &quot;Save only Display Information into HTML&quot; option when saving.&lt;/em&gt; Exit from Word (and wave it goodbye as you do!).&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;encode-as-utf-8&quot;&gt;Encode as UTF-8&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Open the html file in Sublime Text 2. Avert your eyes at the horror that is Word-formatted HTML. Reopen with encoding UTF-8 and save the file:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;/assets/sublime-text-utf8.png&quot; alt=&quot;Sublime Text 2 Reopen with Encoding&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;If I don&amp;#8217;t recode as UTF-8, then the next step will fail with the error:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;literalblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;pandoc: Cannot decode byte &#39;\x6f&#39;: Data.Text.Encoding.decodeUtf8: Invalid UTF-8 stream&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;use-pandoc-to-convert-from-html-to-asciidoc&quot;&gt;Use Pandoc to convert from HTML to AsciiDoc&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Run &lt;a href=&quot;http://johnmacfarlane.net/pandoc/&quot;&gt;pandoc&lt;/a&gt;. For example, the following command takes &lt;code&gt;ConventionSheet.htm&lt;/code&gt; and converts it to the AsciiDoc file &lt;code&gt;file.asc&lt;/code&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;literalblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;pandoc -f html -t asciidoc -o file.asc ConventionSheet.htm&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;use-sublime-text-2-search-and-replace-using-some-regular-expressions-to-strip-out-crazy-things&quot;&gt;Use Sublime Text 2 search and replace (using some regular expressions) to strip out crazy things&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Weird single quotes need to go:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;/assets/sublime-text-backtick-replace.png&quot; alt=&quot;Sublime Text 2 Replace backtick with single quote&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;If you had reviewing turned on in Word, then reviewer comments and changes will likely be present in the HTML. Remove these using a search and replace with the following Regex in the search field:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;literalblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;\[line-through\]\*(.+)\*&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;When matched lines cross line breaks then you can use the single line option (&lt;code&gt;?s&lt;/code&gt;) in your regex for search and replace:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;literalblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;(?s)\[line-through\]\*.(.*?)\*&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;use-sublime-text-2-to-perform-any-remaining-asciidoc-formatting&quot;&gt;Use Sublime Text 2 to perform any remaining AsciiDoc formatting&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Monospace any regex or other special characters (these will cause problems for the AsciiDoc parser) in the document.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Edit the AsciiDoc document as you wish! Note that GitHub now natively displays AsciiDoc files (using &lt;a href=&quot;http://asciidoctor.org/news/asciidoctor-announcement.html&quot;&gt;AsciiDoctor&lt;/a&gt; behind the scenes), just as it does for Markdown.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        <pubDate>Thu, 14 Feb 2013 15:35:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/14/word-to-asciidoc/</guid>
-        
-        <category>Writing</category>
-        
-        <category>Tools</category>
-        
-        <category>Productivity</category>
-        
-        <category>AsciiDoc</category>
         
         
       </item>
