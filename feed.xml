@@ -5,9 +5,60 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Jan 2015 19:12:37 +0000</pubDate>
-    <lastBuildDate>Fri, 16 Jan 2015 19:12:37 +0000</lastBuildDate>
+    <pubDate>Mon, 19 Jan 2015 13:32:12 +0000</pubDate>
+    <lastBuildDate>Mon, 19 Jan 2015 13:32:12 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Reading and Writing Arrays to Text Files in Ruby</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I wanted to be able to schedule publishing new articles here on a regular schedule. One thing I needed was to create a simple mechanism to tell the publisher which posts are upcoming and the order to publish them in.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I opted for a simple text file called &lt;code&gt;publish_queue&lt;/code&gt; which sits in the Jekyll &lt;code&gt;_drafts&lt;/code&gt; folder, along with the draft posts that are ready to publish and queued up, or under development for future queuing. It will likely be a YAML text file eventually, but a simple file with the name of the draft post on each line seemed a sufficient first solution. So the file looks like:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;CodeRay highlight&quot;&gt;&lt;code data-lang=&quot;publish_queue&quot;&gt;waterfall-versus-agile-development.adoc
+reading-and-writing-to-text-files-in-ruby.adoc
+scaling-agile-to-the-enterprise-resources.adoc&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I read each line of this file into an array where each array item is the name of a post, and call a method to determine which is the next one to publish (currently the first, but later could be some other rule):&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;CodeRay highlight&quot;&gt;&lt;code data-lang=&quot;ruby&quot;&gt;    drafts_to_publish = &lt;span class=&quot;constant&quot;&gt;IO&lt;/span&gt;.readlines(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;_drafts/publish_queue&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;).map(&amp;amp;&lt;span class=&quot;symbol&quot;&gt;:chomp&lt;/span&gt;)
+    file = next_draft_to_publish(drafts_to_publish)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Since &lt;code&gt;IO.readlines(&quot;_drafts/publish_queue&quot;)&lt;/code&gt; preserves carriage returns, I call &lt;code&gt;.map(&amp;amp;:chomp)&lt;/code&gt; to strip those off the file names.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;After I&amp;#8217;ve published the file from &lt;code&gt;_drafts&lt;/code&gt; to &lt;code&gt;_posts&lt;/code&gt; and pushed the changes to the Jekyll repository on GitHub, I need to update the publish queue by calling &lt;code&gt;drafts_to_publish.shift&lt;/code&gt; to remove the draft we just published from the publish queue:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;CodeRay highlight&quot;&gt;&lt;code data-lang=&quot;ruby&quot;&gt;    mark_draft_as_published drafts_to_publish
+
+    &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;mark_draft_as_published&lt;/span&gt;(drafts_to_publish)
+      drafts_to_publish.shift
+      &lt;span class=&quot;constant&quot;&gt;File&lt;/span&gt;.open(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;_drafts/publish_queue&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;w+&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt; |f|
+        f.puts(drafts_to_publish)
+      &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 19 Jan 2015 13:30:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/blog/reading-and-writing-arrays-to-text-files-in-ruby</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/blog/reading-and-writing-arrays-to-text-files-in-ruby</guid>
+        
+        <category>Coding</category>
+        
+        
+      </item>
     
       <item>
         <title>Design is Easy</title>
@@ -1410,104 +1461,6 @@ much technical detail you incorporate.&lt;/p&gt;
         <pubDate>Tue, 07 May 2013 11:40:00 +0000</pubDate>
         <link>http://thepaulrayner.com/blog/2013/05/07/succeeding-with-ddd-documentation/</link>
         <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/05/07/succeeding-with-ddd-documentation/</guid>
-        
-        <category>DDD</category>
-        
-        <category>Agile</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Agile User stories and Domain-Driven Design (DDD)</title>
-        <description>&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;On Monday night at our DDD Denver meetup we ended up having a valuable and lively group discussion using a modified &lt;a href=&quot;http://systemagility.com/2012/04/16/enjoy-a-lean-coffee/&quot;&gt;Lean Coffee&lt;/a&gt;. The four questions we covered (in order) were:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Where to start in developing a domain model?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;What is the biggest hurdle for a team adopting DDD?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;What is the intersection of DDD &amp;amp; agile user stories?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Techniques for implementing DDD across geographically dispersed teams&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;As we discussed the intersection of DDD and user stories, I mentioned a quick reference guide that I have used for my own coaching and training over the years. There seemed to be a lot of interest in having me share the resource more widely.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;So I am now making my &quot;Stories for Design and Delivery&quot; reference freely and publicly available.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;This double-sided quick-reference provides a wealth of distilled content about how to integrate stories and design, including making decisions about splitting based on business subdomain.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Click on either thumbnail below to download the full-size PDF version.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;front&quot;&gt;Front&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;imageblock dropshadow&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://www.virtual-genius.com/resources/Stories-for-design-and-delivery.pdf&quot;&gt;&lt;img src=&quot;/assets/stories-for-design-and-delivery-thumbnail1.png&quot; alt=&quot;Stories for design and delivery - Front&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;back&quot;&gt;Back&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;imageblock dropshadow&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://www.virtual-genius.com/resources/Stories-for-design-and-delivery.pdf&quot;&gt;&lt;img src=&quot;/assets/stories-for-design-and-delivery-thumbnail2.png&quot; alt=&quot;Stories for design and delivery - Back&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I put the first version of the guide together back in 2009 as a quick reference guide for Mike Cohn&amp;#8217;s &lt;em&gt;User Stories Applied&lt;/em&gt;. I needed an easier way to get the whole team to understand user stories without forcing them all to read the book (as good as it is, this wasn&amp;#8217;t going to happen). I printed and laminated a bunch of copies and distributed them to the team.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Iteration two was several years ago when Richard Lawrence published his excellent &lt;a href=&quot;http://www.richardlawrence.info/2009/10/28/patterns-for-splitting-user-stories/&quot;&gt;Patterns for Splitting User Stories post&lt;/a&gt; (also referenced as a footnote on the guide&amp;#8217;s second page). At that time I incorporated Richard&amp;#8217;s material into the second page, greatly improving the guidance around splitting stories.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I&amp;#8217;ve used this guide many times over the years in my classes and coaching, teaching teams how to collaboratively and creatively decompose their functionality into manageable increments.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Iteration three was almost a year ago, when I decided to move away from the conventional agile community&amp;#8217;s terminology and emphasis on process, and focus on how stories can support design, rather than fragment it. I tried to approach it first and foremost as a DDD practitioner, concerned about putting design first. So I incorporated my current understanding of how domain modeling, tactical design practices and strategic design (i.e. mainly subdomain distillation) fits with how most teams manage their work items.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;em&gt;Note: I&amp;#8217;ve deliberately defied convention by not calling them _user&lt;/em&gt; stories. Stories - as I conceive of them - may relate directly to customers, users, stakeholders and even predominantly technical considerations, not just end users. Some heavily design-focused stories, such as building an anti-corruption layer in front of a back-end system, might only be exposed to users tangentially via seemingly unrelated functionality (from their perspective)._&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Just recently, Richard has reworked his story splitting guide into an excellent flow chart: &lt;a href=&quot;http://www.richardlawrence.info/2012/01/27/new-story-splitting-resource&quot;&gt;How to Split a User Story&lt;/a&gt;, which I highly recommend as a more process-focused complement to mine.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I hope this is as helpful to others as it has been to me. Let me know in the comments if you do find this useful. And please let me know any ways I might improve the quick reference guide.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;em&gt;The document is designed to be printed double-sided. I recommend laminating your copies before you hand them out so they last longer and are less likely to get lost in a pile of paper.&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        <pubDate>Fri, 15 Feb 2013 21:14:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/</guid>
         
         <category>DDD</category>
         
