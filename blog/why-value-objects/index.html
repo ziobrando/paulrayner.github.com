@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Posts Tagged &ldquo;Rails&rdquo;</title>
-  <meta name="description" content="Thinking about DDD, BDD, coding, software design and agile etc.">
+  <title>Why Value Objects?</title>
+  <meta name="description" content="Value objects are a key building block pattern in domain-driven design (DDD). Here are some of the reasons why. They&#8230;&#8203;">
 
-  
+  <meta name="keywords" content="ddd">
 
   <link rel="stylesheet" href="/css/main.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://thepaulrayner.com/tags/Rails/">
+  <link rel="canonical" href="http://thepaulrayner.com/blog/why-value-objects">
   <link rel="alternate" type="application/rss+xml" title="Leading by Design" href="http://thepaulrayner.com/feed.xml" />
   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -66,135 +66,88 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <h2>Posts Tagged &ldquo;Rails&rdquo;</h2>
-          <table class="table table-striped">
-            <tbody>
-              
-            
-            
-            
-              
-            
-            
-            
-              
-            
-            
-            
-              
-            
-            
-            
-              
-            
-            
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            <tr>
-              <td>
-              <h3><a href="/blog/2015/01/12/Refreshing-Your-Sites-Favicon/">Refreshing Your Sites Favicon</a></h3>
-              <p><strong>January 12, 2015</strong> .  . <a href="http://erjjones.github.com/blog/2015/01/12/Refreshing-Your-Sites-Favicon/#disqus_thread" data-disqus-identifier="/blog/2015/01/12/Refreshing-Your-Sites-Favicon/"></a>
-              <br/><small><i></i></small>
-              <br/><small><i class="icon-tags"></i>  <a href="/tags/Coding" title="View posts tagged with &quot;Coding&quot;"><u>Coding</u></a>     <a href="/tags/Rails" title="View posts tagged with &quot;Rails&quot;"><u>Rails</u></a>    </small></p>
-              </td>
-            </tr>
-            
-            
-              
-            
-            
-            
-            
-            
-              
-            
-            
-            
-              
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            
-              
-            
-            
-            
-            
-            
-                  
-            </tbody>
-          </table> 
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Why Value Objects?</h1>
+    <span class="post-meta">
+<i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Jan 20, 2015
+
+<i class="fa fa-tags fa-lg"></i>&nbsp; <a href="/tags/ddd" title="View posts tagged with &quot;ddd&quot;">ddd |</a>   
+
+</span>
+
+  </header>
+
+  <article class="post-content">
+    <div class="paragraph">
+<p>Value objects are a key building block pattern in domain-driven design (DDD). Here are some of the reasons why. They&#8230;&#8203;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Give rich, expressive names to key concepts in our model</p>
+</li>
+<li>
+<p>Increase the conceptual cohesiveness of objects, readability of our code and the overall suppleness of our design</p>
+</li>
+<li>
+<p>Making value objects immutable reduces incidence of bugs, improves thread safety and encourages a functional composition style</p>
+</li>
+<li>
+<p>Encapsulation (information hiding) reduces cognitive burden and increases communication</p>
+</li>
+<li>
+<p>Reduces primitive obsession</p>
+</li>
+<li>
+<p>Removes burden of maintaining state from entities, focusing them on identity and lifecycle. Entities delegate the bulk of their behavioral work to value objects.</p>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="value-object-s-are-not-data-transfer-objects">Value Object’s are NOT Data Transfer Objects</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Data Transfer Objects’s (DTOs) have become the dominant method for moving data between layers, such as propagating a database schema up through the layers. Data Transfer Objects and Value Objects are therefore two completely separate things.</p>
+</div>
+<div class="paragraph">
+<p>They look the same superficially, but the entire purpose of a DTO is simply to move data from here to there, with no logic/behavior, just state (i.e. DTO is a technical solution to a technical problem). However, a Value Object represents a concept, rather than a mechanical contrivance to shuttle stuff around.</p>
+</div>
+</div>
+</div>
+    <div>
+  <h4>About the Author</h4>
+  <section  class="visible-desktop">
+  <img class="gravatar" src="http://www.gravatar.com/avatar/4ce180eb1538932a4cc5b14c9eb0e83b?s=300">
+  <span>Paul is from Perth, Australia, but chooses to live, work and play with his amazing wife and two children in Denver, Colorado. He co-founded and co-leads <a href="http://bit.ly/ddd_den">DDD Denver</a>. Look for him speaking at local user groups, and at regional and international conferences.<br><br>
+  If you are looking for an expert hands-on team coach and design mentor in Domain-Driven Design (DDD), BDD with Cucumber, or lean/agile process Paul is available for consulting and training through his company, <a href="http://www.virtual-genius.com">Virtual Genius LLC.</a></span>
+</section>
+</div>
+  </article>
+ 
+</div>
+
       </div>
     </div>
 
     
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'thepaulrayner'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
     <footer class="site-footer">
 
