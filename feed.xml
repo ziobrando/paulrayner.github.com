@@ -5,9 +5,103 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Jan 2015 04:25:19 +0000</pubDate>
-    <lastBuildDate>Wed, 21 Jan 2015 04:25:19 +0000</lastBuildDate>
+    <pubDate>Wed, 21 Jan 2015 12:02:53 +0000</pubDate>
+    <lastBuildDate>Wed, 21 Jan 2015 12:02:53 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Value Objects and Immutability</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Why make value objects immutable, and how to do it when working in a language like Java or C#?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;why-immutable&quot;&gt;Why Immutable?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In &lt;a href=&quot;http://www.amazon.com/Effective-Java-Edition-Joshua-Bloch/dp/0321356683&quot;&gt;Effective Java&lt;/a&gt;, Joshua Bloch makes this compelling recommendation:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Classes should be immutable unless there’s a very good reason to make them mutable….If a class cannot be made immutable, limit its mutability as much as possible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Joshua Bloch&lt;br&gt;
+&lt;cite&gt;Effective Java&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;use-as-keys&quot;&gt;Use as Keys&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Immutable objects also make good candidates for use as entity identifiers, or as keys in either Maps or Sets; keys in dictionary collections in Java or C# cannot change value while being used as a key, so immutable objects make great keys.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;inherently-thread-safe&quot;&gt;Inherently Thread-Safe&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Immutable objects are also automatically thread-safe and have no synchronization issues (see pp. 46-54 of &lt;a href=&quot;http://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601&quot;&gt;Java Concurrency in Practice&lt;/a&gt;). They can also never exist in unknown or undesirable state because of an exception.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Formally, a class is immutable if and only if:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;it is final, preventing problems with polymorphism;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;none of its methods change its own public state; and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;any mutable fields it has are completely inaccessible to external classes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;how-to-make-a-java-or-c-object-immutable&quot;&gt;How to Make a Java or C# Object Immutable&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;“Because changes only occur upon construction, immutable classes make it trivial to write unit tests. - Neal Ford&quot;&gt;&lt;/span&gt; If you are working in Java or C#, you need to do the following to make an object immutable (adapted from Neal Ford’s article &lt;a href=&quot;http://bit.ly/functional_thinking_immutability&quot;&gt;Functional thinking: Immutability&lt;/a&gt;):&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Make all fields final. When you define fields as final in Java, you must either initialize them at declaration time or in the constructor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make the class final so that it cannot be overridden. If the class can be overridden, its methods’ behaviors can be overridden as well, so your safest bet is to disallow subclassing. Notice that this is the strategy used by Java’s String class.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Provide at least one constructor, and set whatever state it will contain in the constructor. If you have no state to set, why do you have an object? Static methods on a stateless class would work just as well. Thus, you should never have a no-argument constructor for an immutable class .&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do not provide any mutating methods other than the constructor (i.e. all functions must be side-effect-free).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do not provide a no-argument constructor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implement hashcode and equals (use your IDE to generate the code). Remember to do this for any enclosed value objects too.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Not only must you avoid typical JavaBeans-inspired setXXX methods, but you must also be careful not to return mutable object references. The fact that the object reference is final doesn’t mean that you can’t change what it points to. Thus, you need to make sure you defensively copy any object references you return from getXXX methods. Be especially wary of collections!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Wed, 21 Jan 2015 12:01:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/value-objects-and-immutability</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/value-objects-and-immutability</guid>
+        
+        <category>ddd</category>
+        
+        
+      </item>
     
       <item>
         <title>Why Value Objects?</title>
@@ -892,99 +986,6 @@ Here&#39;s the actual AsciiDoc content for this blog post. You can see the origi
         
         <category>Jekyll</category>
         
-        
-      </item>
-    
-      <item>
-        <title>Domain-Driven Design in Ruby at DDD Exchange 2013 in London</title>
-        <description>&lt;div class=&quot;imageblock left&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg/178px-Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg!&quot; alt=&quot;Burlington House Cartoon&quot; width=&quot;150&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Last week when I was in London I came across Leonardo DaVinci&amp;#8217;s drawing, &lt;a href=&quot;http://en.wikipedia.org/wiki/The_Virgin_and_Child_with_St_Anne_and_St_John_the_Baptist&quot;&gt;The Virgin and Child with St Anne and St John the Baptist&lt;/a&gt;, while wandering the National Gallery in London. It&amp;#8217;s also known as &lt;em&gt;The Burlington House Cartoon&lt;/em&gt; because drawings of this sort were usually transferred to a board for painting by pricking or incising the outline. With this cartoon, this has not been done, suggesting that the drawing has been kept as a work of art in its own right.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I see a sample app as functioning like this cartoon. It&amp;#8217;s not a complete system, and is not intended to be prescriptive in any way. Rather, it is an along-the-way artifact created to learn. It&amp;#8217;s a point-in-time snapshot of a much deeper, largely invisible, learning process, and thus is incomplete in that way too. When the sample app is done, it can function as a teaching tool, as a guide on the way to building something real. As a conversation starter and tradeoff clarifier.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Last Friday I presented at the &lt;a href=&quot;http://skillsmatter.com/event/design-architecture/dddx-2013&quot;&gt;DDD Exchange 2013&lt;/a&gt; hosted by Skills Matter in London on what I&amp;#8217;ve learned recently in exploring doing domain-driven design (DDD) in Ruby. The way I approached this exploration was to start porting the DDD sample app from Java and C# to Ruby. I wanted to do this because it would give me an opportunity to go much deeper in Ruby than every before, while applying DDD concepts and techniques I was familiar with in some unfamiliar ways using new tools.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I started the port to Ruby back in early May, and presented my early findings to an encouraging audience at DDD Denver on May 13. At that point I had only the domain model objects and some of the Rspec tests in place. Much of my time had been taken with investigating how best to implement value objects, and possible different approaches for the UI and for how to tackle enabling eventual consistency between aggregates. I had only begun to work out how to handle persistence with MongoDB.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;When I gave the DDD Denver presentation, I was very nervous about presenting such an incomplete effort in public. But I found everyone to be very supportive and it inspired me to keep going. In the next four weeks I was able to solve all the big issues and prepare a presentation for DDD Exchange 2013. If you are interested, Skills Matter did an excellent job of recording the presentation and getting it online. See below for links to resources.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;My hope is that this - currently very unfinished and unpolished - effort sparks interesting conversations about options, tradeoffs and possibilities, and helps others get to grips with the details of how to make DDD real on their projects.&lt;/p&gt;
-&lt;/div&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Original slides for today&amp;#39;s &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt; 2013 talk Domain-Driven Design with Ruby are now online at &lt;a href=&quot;http://virtual-genius.com/presentations/ddd_with_ruby_20130614&quot;&gt;http://t.co/w9W3wvNz1J&lt;/a&gt; &lt;a href=&quot;https://twitter.com/search?q=%23DDDesign&amp;amp;src=hash&quot;&gt;#DDDesign&lt;/a&gt;&lt;/p&gt;&amp;mdash; Paul Rayner (@thepaulrayner) &lt;a href=&quot;https://twitter.com/thepaulrayner/statuses/345538141706412032&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here&amp;#8217;s a list of resources related to my presentation:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://virtual-genius.com/presentations/ddd_with_ruby_20130614.html&quot;&gt;Original presentation slides&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://skillsmatter.com/podcast/design-architecture/paul-rayner/mh-7679&quot;&gt;Video of the presentation&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/paulrayner/ddd_sample_app_ruby&quot;&gt;Sample app on Github&lt;/a&gt; - see the README for a comprehensive list of resources I&amp;#8217;ve compiled as I&amp;#8217;ve researched how to accomplish the Ruby port (including links to the Java and C# apps the port is based on).&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;A big thank you again to Skills Matter for hosting such a wonderful event and making it such a special day (for both me and my son).&lt;/p&gt;
-&lt;/div&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Many thanks to all of today&amp;#39;s speakers: &lt;a href=&quot;https://twitter.com/unclebobmartin&quot;&gt;@unclebobmartin&lt;/a&gt; &lt;a href=&quot;https://twitter.com/robsmallshire&quot;&gt;@robsmallshire&lt;/a&gt; &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; &lt;a href=&quot;https://twitter.com/zimakki&quot;&gt;@zimakki&lt;/a&gt; You guys are awesome! &lt;a href=&quot;https://twitter.com/search?q=%23DDDx&amp;amp;src=hash&quot;&gt;#DDDx&lt;/a&gt; &lt;a href=&quot;https://twitter.com/search?q=%23FF&amp;amp;src=hash&quot;&gt;#FF&lt;/a&gt; (2/2)&lt;/p&gt;&amp;mdash; skillsmatter (@skillsmatter) &lt;a href=&quot;https://twitter.com/skillsmatter/statuses/345596880899682304&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;##Tweets&lt;/p&gt;
-&lt;/div&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Cargo sample is back in ruby ! &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jérémie Chassaing (@thinkb4coding) &lt;a href=&quot;https://twitter.com/thinkb4coding/statuses/345489374517006336&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Good session by &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; about DDD with Ruby &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; Nathan Gloyn (@NathanGloyn) &lt;a href=&quot;https://twitter.com/NathanGloyn/statuses/345499135933308928&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; talk about ruby at &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt; gave me some interesting ideas to explore. Great talk !&lt;/p&gt;&amp;mdash; Thomas Jaskula (@tjaskula) &lt;a href=&quot;https://twitter.com/tjaskula/statuses/345497941353570305&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; really rocked. Cleared away so much fog and sparkled a lot of cool ideas! Thanks! &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; ziobrando (@ziobrando) &lt;a href=&quot;https://twitter.com/ziobrando/statuses/345497521143029760&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Really, REALLY interesting session by &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; about doing DDD in Ruby &lt;a href=&quot;https://twitter.com/search?q=%23DDDX&amp;amp;src=hash&quot;&gt;#DDDX&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tom Janssens (@ToJans) &lt;a href=&quot;https://twitter.com/ToJans/statuses/345492748020887552&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Good idea to show the project directory tree to show how to apply DDD with Rails/MongoDB/Mongoid by &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; at &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; cyrille martraire (@cyriux) &lt;a href=&quot;https://twitter.com/cyriux/statuses/345495156864200706&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; explaining how he did an hexagonal arch in rails application, really nice and clean  &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rui Carvalho (@rhwy) &lt;a href=&quot;https://twitter.com/rhwy/statuses/345494558446063616&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Looks like Ruby on Rails smackdown here between activerecord pattern and domain driven pattern. Who will win? &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; DCU CoderDojo (@coderdojodcu) &lt;a href=&quot;https://twitter.com/coderdojodcu/statuses/345496157423812608&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Actors are back in &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; ruby presentation...&lt;/p&gt;&amp;mdash; Jérémie Chassaing (@thinkb4coding) &lt;a href=&quot;https://twitter.com/thinkb4coding/statuses/345495764119732224&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Domain driven design with &lt;a href=&quot;https://twitter.com/search?q=%23ruby&amp;amp;src=hash&quot;&gt;#ruby&lt;/a&gt;  &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; &lt;a href=&quot;http://t.co/FMHMtgI1hX&quot;&gt;pic.twitter.com/FMHMtgI1hX&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rui Carvalho (@rhwy) &lt;a href=&quot;https://twitter.com/rhwy/statuses/345488522964238336&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;As an exercise, I think I’ll be reimplementing in Python the &lt;a href=&quot;https://twitter.com/search?q=%23dddesign&amp;amp;src=hash&quot;&gt;#dddesign&lt;/a&gt; Ruby sample presented by &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; at &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;.&lt;/p&gt;&amp;mdash; Robert Smallshire (@robsmallshire) &lt;a href=&quot;https://twitter.com/robsmallshire/statuses/345498791186673664&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Had a good talk during the break with &lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; about evangelising &lt;a href=&quot;https://twitter.com/search?q=%23DDDesign&amp;amp;src=hash&quot;&gt;#DDDesign&lt;/a&gt; in dynamic languages like ruby and php  &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mathias Verraes (@mathiasverraes) &lt;a href=&quot;https://twitter.com/mathiasverraes/statuses/345578077138608128&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/thepaulrayner&quot;&gt;@thepaulrayner&lt;/a&gt; talk at &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt; &lt;a href=&quot;https://twitter.com/search?q=%23ruby&amp;amp;src=hash&quot;&gt;#ruby&lt;/a&gt; &lt;a href=&quot;http://t.co/ryycPIso6k&quot;&gt;pic.twitter.com/ryycPIso6k&lt;/a&gt;&lt;/p&gt;&amp;mdash; Thomas Jaskula (@tjaskula) &lt;a href=&quot;https://twitter.com/tjaskula/statuses/345489563344572416&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;And I just have to include this one&amp;#8230;&amp;#8203;&lt;/p&gt;
-&lt;/div&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p&gt;Breaking News! Holy Camelshit! Is really possible to apply DDD with Rails! &lt;a href=&quot;https://twitter.com/search?q=%23dddx&amp;amp;src=hash&quot;&gt;#dddx&lt;/a&gt;&lt;/p&gt;&amp;mdash; DDD Borat (@DDD_Borat) &lt;a href=&quot;https://twitter.com/DDD_Borat/statuses/345497300921090048&quot;&gt;June 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</description>
-        <pubDate>Thu, 20 Jun 2013 11:28:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange/</guid>
-        
-        <category>DDD</category>
-        
-        
-        <category>ddd</category>
         
       </item>
     
