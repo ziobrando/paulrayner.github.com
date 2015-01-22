@@ -5,9 +5,134 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Jan 2015 12:02:53 +0000</pubDate>
-    <lastBuildDate>Wed, 21 Jan 2015 12:02:53 +0000</lastBuildDate>
+    <pubDate>Thu, 22 Jan 2015 12:02:10 +0000</pubDate>
+    <lastBuildDate>Thu, 22 Jan 2015 12:02:10 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Persisting Value Objects</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It can be challenging sometimes to know how best to persist value objects to a data store, especially if you are using a RDBMS. There are a variety of options to choose from, however, depending on your needs and constraints.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Examples below are based on my &lt;a href=&quot;https://github.com/paulrayner/ddd_sample_app_ruby&quot;&gt;Ruby port of the DDD sample app&lt;/a&gt;. Here is a class diagram showing the &lt;code&gt;Cargo&lt;/code&gt; aggregrate, which consists of the &lt;code&gt;Cargo&lt;/code&gt; entity (as the aggregate root) and a number of value objects, such as &lt;code&gt;Itinerary&lt;/code&gt; and &lt;code&gt;RouteSpecification&lt;/code&gt; that are also part of the &lt;code&gt;Cargo&lt;/code&gt; aggregate. This is based on examples given in Eric Evans&amp;#8217;s &lt;a href=&quot;http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215&quot;&gt;Domain-Driven Design&lt;/a&gt; book.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/cargo.png&quot; alt=&quot;Cargo entity and associated value objects&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;title&quot;&gt;Figure 1. Cargo entity and associated value objects&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;inline-value-object-s-fields-to-entity-s-table&quot;&gt;Inline Value Object’s Fields to Entity’s Table&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is the simplest arrangement, both in terms of ORM mapping and database schema design. It also is an easy way to support refactoring a value object out of an entity, since only the objects and the ORM mapping would need to change; there is no change to the underlying database schema.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;An example of this would be refactoring properties such as &lt;code&gt;Origin&lt;/code&gt;, &lt;code&gt;Destination&lt;/code&gt; and &lt;code&gt;Arrival Deadline&lt;/code&gt; out of their original location in the &lt;a href=&quot;https://github.com/paulrayner/ddd_sample_app_ruby/blob/master/domain/cargo/cargo.rb&quot;&gt;&lt;code&gt;Cargo&lt;/code&gt; entity&lt;/a&gt; and into a new &lt;a href=&quot;https://github.com/paulrayner/ddd_sample_app_ruby/blob/master/domain/cargo/route_specification.rb&quot;&gt;&lt;code&gt;RouteSpecification&lt;/code&gt; value object&lt;/a&gt;. The &lt;code&gt;RouteSpecification&lt;/code&gt; value object, having a one-to-one, relationship with the &lt;code&gt;Cargo&lt;/code&gt; entity, lends itself very naturally to this kind of approach. The same would be true for the &lt;code&gt;Itinerary&lt;/code&gt; value object.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;create-database-table-for-each-of-value-object-type-and-represent-data-as-field&quot;&gt;Create Database Table for each of Value Object Type and Represent Data as Field&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In the DDD sample app, a single &lt;code&gt;Itinerary&lt;/code&gt; value object has many &lt;code&gt;Leg&lt;/code&gt; value objects. So an example of this approach would be to persist the &lt;code&gt;Legs&lt;/code&gt; value object to a &lt;code&gt;Legs&lt;/code&gt; database table that has a foreign key back to the Itinerary database table. This is a common approach for 1-Many relationships. However, see the next serialization approach as perhaps a more effective solution in many cases.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;serialize-the-value-object-and-store-in-field-in-entity-s-table&quot;&gt;Serialize the Value Object and Store in Field in Entity’s Table&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is a less common than creating a separate table for the value object as in the previous approach, but serialization is actually the method I would recommend in most cases where you have a one-to-many relationship. For example, persist &lt;code&gt;Itinerary&lt;/code&gt; and all its &lt;code&gt;Leg&lt;/code&gt; value objects as a serialized object grap and then inline it into the Entity’s table within the Cargo database table.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Use an appropriate serialization format such as plain text, XML, YAML or JSON. Databases such as Postgres and SQL Server provide native format for such approaches. For a Postgres example, see Vaughn Vernon&amp;#8217;s post &lt;a href=&quot;https://vaughnvernon.co/?p=942&quot;&gt;The Ideal Domain-Driven Design Aggregate Store?&lt;/a&gt; For an example of manipulating XML with SQL Server, see &lt;a href=&quot;https://www.simple-talk.com/sql/database-administration/manipulating-xml-data-in-sql-server/&quot;&gt;Manipulating XML Data in SQL Server&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Querying and indexing options may be limited as in SQL Server 2008 XML columns, or even non-existent in many RDMS’s. An ORM will typically need custom code or a custom type, such as in Hibernate, to manage the serialization/deserialization of each collection.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Serializing objects to text-based formats gives you human-readable database data, but is comparatively slow and potentially huge in size compared to regular database columns. It is important to verify that this approach can handle the performance needs before going too far with it. Also, if the serialized value object stored in the DB is opaque (e.g., the only query performed on the column is to serialize/deserialize based on primary key lookep) then consider using a much faster (and typically smaller) format like binary.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;combined-rdms-and-document-database-approach&quot;&gt;Combined RDMS and Document Database Approach&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In the Java space, SpringSource has been doing some very interesting work for the &lt;a href=&quot;http://www.springsource.org/spring-data&quot;&gt;Spring.Data.Commons and related projects&lt;/a&gt; in the area of what they call &#39;cross-store persistence.&#39; &lt;span class=&quot;footnote&quot;&gt;[&lt;a id=&quot;_footnoteref_1&quot; class=&quot;footnote&quot; href=&quot;#_footnote_1&quot; title=&quot;View footnote.&quot;&gt;1&lt;/a&gt;]&lt;/span&gt; Portions of your object are persisted to a RDBMS and other portions are persisted to NoSQL stores (and the framework handles persisting and rehydrating the right parts to/from the right data store for you). These are all OSS solutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;use-a-document-database&quot;&gt;Use a Document Database&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The &lt;code&gt;CargoRepository&lt;/code&gt; could use an &lt;code&gt;Itinerary&lt;/code&gt; document Id stored in a &lt;code&gt;Cargo&lt;/code&gt; field to retrieve the &lt;code&gt;Itinerary&lt;/code&gt; value object stored in a document database such as MongoDB, RavenDB or CouchDB. Note that many document databases offer transparency of query into the contents of the &#39;document&#39; (i.e. serialized value object in this case), which removes the need to predict which properties, etc. of the value object need to be stored separately in the table as additional fields just so that they can be queried.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To Summarize:&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all spread&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 25%;&quot;&gt;
+&lt;col style=&quot;width: 25%;&quot;&gt;
+&lt;col style=&quot;width: 25%;&quot;&gt;
+&lt;col style=&quot;width: 25%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;O-R&lt;/th&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Represent Data in Fields&lt;/th&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Serialize Object&lt;/th&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Reference to Other Storage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Inline in Entity Table&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;1-to-1
+&lt;/p&gt;&lt;p class=&quot;tableblock&quot;&gt;* Good O-R mapper support
+* Straightforward object/DB schema versioning
+* Factoring fields into Value Object doesn’t change DB schema&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;1-to-Many/1-to-1 Complex
+&lt;/p&gt;&lt;p class=&quot;tableblock&quot;&gt;* Version management of serialization
+* Some performance concerns
+* Query limitations
+* Field length limitations&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Document Id
+&lt;/p&gt;&lt;p class=&quot;tableblock&quot;&gt;* Hybrid approach – store document Id in Entity’s table and lookup in Repository
+* Queries supported by document databases&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Separate Table&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;1-to-Many
+&lt;/p&gt;&lt;p class=&quot;tableblock&quot;&gt;* Good O-R mapper support, but must put ID field in Value Object
+* Straightforward object/DB schema versioning&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;X&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;X&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;div class=&quot;footnote&quot; id=&quot;_footnote_1&quot;&gt;
+&lt;a href=&quot;#_footnoteref_1&quot;&gt;1&lt;/a&gt; Sourced from Steve Bohlen posting to DDD Immersion Alumni Mailing List on 11/17/2011
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Thu, 22 Jan 2015 12:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/persisting-value-objects</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/persisting-value-objects</guid>
+        
+        <category>ddd</category>
+        
+        
+      </item>
     
       <item>
         <title>Value Objects and Immutability</title>
@@ -884,107 +1009,6 @@ An Experience Report&lt;/a&gt; - Agile 2009 presentation for Abbott. See also &l
         <category>Coding</category>
         
         <category>Rails</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Build Jekyll-Based Blogs &amp;amp; Websites with AsciiDoc</title>
-        <description>&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Announcing the release of &lt;a href=&quot;https://github.com/asciidoctor/jekyll-asciidoc&quot;&gt;jekyll-asciidoc&lt;/a&gt;, a &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; plugin that converts AsciiDoc files in your site source to HTML pages using &lt;a href=&quot;http://asciidoctor.org&quot;&gt;Asciidoctor&lt;/a&gt;.
-&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;Start writing your web content in Jekyll using all the richness and clarity of AsciiDoc.&quot;&gt;&lt;/span&gt;
-The jekyll-asciidoc gem was written by Dan Allen (&lt;a href=&quot;https://twitter.com/mojavelinux&quot;&gt;@mojavelinux&lt;/a&gt;) and I have &lt;a href=&quot;https://rubygems.org/gems/jekyll-asciidoc&quot;&gt;published the release 1.0.0 version to RubyGems&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Jekyll is a simple, blog-aware, static site generator, enabling you to convert plain text content into static websites and blogs. Until recently, Jekyll only supported &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; (or &lt;a href=&quot;http://redcloth.org/textile&quot;&gt;Textile&lt;/a&gt;) formatted content.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/blog/1939-how-github-uses-github-to-document-github&quot;&gt;How GitHub uses GitHub to document GitHub&lt;/a&gt; announced:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Jekyll 2.0 introduced a new plugin type called a &lt;a href=&quot;http://jekyllrb.com/docs/plugins/#converters&quot;&gt;Converter&lt;/a&gt; that transforms any markup into HTML. This frees the writer up to compose content however she chooses, and Jekyll will just serve the final HTML. For example, you can write your posts in AsciiDoc, if that&amp;#8217;s your thing.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Yes, that &lt;em&gt;is&lt;/em&gt; my thing. This post is actually written in AsciiDoc and is being rendered using jekyll-asciidoc.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph dropshadow&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;a class=&quot;image&quot; href=&quot;https://rubygems.org/gems/jekyll-asciidoc&quot;&gt;&lt;img src=&quot;/assets/jekyll-asciidoc_rubygems.png&quot; alt=&quot;jekyll-asciidoc gem on RubyGems&quot; width=&quot;400&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;admonitionblock tip&quot;&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class=&quot;icon&quot;&gt;
-&lt;i class=&quot;fa icon-tip&quot; title=&quot;Tip&quot;&gt;&lt;/i&gt;
-&lt;/td&gt;
-&lt;td class=&quot;content&quot;&gt;
-GitHub doesn’t (yet) whitelist the AsciiDoc plugin, so you can only run it on your own machine. I set up a Travis CI job to automate publishing of this site to GitHub Pages.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here&amp;#8217;s the actual AsciiDoc content for this blog post. You can see the original file in &lt;a href=&quot;https://github.com/paulrayner/paulrayner.github.com/blob/jekyll/_posts/2015-01-05-jekyll-asciidoc-gem-published.adoc&quot;&gt;my website source repository on GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;title&quot;&gt;2015-01-05-jekyll-asciidoc-gem-published.adoc&lt;/div&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;CodeRay highlight&quot;&gt;&lt;code data-lang=&quot;asciidoc&quot;&gt;---
-tags:
-- AsciiDoc
-- Jekyll
-excerpt: The jekyll-asciidoc gem has now been released and is available for download at RubyGems. Get it now, and add the richness of AsciiDoc markup to your Jekyll static site generation.
----
-:title: Build Jekyll-Based Blogs &amp;amp; Websites with AsciiDoc
-:layout: post
-:date: 2015-01-05 11:40
-:comments: true
-:sharing: true
-
-
-Announcing the release of https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc], a http://jekyllrb.com/[Jekyll] plugin that converts AsciiDoc files in your site source to HTML pages using http://asciidoctor.org[Asciidoctor].
-q:&amp;gt;[Start writing your web content in Jekyll using all the richness and clarity of AsciiDoc.]
-The jekyll-asciidoc gem was written by Dan Allen (https://twitter.com/mojavelinux[@mojavelinux]) and I have https://rubygems.org/gems/jekyll-asciidoc[published the release 1.0.0 version to RubyGems].
-
-
-Jekyll is a simple, blog-aware, static site generator, enabling you to convert plain text content into static websites and blogs. Until recently, Jekyll only supported http://daringfireball.net/projects/markdown/[Markdown] (or http://redcloth.org/textile[Textile]) formatted content.
-
-https://github.com/blog/1939-how-github-uses-github-to-document-github[How GitHub uses GitHub to document GitHub] announced:
-
-[quote]
-____
-Jekyll 2.0 introduced a new plugin type called a http://jekyllrb.com/docs/plugins/#converters[Converter] that transforms any markup into HTML. This frees the writer up to compose content however she chooses, and Jekyll will just serve the final HTML. For example, you can write your posts in AsciiDoc, if that&#39;s your thing.
-____
-
-Yes, that _is_ my thing. This post is actually written in AsciiDoc and is being rendered using jekyll-asciidoc.
-
-[.dropshadow]
-image:/assets/jekyll-asciidoc_rubygems.png[jekyll-asciidoc gem on RubyGems, 400, link=&amp;quot;https://rubygems.org/gems/jekyll-asciidoc&amp;quot;]
-
-TIP: GitHub doesn’t (yet) whitelist the AsciiDoc plugin, so you can only run it on your own machine. I set up a Travis CI job to automate publishing of this site to GitHub Pages.
-
-Here&#39;s the actual AsciiDoc content for this blog post. You can see the original file in https://github.com/paulrayner/paulrayner.github.com/blob/jekyll/_posts/2015-01-05-jekyll-asciidoc-gem-published.adoc[my website source repository on GitHub].....&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Updated 2015/1/12&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The jekyll-asciidoc plugin is now included as an official plugin in the list of Converters on the &lt;a href=&quot;http://jekyllrb.com/docs/plugins/&quot;&gt;Jekyll plugins page&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;a class=&quot;image&quot; href=&quot;http://jekyllrb.com/docs/plugins/&quot;&gt;&lt;img src=&quot;/assets/jekyll-asciidoc-official.png&quot; alt=&quot;jekyll-asciidoc gem on Jekyll documentation plugins list&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;</description>
-        <pubDate>Mon, 05 Jan 2015 00:00:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/2015/01/05/jekyll-asciidoc-gem-published/</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/2015/01/05/jekyll-asciidoc-gem-published/</guid>
-        
-        <category>AsciiDoc</category>
-        
-        <category>Jekyll</category>
         
         
       </item>
