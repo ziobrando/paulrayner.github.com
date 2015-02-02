@@ -5,9 +5,83 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Feb 2015 14:51:29 +0000</pubDate>
-    <lastBuildDate>Mon, 02 Feb 2015 14:51:29 +0000</lastBuildDate>
+    <pubDate>Mon, 02 Feb 2015 14:52:51 +0000</pubDate>
+    <lastBuildDate>Mon, 02 Feb 2015 14:52:51 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Don&#39;t Give Your Customers What They Ask For</title>
+        <description>&lt;div class=&quot;imageblock left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;http://arcweb.archives.gov/arc/action/ExternalIdSearch?id=594412&quot;&gt;&lt;img src=&quot;/assets/flying_machine_patent.jpg&quot; alt=&quot;Patent Drawing for a Flying Machine&quot; width=&quot;300&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Give them what they need.&lt;/em&gt;&lt;/strong&gt; There is a pairing exercise participants experience in my BDD with Cucumber workshops, where one person describes a commonplace activity to the other. The challenge is describing it &lt;em&gt;without&lt;/em&gt; being able to use certain common words. One thing I have noticed, no matter where I have run this exercise, is that very few people actually explain &lt;em&gt;why&lt;/em&gt; this activity should even be done. They typically spend all the time describing the mechanics of how to do it, but don&amp;#8217;t explain why, and the listener usually doesn&amp;#8217;t think to ask. I contend that as technologists we do the same thing to our customers all the time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;The critical piece here is asking &quot;why?&quot;&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In the class exercise, if the person explaining the activity had started with why, the rest of the description would have been so much clearer and fallen into place quicker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For us, we need to ask our customers, &quot;why do you need this?&quot; &quot;How will it help you?&quot; &quot;What problem does having this capability or feature solve?&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;And then ask &quot;why?&quot; a few more times.&lt;/strong&gt; Not in an annoying way like a small child does, but as a genuine drive to deeper learning and empathy.&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;Listen to your customers, but don’t let them tell you what to do.&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Failure to do this will lead to a mechanical understanding of the need rather than the type of creative collaboration that might lead to deep insights about the true problem being addressed. I think it is this lack of deeper questioning that explains how many user stories lack a clear statement of the benefit returned by implementing the feature described by the story.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In &lt;a href=&quot;http://tom.preston-werner.com/2011/03/29/ten-lessons-from-githubs-first-year.html&quot;&gt;Ten Lessons from GitHub’s First Year&lt;/a&gt;, Tom Preston-Werner writes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Adapt to Your Customers&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here’s a seemingly paradoxical piece of advice for you: Listen to your customers, but don’t let them tell you what to do. Let me explain. Consider a feature request such as “GitHub should let me FTP up a documentation site for my project.” What this customer is really trying to say is “I want a simple way to publish content related to my project,” but they’re used to what’s already out there, and so they pose the request in terms that are familiar to them. We could have implemented some horrible FTP based solution as requested, but we looked deeper into the underlying question and now we allow you to publish content by simply pushing a Git repository to your account. This meets requirements of both functionality and elegance.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Tom Preston-Werner&lt;br&gt;
+&lt;cite&gt;Ten Lessons from GitHub&#39;s First Year&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In &lt;a href=&quot;http://tom.preston-werner.com/2010/08/23/readme-driven-development.html&quot;&gt;Readme Driven Development&lt;/a&gt; Tom points out how &quot;building the right system&quot; always trumps &quot;building the system right&quot;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I hear a lot of talk these days about TDD and BDD and Extreme Programming and SCRUM and stand up meetings and all kinds of methodologies and techniques for developing better software, but it&amp;#8217;s all irrelevant unless the software we&amp;#8217;re building meets the needs of those that are using it. Let me put that another way. A perfect implementation of the wrong specification is worthless.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Tom Preston-Werner&lt;br&gt;
+&lt;cite&gt;Readme Driven Development&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Producing working software frequently is necessary but insufficient. Producing valuable working software frequently is what matters.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;Note: I posted an early version of this articule on my company blog on 21 July 2011, but am reposting it here.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;Flying Machine Patent from US National Archives. Patent Drawing for a Flying Machine, 10/05/1869. Creator(s): Department of Commerce. Patent Office. (1925 - 1975).&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 02 Feb 2015 14:50:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/dont-give-your-customers-what-they-ask-for</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/dont-give-your-customers-what-they-ask-for</guid>
+        
+        <category>agile</category>
+        
+        
+      </item>
     
       <item>
         <title>LeanUX - My Notes</title>
@@ -1496,163 +1570,6 @@ Maybe your executives would have been interested in attending the &lt;a href=&qu
         <category>Agile</category>
         
         <category>Design</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Aggregates &amp; Entities in Domain-Driven Design</title>
-        <description>&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here are some thoughts on distinctions between aggregates and entities in domain-driven design (DDD), in response to some good questions &lt;a href=&quot;https://twitter.com/hbrumleve&quot;&gt;Harry Brumleve&lt;/a&gt; asked me via email.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here is the relevant content from the email:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;I&#39;ve always had problems with Aggregates vs. Entities.
-
-Is it that Agg&#39;s are transactional boundaries that expose behaviors (methods) that the entities they contain may perform?
-
-Entity is a business concept that exposes behavior.
-
-A collection of entities may have different behavior varied upon the type of aggregate that encapsulates it?
-
-Or is it that Agg Root = Entity and it&#39;s an arbitrary naming of the same concept?
-
-Or is this over-thinking it?&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Let&amp;#8217;s use the typical example of a purchase order (PO) and its line items. How you might model this as entities and value objects? And is there an aggregate concept lurking in there?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;a-concrete-example&quot;&gt;A Concrete Example&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I&amp;#8217;ve done this in the past as Purchase Order being an entity, since &lt;em&gt;it has identity and a lifecycle&lt;/em&gt;. The lifecycle could be modeled as object state or as an event stream - it doesn&amp;#8217;t matter for our purposes here. The line items would likely be value objects, since its their properties that probably matter more than trying to preserve identity over time for them. There may need to be other objects associated with the PO, but let&amp;#8217;s keep it simple.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;/assets/po-example-aggregate.png&quot; alt=&quot;PO Example&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;title&quot;&gt;Figure 1. Two purchase orders, the 2nd one with multiple line items&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Let&amp;#8217;s say your company needs to create a purchase order for an 4 day agile workshop class, because creating purchase orders for training is how they roll. Using the model I described, you would have a single Purchase Order and one Line Item for the class. Unlike the agile classes I teach, which are one inclusive price,  other companies offering training and coaching might want to break out the costs to rent a venue, pay for catering, cover instructor travel expenses, coaching days etc. So purchase orders would need to handle multiple line items in many cases. This is fairly standard for POs anyway.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;aggregates-support-higher-level-concepts&quot;&gt;Aggregates Support Higher Level Concepts&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The business could work with LineItems individually, but in practice never would, since they only really make sense in light of their PurchaseOrder. And you would mostly likely want to work with the higher-level concept of Purchase Orders rather than always having to deal at the granularity of the Line Items.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;If someone was to approve Purchase Order with ID=XYZ124, they would typically be approving all its Line Items as well. I could imagine business rules for certain types of Purchase Orders that the sum of the values of the individual Line Items could not exceed a certain amount for the Purchase Order to be approved. A Purchase Order would probably need to have at least one Line Item to be valid.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here is a case of two or more objects that seem to belong together most of the time in terms of how you need to work with them. So treat PO as an &lt;em&gt;aggregate&lt;/em&gt; of the PO entiity and the Line Item value objects. And make the PO entity the root of the aggregate.  So what we have in this example is an aggregate consisting of a single entity, the Purchase Order (functioning as the &lt;em&gt;root&lt;/em&gt; of the aggregate), and a set of one or more associated Line Item value objects.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;aggregates-invariants-and-consistency&quot;&gt;Aggregates, Invariants and Consistency&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;This aggregate boundary is part of the model, and allows us to enforce invariants (e.g. having at least one Line Item) for the PO aggregate. Between POs we can have eventual consistency, since we are comfortable with not trying to keep all our aggregates in sync with each other. We can update the PO with ID=XYZ124 and then update another related PO with ID=ABC432 separately.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In terms of how this plays out, you would typically have a repository for persisting and retrieving the PO aggregates. When you get a PO from its repository, it would be created whole, with all its Line Items as well. As an aside, this is what makes document stores a nice fit for aggregates, since aggregate and document boundaries often tend to align in terms of how a model is used.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I realize none of what I&amp;#8217;ve written above is directly answering your questions, but it always helps me to try to have a concrete example to discuss. In a particular model, I&amp;#8217;ve typically only had each entity be part of one aggregate. But that may be because I haven&amp;#8217;t seen a domain yet where the model needed anything more complicated.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;For background reading, see the &lt;a href=&quot;http://domainlanguage.com/ddd/reference/DDD_Reference_2011-01-31.pdf&quot;&gt;DDD Reference&lt;/a&gt; book, especially pp. 18, 19 and 24.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;aggregate-boundaries-and-behavior&quot;&gt;Aggregate Boundaries and Behavior&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;I love concrete examples. This actually demonstrates my confusion between Aggregates and Root Entities.
-
-I obviously need to think this out _a lot more_, but I&#39;ve always felt like the diagram you&#39;ve sent has aggregates in the wrong spot. Namely, that aggregates represent a collection of behaviors that are transactionally bound and express the domain model.&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I can see how you might define an aggregate this way, and I think it&amp;#8217;s a valid way to conceptualize them.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;The entities make up the design and implementation of an aggregate&#39;s behaviors; since they are encapsulated within aggregates,&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I would rather have most of the behaviors tied to value objects rather than entities. One of the things I&amp;#8217;d encourage is to keep entities free of behavior where possible, since identity is already a big burden to bear, and have behavior expressed in the value objects. So as more behavior needs to be added to this PO, I would try to model that as behaviors on new or existing value objects where possible.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;How they contribute to the make up of the aggregate&#39;s composition is arbitrary and not important to the domain outside of the aggregate&#39;s context.&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&quot;Arbitrary and not important&quot; might be a little too strong a statement for me. I&amp;#8217;d need an example of where this would be the case. However, generally speaking, I think you&amp;#8217;re correct.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;Additionally, I feel that an Aggregate Root concept is a vestigial idea posited by Eric to appease some OO or implementation concern. :-) That may just be me being cheeky, though.&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Possibly. I&amp;#8217;ve not implemented a system using CQRS, which takes aggregates in a different and interesting direction from what Eric originally proposed. I find the aggregate root concept helpful though, since a single entity typically takes that responsibility.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;aggregate-boundaries-and-refining-the-model&quot;&gt;Aggregate Boundaries and Refining the Model&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;To your point, if entities aren&#39;t used across aggregate types, aren&#39;t you really using the behaviors of the aggregates to express your model and the entities to express the arbitrary design of a particular aggregate?&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Yes, if I understand you correctly.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;As a concrete example, a PO has several behaviors that may not change as a training organization moves from inferiority to not-as-optimal. The design and implementation may currently consider entities like &quot;Location Rental&quot; or &quot;Travel Expenses&quot; to express the PO model; but after maturity of the model and company they choose to represent their line items more succinctly or with less inferior concepts. The entities will change, or yield to new entity concepts, but the PO aggregate&amp;#8217;s boundary stays in tact.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Aggregate boundaries may, and likely will, change over time as the model matures. That&amp;#8217;s assuming the team is practicing iterative design and growing their model as their understanding grows. Maybe the team realizes that Location Rental needs to be its own aggregate, for example. And if a PO is canceled then the Location Rental needs to be canceled too.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;To your point, though, the entities, value objects and domain events inside the aggregate could potentially change without affecting the aggregate boundary.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;Is the answer to my conundrum &quot;it depends&quot; &amp;amp; &quot;do what&#39;s best for your organization&quot;? :-)&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Always! :) That being said, there&amp;#8217;s clearly some nuance here and probably the need to sketch out some ideas on napkins to clarify each other&amp;#8217;s thinking.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;See &lt;a href=&quot;https://github.com/paulrayner/ddd_sample_app_ruby/blob/master/domain/cargo/cargo.rb&quot;&gt;the Cargo aggregate&lt;/a&gt; in the Ruby DDD sample app for a half-decent example. Cargo is the aggregate root, with several value objects handling the business rules. Delivery essentially functions as a read projection of the Handling Event history. Cargo is focused on identity and not much else. All the interesting business logic is in the value objects.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        <pubDate>Tue, 13 Jan 2015 15:21:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/blog/aggregates-and-entities-in-domain-driven-design</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/blog/aggregates-and-entities-in-domain-driven-design</guid>
-        
-        <category>DDD</category>
-        
-        <category>Coding</category>
         
         
       </item>
