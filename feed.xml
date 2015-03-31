@@ -5,8 +5,8 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Mar 2015 02:13:36 +0000</pubDate>
-    <lastBuildDate>Sun, 29 Mar 2015 02:13:36 +0000</lastBuildDate>
+    <pubDate>Tue, 31 Mar 2015 17:32:09 +0000</pubDate>
+    <lastBuildDate>Tue, 31 Mar 2015 17:32:09 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -21,6 +21,11 @@ that the same theology also talks about the notion of a community being a
 bounded set. In other words, &lt;em&gt;BDD is a centered community, rather than a bounded
 community.&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class=&quot;imageblock right&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://skillsmatter.com/skillscasts/6174-wtf-is-bdd&quot;&gt;&lt;img src=&quot;/assets/what-is-bdd-panel2.png&quot; alt=&quot;BDD panel&quot; width=&quot;300&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I want to be clear what I meant by bounded vs. centered set as it applies to a
 community when I proposed it in the CukeUp 2015 panel. These terms originated in
@@ -30,13 +35,14 @@ adapt a significant amount of the content from his original article in what
 follows to make it relevant for those without a background or interest in
 theology. Before I do that though, first a little background is in order.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;cukeup-2015&quot;&gt;CukeUp 2015&lt;/h3&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;cukeup-2015&quot;&gt;CukeUp 2015&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The CukeUp 2015 conference at Skills Matter in London culminated yesterday in an
 wonderful panel discussion about what BDD actually is, organized and facilitated
-by Tom Stuart. I highly recommend anyone interested in BDD watch it once Skills
-Matter posts the video. I&amp;#8217;ll link to it here once they do.&lt;/p&gt;
+by Tom Stuart. I highly recommend anyone interested in current thinking in BDD watch
+the video posted by Skills Matter at &lt;a href=&quot;https://skillsmatter.com/skillscasts/6174-wtf-is-bdd&quot; class=&quot;bare&quot;&gt;https://skillsmatter.com/skillscasts/6174-wtf-is-bdd&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock left&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
@@ -57,8 +63,10 @@ continue challenging the status quo and incorporating new learning and practices
 as they reveal themselves in the future.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;bounded-sets&quot;&gt;Bounded sets&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;bounded-sets&quot;&gt;Bounded sets&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;In his 1978 article&lt;span class=&quot;footnote&quot;&gt;[&lt;a id=&quot;_footnoteref_1&quot; class=&quot;footnote&quot; href=&quot;#_footnote_1&quot; title=&quot;View footnote.&quot;&gt;1&lt;/a&gt;]&lt;/span&gt;
 , Hiebert notes that many of our words refer to bounded sets:
@@ -107,8 +115,10 @@ can be no change in its categorical status.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;what-if-bdd-was-a-bounded-set&quot;&gt;What if BDD was a Bounded Set?&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;what-if-bdd-was-a-bounded-set&quot;&gt;What if BDD was a Bounded Set?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;What happens to our concept of &quot;BDD&quot; if we define it in terms of a bounded set?
 If we use the above characteristics of a bounded set we probably come up with
@@ -151,8 +161,10 @@ strict adherence to certain essential BDD &quot;practices.&quot;&lt;/p&gt;
 set. Rather, it is a centered set. Let&amp;#8217;s see what we mean by that.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;centered-sets&quot;&gt;Centered Sets&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;centered-sets&quot;&gt;Centered Sets&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;There are other ways to form mental categories. Hiebert says a second way is to
 form centered sets&lt;span class=&quot;footnote&quot;&gt;[&lt;a id=&quot;_footnoteref_2&quot; class=&quot;footnote&quot; href=&quot;#_footnote_2&quot; title=&quot;View footnote.&quot;&gt;2&lt;/a&gt;]&lt;/span&gt;. A centered set has the following characteristics:&lt;/p&gt;
@@ -205,8 +217,10 @@ towards the positive magnetic pole, and protons are those attracted by the negat
 pole. The diagram here is another way of visualizing a centered set&lt;span class=&quot;footnote&quot;&gt;[&lt;a id=&quot;_footnoteref_3&quot; class=&quot;footnote&quot; href=&quot;#_footnote_3&quot; title=&quot;View footnote.&quot;&gt;3&lt;/a&gt;]&lt;/span&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;bdd-as-a-centered-set&quot;&gt;BDD as a Centered Set&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;bdd-as-a-centered-set&quot;&gt;BDD as a Centered Set&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;In contrast to a bounded set, how does the concept &quot;BDD&quot; look defined as a
 centered set as I propose?&lt;/p&gt;
@@ -263,6 +277,7 @@ centered set, with the agile manifesto as the central value statement for the
 movement. Whether BDD, or agile in general, being a centered community rather
 than a bounded one must involve always seeking to not only uphold but also
 increase the gravitational pull of the values at the center.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&quot;footnotes&quot;&gt;
